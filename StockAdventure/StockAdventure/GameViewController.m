@@ -1,6 +1,6 @@
 #import "GameViewController.h"
 #import "GameScene.h"
-#import "GameScene2.h"
+#import "StoryReader.h"
 
 @implementation GameViewController
 
@@ -13,18 +13,10 @@
 
     skView.ignoresSiblingOrder = YES;
 
-    GameScene *scene = [[GameScene alloc] initWithSize:self.view.frame.size];
+    GameScene *scene = [[GameScene alloc] initWithSize:self.view.frame.size
+                                                stitch:[[StoryReader instance] getStory][@"data"][@"initial"]];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     [skView presentScene:scene];
-
-    [skView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)]];
-}
-
-- (void)tap {
-    SKTransition *testTransition = [SKTransition fadeWithColor:[UIColor greenColor] duration:3];
-    GameScene2 *newScene = [[GameScene2 alloc] initWithSize:self.view.frame.size];
-    SKView *skView = (SKView *) self.view;
-    [skView presentScene:newScene transition:testTransition];
 }
 
 - (NSUInteger)supportedInterfaceOrientations {

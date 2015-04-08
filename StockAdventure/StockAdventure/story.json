@@ -1,0 +1,87 @@
+{
+  "url_key": "65b8",
+  "data": {
+    "allowCheckpoints": false,
+    "optionMirroring": true,
+    "editorData": {
+      "libraryVisible": false,
+      "playPoint": "sheBroughtCake",
+      "textSize": 0,
+      "authorName": "Stefan Kendall"
+    },
+    "stitches": {
+      "youContinueWorki": {
+        "content": [
+          "You continue working.",
+          {"pageNum": 3}
+        ]
+      },
+      "sheBroughtCake": {
+        "content": [
+          "...she brought cake.",
+          {
+            "option": "Go eat cake.",
+            "linkPath": "thereIsNothingSp",
+            "notIfConditions": null,
+            "ifConditions": null
+          },
+          {
+            "option": "Continue working.",
+            "linkPath": "youContinueWorki",
+            "notIfConditions": null,
+            "ifConditions": null
+          },
+          {
+            "option": "Fuck cake. Walk out.",
+            "linkPath": "finallyFree",
+            "notIfConditions": null,
+            "ifConditions": null
+          }
+        ]
+      },
+      "allAroundYouIsWa": {
+        "content": [
+          "All around you is wasteland.",
+          {"image": "test.png"},
+          {"divert": "youveWorkedHereF"},
+          {"pageNum": 1}
+        ]
+      },
+      "fun": {"content": ["Fun."]},
+      "itsJennifersBirt": {
+        "content": [
+          "It's Jennifer's birthday today. ",
+          {"divert": "sheBroughtCake"}
+        ]
+      },
+      "finallyFree": {
+        "content": [
+          "Finally. Free.",
+          {"pageNum": 2}
+        ]
+      },
+      "thereIsNothingSp": {
+        "content": [
+          "There is nothing special about Jennifer.",
+          {
+            "option": "Leave",
+            "linkPath": "fun",
+            "notIfConditions": null,
+            "ifConditions": null
+          },
+          {"pageNum": 4}
+        ]
+      },
+      "youveWorkedHereF": {
+        "content": [
+          "You've worked here for five years now. Your  days are so filled with hollow meetings you can't even remember what you do anymore.",
+          {"divert": "itsJennifersBirt"}
+        ]
+      }
+    },
+    "initial": "allAroundYouIsWa"
+  },
+  "created_at": "2015-04-07T00:35:53Z",
+  "updated_at": "2015-04-08T01:18:02Z",
+  "title": "Stock Adventure"
+}
