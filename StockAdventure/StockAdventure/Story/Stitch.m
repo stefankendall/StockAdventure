@@ -34,7 +34,7 @@
             [options addObject:contentDict];
         }
     }
-    return self.stitchDictionary[@"content"][0];
+    return options;
 }
 
 - (NSString *)divertIdFromData:(NSDictionary *)data {

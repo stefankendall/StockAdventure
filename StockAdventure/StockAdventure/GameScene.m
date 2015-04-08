@@ -1,6 +1,7 @@
 #import "GameScene.h"
 #import "Stitch.h"
 #import "StitchNode.h"
+#import "StitchOptionsNode.h"
 
 @implementation GameScene
 
@@ -12,7 +13,6 @@
         self.horizontalPad = 10;
         self.pageStartStitch = stitch;
         self.nextStitch = stitch;
-        self.currentPosition = 0;
         self.lastStitchReached = NO;
     }
 
@@ -27,16 +27,24 @@
     Stitch *stitch = [[Stitch alloc] initWithStitchId:stitchId];
 
     StitchNode *paragraph = [StitchNode paragraphNodeWithText:[stitch content]
-                                                     position:self.currentPosition
                                                      forWidth:(int) (self.size.width -
                                                              2 * self.horizontalPad)];
 
-    CGFloat existingOffset = [paragraph height] + [self heightOfAllCurrentParagraphs];
     paragraph.position = CGPointMake(self.horizontalPad,
-            self.size.height - self.topViewVerticalPad - existingOffset);
+            self.size.height - self.topViewVerticalPad - [paragraph height] - [self heightOfAllCurrentParagraphs]);
     paragraph.name = @"paragraph";
     [self addChild:paragraph];
-    self.currentPosition++;
+
+    if ([[stitch options] count] > 0) {
+        StitchOptionsNode *options = [StitchOptionsNode optionsNodeForStich:stitch
+                                                                   forWidth:(int) (self.size.width -
+                                                                           2 * self.horizontalPad)];
+
+        options.position = CGPointMake(self.size.width / 2,
+                self.size.height - self.topViewVerticalPad - [options height] - [self heightOfAllCurrentParagraphs]);
+        options.name = @"options";
+        [self addChild:options];
+    }
 
     if ([stitch divert]) {
         self.nextStitch = [stitch divert];
@@ -60,7 +68,6 @@
         [self addStitch:self.nextStitch];
     }
 }
-
 
 - (void)update:(CFTimeInterval)currentTime {
 }

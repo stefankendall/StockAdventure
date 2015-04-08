@@ -17,4 +17,5 @@
 
 - (NSString *)content;
 
+- (NSArray *)options;
 @end

@@ -8,7 +8,7 @@ const NSString *STITCH_FONT = @"Avenir";
 const int fontSize = 24;
 const int padBetweenLines = 10;
 
-+ (StitchNode *)paragraphNodeWithText:(NSString *)text position:(int)position forWidth:(int)width {
++ (StitchNode *)paragraphNodeWithText:(NSString *)text forWidth:(int)width {
     StitchNode *node = [self node];
     node.alpha = 0;
 
