@@ -1,14 +1,13 @@
-#import "StitchOptionsNode.h"
+#import "OptionsNode.h"
 #import "Stitch.h"
+#import "OptionNode.h"
 
-@implementation StitchOptionsNode
-
-const NSString *OPTION_FONT = @"Avenir-Heavy-Oblique";
-const int OPTION_FONT_SIZE = 24;
 const int BETWEEN_OPTION_PADDING = 24;
 
-+ (StitchOptionsNode *)optionsNodeForStich:(Stitch *)stitch forWidth:(int)width {
-    StitchOptionsNode *node = [self node];
+@implementation OptionsNode
+
++ (OptionsNode *)optionsNodeForStich:(Stitch *)stitch forWidth:(int)width {
+    OptionsNode *node = [self node];
     node.stitch = stitch;
     node.alpha = 0;
     [node runAction:
@@ -19,22 +18,20 @@ const int BETWEEN_OPTION_PADDING = 24;
     ];
 
     for (NSUInteger i = 0; i < [stitch.options count]; i++) {
-        NSDictionary *dict = stitch.options[[stitch.options count] - i - 1];
+        NSDictionary *optionDict = stitch.options[[stitch.options count] - i - 1];
 
-        SKLabelNode *label = [SKLabelNode labelNodeWithFontNamed:(NSString *) OPTION_FONT];
-        [label setFontSize:OPTION_FONT_SIZE];
-        [label setText:dict[@"option"]];
-        label.position = CGPointMake(0, i * (OPTION_FONT_SIZE + BETWEEN_OPTION_PADDING));
-        label.name = @"option";
-
-        [node addChild:label];
+        OptionNode *option = [OptionNode nodeWithOption:optionDict];
+        option.name = @"option";
+        option.position = CGPointMake(0, i * ([option height] + BETWEEN_OPTION_PADDING));
+        [node addChild:option];
     }
 
     return node;
 }
 
 - (int)height {
-    return [self.stitch.options count] * (OPTION_FONT_SIZE + BETWEEN_OPTION_PADDING);
+    OptionNode *option = (OptionNode *) [self childNodeWithName:@"option"];
+    return (int) ([self.stitch.options count] * ([option height] + BETWEEN_OPTION_PADDING));
 }
 
 - (Stitch *)stitchForNode:(SKNode *)node {

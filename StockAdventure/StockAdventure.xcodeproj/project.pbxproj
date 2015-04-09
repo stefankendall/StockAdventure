@@ -17,14 +17,14 @@
 		02A12A8D1AD5E00D007C142B /* FontTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A12A8C1AD5E00D007C142B /* FontTest.xib */; };
 		54590178D317DFDC9DED2F06 /* story.json in Resources */ = {isa = PBXBuildFile; fileRef = 54590BA1C7F422C589A5D46C /* story.json */; };
 		545903A48F9F578AFBA29F23 /* StitchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B831D73542D87FDB55D /* StitchNode.m */; };
-		5459044B36E8927C66DFB201 /* TextFlower.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590EA7BDC64AD94CDD7B7A /* TextFlower.m */; };
-		545904FF6E4E41C23E23D301 /* StitchOptionsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590153782BB7BBFA3427F9 /* StitchOptionsNode.m */; };
+		545904FF6E4E41C23E23D301 /* OptionsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590153782BB7BBFA3427F9 /* OptionsNode.m */; };
 		5459059D733D587B3FEBDCAB /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901622765EABAF7EF95A5 /* GameViewController.m */; };
-		5459064D30565DE9FEF5CF84 /* GameScene2.m in Sources */ = {isa = PBXBuildFile; fileRef = 545906293FAF9EB8D9C3C16F /* GameScene2.m */; };
 		54590760295CFDDEC49CD7E5 /* StoryReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E72328FB4B852265951 /* StoryReader.m */; };
 		54590857A53E3D20BD2F2F5F /* Stitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909F9E8878CD1D53153E3 /* Stitch.m */; };
 		545908E5F7C5B39C3FF07117 /* StitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459005110D3CB778DFB105B /* StitchTests.m */; };
 		54590A240B4F70FA2F1A3EB0 /* TextFlowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459081CFDC0D32D08AABC74 /* TextFlowerTests.m */; };
+		54590DB2E366BA643101133A /* OptionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D84A987FD48A145F6E6 /* OptionNode.m */; };
+		54590E2EDEBD7094A5ECA8B4 /* TextFlower.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D0CBE8B4749184E66B0 /* TextFlower.m */; };
 		7950CE01897B7906314179A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0646C971F0F9B5A062B32D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,24 +54,25 @@
 		0294BEC21ACB745100077455 /* StockAdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockAdventureTests.m; sourceTree = "<group>"; };
 		02A12A8C1AD5E00D007C142B /* FontTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontTest.xib; sourceTree = "<group>"; };
 		279297BD6411B2181E952321 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		5459001E8172AD4DB22A9AF6 /* GameScene2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene2.h; sourceTree = "<group>"; };
 		5459005110D3CB778DFB105B /* StitchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchTests.m; sourceTree = "<group>"; };
-		54590153782BB7BBFA3427F9 /* StitchOptionsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchOptionsNode.m; sourceTree = "<group>"; };
+		54590153782BB7BBFA3427F9 /* OptionsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsNode.m; sourceTree = "<group>"; };
 		545901622765EABAF7EF95A5 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		5459019A7EADEC41B37F6EDE /* Stitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stitch.h; sourceTree = "<group>"; };
-		54590504EA92AB6A2A86230C /* TextFlower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFlower.h; sourceTree = "<group>"; };
-		545906293FAF9EB8D9C3C16F /* GameScene2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene2.m; sourceTree = "<group>"; };
+		5459060A244101C0044FD94C /* TextFlower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFlower.h; sourceTree = "<group>"; };
+		54590638DF377C8F964925BC /* StitchTransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchTransitionProtocol.h; sourceTree = "<group>"; };
 		545906976A2AD78B5C92185B /* StoryReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryReader.h; sourceTree = "<group>"; };
+		5459070C8A260112504C6BF4 /* OptionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionNode.h; sourceTree = "<group>"; };
 		5459080EBA1F20A68A59496E /* StitchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchNode.h; sourceTree = "<group>"; };
 		5459081CFDC0D32D08AABC74 /* TextFlowerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlowerTests.m; sourceTree = "<group>"; };
-		54590951F8FE597BB704B44B /* StitchOptionsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchOptionsNode.h; sourceTree = "<group>"; };
+		54590951F8FE597BB704B44B /* OptionsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsNode.h; sourceTree = "<group>"; };
 		545909F9E8878CD1D53153E3 /* Stitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stitch.m; sourceTree = "<group>"; };
 		54590B831D73542D87FDB55D /* StitchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchNode.m; sourceTree = "<group>"; };
 		54590BA1C7F422C589A5D46C /* story.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = story.json; sourceTree = "<group>"; };
 		54590D041AE2F4AD2634E082 /* StitchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchTests.h; sourceTree = "<group>"; };
+		54590D0CBE8B4749184E66B0 /* TextFlower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlower.m; sourceTree = "<group>"; };
+		54590D84A987FD48A145F6E6 /* OptionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionNode.m; sourceTree = "<group>"; };
 		54590DD9A55DF8F2BFDA7BDA /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		54590E72328FB4B852265951 /* StoryReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryReader.m; sourceTree = "<group>"; };
-		54590EA7BDC64AD94CDD7B7A /* TextFlower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlower.m; sourceTree = "<group>"; };
 		6F0646C971F0F9B5A062B32D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1E53223D07BB9071109ECE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,8 +127,6 @@
 				0294BEB31ACB745100077455 /* Images.xcassets */,
 				0294BEB51ACB745100077455 /* LaunchScreen.xib */,
 				0294BEA11ACB745100077455 /* Supporting Files */,
-				545906293FAF9EB8D9C3C16F /* GameScene2.m */,
-				5459001E8172AD4DB22A9AF6 /* GameScene2.h */,
 				54590DD9A55DF8F2BFDA7BDA /* GameViewController.h */,
 				545901622765EABAF7EF95A5 /* GameViewController.m */,
 				54590847E3242C1331794F03 /* Nodes */,
@@ -179,8 +178,6 @@
 				545906976A2AD78B5C92185B /* StoryReader.h */,
 				545909F9E8878CD1D53153E3 /* Stitch.m */,
 				5459019A7EADEC41B37F6EDE /* Stitch.h */,
-				54590EA7BDC64AD94CDD7B7A /* TextFlower.m */,
-				54590504EA92AB6A2A86230C /* TextFlower.h */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -190,9 +187,14 @@
 			children = (
 				54590B831D73542D87FDB55D /* StitchNode.m */,
 				5459080EBA1F20A68A59496E /* StitchNode.h */,
-				54590153782BB7BBFA3427F9 /* StitchOptionsNode.m */,
-				54590951F8FE597BB704B44B /* StitchOptionsNode.h */,
+				54590153782BB7BBFA3427F9 /* OptionsNode.m */,
+				54590951F8FE597BB704B44B /* OptionsNode.h */,
 				02A12A8C1AD5E00D007C142B /* FontTest.xib */,
+				54590638DF377C8F964925BC /* StitchTransitionProtocol.h */,
+				54590D0CBE8B4749184E66B0 /* TextFlower.m */,
+				5459060A244101C0044FD94C /* TextFlower.h */,
+				54590D84A987FD48A145F6E6 /* OptionNode.m */,
+				5459070C8A260112504C6BF4 /* OptionNode.h */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -356,13 +358,13 @@
 				0294BEA71ACB745100077455 /* AppDelegate.m in Sources */,
 				0294BEAA1ACB745100077455 /* GameScene.m in Sources */,
 				0294BEA41ACB745100077455 /* main.m in Sources */,
-				5459064D30565DE9FEF5CF84 /* GameScene2.m in Sources */,
 				5459059D733D587B3FEBDCAB /* GameViewController.m in Sources */,
 				545903A48F9F578AFBA29F23 /* StitchNode.m in Sources */,
 				54590760295CFDDEC49CD7E5 /* StoryReader.m in Sources */,
 				54590857A53E3D20BD2F2F5F /* Stitch.m in Sources */,
-				5459044B36E8927C66DFB201 /* TextFlower.m in Sources */,
-				545904FF6E4E41C23E23D301 /* StitchOptionsNode.m in Sources */,
+				545904FF6E4E41C23E23D301 /* OptionsNode.m in Sources */,
+				54590E2EDEBD7094A5ECA8B4 /* TextFlower.m in Sources */,
+				54590DB2E366BA643101133A /* OptionNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,10 +4,10 @@
 
 @class Stitch;
 
-@interface StitchOptionsNode : SKNode
+@interface OptionsNode : SKNode
 @property(nonatomic, strong) Stitch *stitch;
 
-+ (StitchOptionsNode *)optionsNodeForStich:(Stitch *)stitch forWidth:(int)width;
++ (OptionsNode *)optionsNodeForStich:(Stitch *)stitch forWidth:(int)width;
 
 - (int)height;
 

@@ -1,11 +1,13 @@
 #import "GameScene.h"
 #import "Stitch.h"
 #import "StitchNode.h"
-#import "StitchOptionsNode.h"
+#import "OptionsNode.h"
+#import "GameViewController.h"
+#import "OptionNode.h"
 
 @implementation GameScene
 
-- (instancetype)initWithSize:(CGSize)size stitch:(NSString *)stitch {
+- (instancetype)initWithSize:(CGSize)size stitch:(NSString *)stitch delegate:(NSObject <StitchTransitionProtocol> *)delegate {
     self = [super initWithSize:size];
     if (self) {
         self.topViewVerticalPad = 40;
@@ -14,6 +16,7 @@
         self.pageStartStitch = stitch;
         self.nextStitch = stitch;
         self.lastStitchReached = NO;
+        self.transitionDelegate = delegate;
     }
 
     return self;
@@ -36,9 +39,9 @@
     [self addChild:paragraph];
 
     if ([[stitch options] count] > 0) {
-        StitchOptionsNode *options = [StitchOptionsNode optionsNodeForStich:stitch
-                                                                   forWidth:(int) (self.size.width -
-                                                                           2 * self.horizontalPad)];
+        OptionsNode *options = [OptionsNode optionsNodeForStich:stitch
+                                                       forWidth:(int) (self.size.width -
+                                                               2 * self.horizontalPad)];
 
         options.position = CGPointMake(self.size.width / 2,
                 self.size.height - self.topViewVerticalPad - [options height] - [self heightOfAllCurrentParagraphs]);
@@ -64,9 +67,11 @@
 }
 
 - (SKNode *)touchedOption:(NSSet *)touches {
-    SKNode *touchedNode = [self nodeAtPoint:[[touches anyObject] locationInNode:self]];
-    if (touchedNode && [touchedNode.name isEqualToString:@"option"]) {
-        return (StitchOptionsNode *) touchedNode;
+    NSArray *touchedNodes = [self nodesAtPoint:[[touches anyObject] locationInNode:self]];
+    for (SKNode *touchedNode in touchedNodes) {
+        if (touchedNode && [touchedNode.name isEqualToString:@"option"]) {
+            return (OptionsNode *) touchedNode;
+        }
     }
     return nil;
 }
@@ -76,24 +81,23 @@
         [self addStitch:self.nextStitch];
     }
 
-//    SKNode *optionNode = [self touchedOption:touches];
-//    [optionNode highlight];
+    OptionNode *optionNode = (OptionNode *) [self touchedOption:touches];
+    [optionNode highlight];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-//    SKNode *optionNode = [self touchedOption:touches];
-//    [optionNode highlight];
+    OptionNode *optionNode = (OptionNode *) [self touchedOption:touches];
+    [optionNode highlight];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     SKNode *optionNode = [self touchedOption:touches];
     if (optionNode) {
-        StitchOptionsNode *options = (StitchOptionsNode *) [self childNodeWithName:@"options"];
+        OptionsNode *options = (OptionsNode *) [self childNodeWithName:@"options"];
         Stitch *nextStitch = [options stitchForNode:optionNode];
-        NSLog(@"%@", nextStitch.stitchId);
+        [self.transitionDelegate transitionTo:nextStitch];
     }
 }
-
 
 - (void)update:(CFTimeInterval)currentTime {
 }

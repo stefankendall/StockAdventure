@@ -1,5 +1,7 @@
-
 #import <SpriteKit/SpriteKit.h>
+
+@class GameViewController;
+@protocol StitchTransitionProtocol;
 
 @interface GameScene : SKScene
 
@@ -9,9 +11,9 @@
 @property(nonatomic, copy) NSString *pageStartStitch;
 @property(nonatomic, copy) NSString *nextStitch;
 
-@property(nonatomic) int currentPosition;
-
 @property(nonatomic) BOOL lastStitchReached;
 
-- (instancetype)initWithSize:(CGSize)size stitch:(NSString *)stitch;
+@property(nonatomic, weak) NSObject <StitchTransitionProtocol> *transitionDelegate;
+
+- (instancetype)initWithSize:(CGSize)size stitch:(NSString *)stitch delegate:(NSObject <StitchTransitionProtocol> *)delegate;
 @end
