@@ -63,11 +63,37 @@
     return height;
 }
 
+- (SKNode *)touchedOption:(NSSet *)touches {
+    SKNode *touchedNode = [self nodeAtPoint:[[touches anyObject] locationInNode:self]];
+    if (touchedNode && [touchedNode.name isEqualToString:@"option"]) {
+        return (StitchOptionsNode *) touchedNode;
+    }
+    return nil;
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     if (!self.lastStitchReached) {
         [self addStitch:self.nextStitch];
     }
+
+//    SKNode *optionNode = [self touchedOption:touches];
+//    [optionNode highlight];
 }
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+//    SKNode *optionNode = [self touchedOption:touches];
+//    [optionNode highlight];
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    SKNode *optionNode = [self touchedOption:touches];
+    if (optionNode) {
+        StitchOptionsNode *options = (StitchOptionsNode *) [self childNodeWithName:@"options"];
+        Stitch *nextStitch = [options stitchForNode:optionNode];
+        NSLog(@"%@", nextStitch.stitchId);
+    }
+}
+
 
 - (void)update:(CFTimeInterval)currentTime {
 }

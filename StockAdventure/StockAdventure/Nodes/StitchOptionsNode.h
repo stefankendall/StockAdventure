@@ -10,4 +10,6 @@
 + (StitchOptionsNode *)optionsNodeForStich:(Stitch *)stitch forWidth:(int)width;
 
 - (int)height;
+
+- (Stitch *)stitchForNode:(SKNode *)node;
 @end
