@@ -23,7 +23,7 @@
 }
 
 - (void)testFindsImageInUrl {
-    UIImage *foundImage = [self.stitch imageFromData:@{
+    NSString *foundImage = [self.stitch imageFromData:@{
             @"content" : @[
                     @"1234",
                     @{@"image" : @"https://dl.dropboxusercontent.com/u/5142994/stockadventure/office.png"}

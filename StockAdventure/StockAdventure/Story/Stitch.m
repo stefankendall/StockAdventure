@@ -37,17 +37,17 @@
     return options;
 }
 
-- (UIImage *)image {
+- (NSString *)image {
     return [self imageFromData:self.stitchDictionary];
 }
 
-- (UIImage *)imageFromData:(NSDictionary *)data {
+- (NSString *)imageFromData:(NSDictionary *)data {
     NSString *imageUrl = [self findSingleProperty:@"image" inData:data];
     if (!imageUrl) {
         return nil;
     }
 
-    return [UIImage imageNamed:[self lastPartOfImageFromUrl:imageUrl]];
+    return [self lastPartOfImageFromUrl:imageUrl];
 }
 
 - (NSString *)lastPartOfImageFromUrl:(NSString *)url {

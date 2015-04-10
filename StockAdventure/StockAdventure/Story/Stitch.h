@@ -15,9 +15,9 @@
 
 - (NSString *)divert;
 
-- (UIImage *)image;
+- (NSString *)image;
 
-- (UIImage *)imageFromData:(NSDictionary *)data;
+- (NSString *)imageFromData:(NSDictionary *)data;
 
 + (instancetype)stitchWithStitchId:(NSString *)stitchId;
 

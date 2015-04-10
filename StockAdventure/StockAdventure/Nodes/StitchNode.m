@@ -1,5 +1,6 @@
 #import "StitchNode.h"
 #import "TextFlower.h"
+#import "Stitch.h"
 
 @implementation StitchNode
 
@@ -8,12 +9,11 @@ const NSString *STITCH_FONT = @"Avenir";
 const int fontSize = 24;
 const int padBetweenLines = 10;
 
-+ (StitchNode *)paragraphNodeWithText:(NSString *)text forWidth:(int)width {
++ (StitchNode *)paragraphNodeWithStitch:(Stitch *)stitch forWidth:(int)width {
     StitchNode *node = [self node];
     node.alpha = 0;
 
-    NSArray *lines = [TextFlower linesFromText:text withWidth:width fontSize:fontSize];
-
+    NSArray *lines = [TextFlower linesFromText:[stitch content] withWidth:width fontSize:fontSize];
     for (NSUInteger i = 0; i < [lines count]; i++) {
         SKLabelNode *label = [SKLabelNode labelNodeWithFontNamed:(NSString *) STITCH_FONT];
         label.text = lines[i];
@@ -24,12 +24,24 @@ const int padBetweenLines = 10;
         label.position = CGPointMake(0, ([lines count] - i) * (padBetweenLines + fontSize));
         [node addChild:label];
     }
+    if ([stitch image]) {
+        SKSpriteNode *imageSprite = [SKSpriteNode spriteNodeWithImageNamed:[stitch image]];
+        imageSprite.position = CGPointMake(width / 2, [node height]);
+        imageSprite.anchorPoint = CGPointMake(0.5, 0);
+        [node addChild:imageSprite];
+    }
+
     [node runAction:[SKAction fadeInWithDuration:1]];
     return node;
 }
 
 - (int)height {
-    return [[self children] count] * (fontSize + padBetweenLines);
+    int highest = 0;
+    for (SKNode *node in [self children]) {
+        CGFloat currentNodeBottom = node.position.y + node.frame.size.height;
+        highest = (int) (currentNodeBottom > highest ? currentNodeBottom : highest);
+    }
+    return highest;
 }
 
 @end

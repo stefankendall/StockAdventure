@@ -10,8 +10,8 @@
 - (instancetype)initWithSize:(CGSize)size stitch:(NSString *)stitch delegate:(NSObject <StitchTransitionProtocol> *)delegate {
     self = [super initWithSize:size];
     if (self) {
-        self.topViewVerticalPad = 40;
-        self.padBetweenParagraphs = 40;
+        self.topViewVerticalPad = 20;
+        self.padBetweenParagraphs = 20;
         self.horizontalPad = 10;
         self.pageStartStitch = stitch;
         self.nextStitch = stitch;
@@ -29,9 +29,9 @@
 - (void)addStitch:(NSString *)stitchId {
     Stitch *stitch = [[Stitch alloc] initWithStitchId:stitchId];
 
-    StitchNode *paragraph = [StitchNode paragraphNodeWithText:[stitch content]
-                                                     forWidth:(int) (self.size.width -
-                                                             2 * self.horizontalPad)];
+    StitchNode *paragraph = [StitchNode paragraphNodeWithStitch:stitch
+                                                       forWidth:(int) (self.size.width -
+                                                               2 * self.horizontalPad)];
 
     paragraph.position = CGPointMake(self.horizontalPad,
             self.size.height - self.topViewVerticalPad - [paragraph height] - [self heightOfAllCurrentParagraphs]);
