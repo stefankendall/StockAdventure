@@ -37,15 +37,36 @@
     return options;
 }
 
+- (UIImage *)image {
+    return [self imageFromData:self.stitchDictionary];
+}
+
+- (UIImage *)imageFromData:(NSDictionary *)data {
+    NSString *imageUrl = [self findSingleProperty:@"image" inData:data];
+    if (!imageUrl) {
+        return nil;
+    }
+
+    return [UIImage imageNamed:[self lastPartOfImageFromUrl:imageUrl]];
+}
+
+- (NSString *)lastPartOfImageFromUrl:(NSString *)url {
+    NSArray *parts = [url componentsSeparatedByString:@"/"];
+    return [parts lastObject];
+}
+
 - (NSString *)divertIdFromData:(NSDictionary *)data {
+    return [self findSingleProperty:@"divert" inData:data];
+}
+
+- (NSString *)findSingleProperty:(NSString *)key inData:(NSDictionary *)data {
     NSArray *content = data[@"content"];
     for (NSUInteger i = 1; i < [content count]; i++) {
         NSDictionary *contentDict = content[i];
-        if (contentDict[@"divert"]) {
-            return contentDict[@"divert"];
+        if (contentDict[key]) {
+            return contentDict[key];
         }
     }
-
     return nil;
 }
 

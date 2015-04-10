@@ -9,9 +9,15 @@
 
 - (instancetype)initWithStitchId:(NSString *)stitchId;
 
+- (NSString *)lastPartOfImageFromUrl:(NSString *)url;
+
 - (NSString *)divertIdFromData:(NSDictionary *)data;
 
 - (NSString *)divert;
+
+- (UIImage *)image;
+
+- (UIImage *)imageFromData:(NSDictionary *)data;
 
 + (instancetype)stitchWithStitchId:(NSString *)stitchId;
 

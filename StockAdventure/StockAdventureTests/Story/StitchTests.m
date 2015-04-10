@@ -22,4 +22,20 @@
     XCTAssertEqualObjects(divertId, foundId);
 }
 
+- (void)testFindsImageInUrl {
+    UIImage *foundImage = [self.stitch imageFromData:@{
+            @"content" : @[
+                    @"1234",
+                    @{@"image" : @"https://dl.dropboxusercontent.com/u/5142994/stockadventure/office.png"}
+            ]
+    }];
+
+    XCTAssertNotNil(foundImage);
+}
+
+- (void)testFindsLastPartOfUrl {
+    NSString *last = [self.stitch lastPartOfImageFromUrl:@"https://dl.dropboxusercontent.com/u/5142994/stockadventure/office.png"];
+    XCTAssertEqualObjects(last, @"office.png");
+}
+
 @end
