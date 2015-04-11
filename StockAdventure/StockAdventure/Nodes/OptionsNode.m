@@ -32,7 +32,7 @@ const int OPTIONS_PAD_TOP = 20;
     return node;
 }
 
-- (int)height {
+- (CGFloat)height {
     OptionNode *option = (OptionNode *) [self childNodeWithName:@"option"];
     return (int) ([self.stitch.options count] * ([option height] + BETWEEN_OPTION_PADDING)) + OPTIONS_PAD_TOP;
 }

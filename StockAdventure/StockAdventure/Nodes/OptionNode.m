@@ -30,15 +30,17 @@ const int OPTION_FONT_SIZE = 24;
 
 - (void)highlight {
     [self removeActionForKey:@"removeHighlight"];
-    __weak SKLabelNode *label = (SKLabelNode *) [self childNodeWithName:@"label"];
-    CGFloat startColor = 0.8;
-    [label setFontColor:[UIColor colorWithRed:startColor green:startColor blue:0.0 alpha:1.0]];
-    float highlightTime = 1;
-    SKAction *removeHighlight = [SKAction customActionWithDuration:highlightTime actionBlock:^(SKNode *node, CGFloat elapsedTime) {
-        CGFloat toZeroPosition = startColor - startColor * elapsedTime / highlightTime;
-        [label setFontColor:[UIColor colorWithRed:toZeroPosition green:toZeroPosition blue:0 alpha:1.0]];
+    [self enumerateChildNodesWithName:@"label" usingBlock:^(SKNode *node, BOOL *stop) {
+        SKLabelNode *label = (SKLabelNode *) node;
+        CGFloat startColor = 0.8;
+        [label setFontColor:[UIColor colorWithRed:startColor green:startColor blue:0.0 alpha:1.0]];
+        float highlightTime = 1;
+        SKAction *removeHighlight = [SKAction customActionWithDuration:highlightTime actionBlock:^(SKNode *currentNode, CGFloat elapsedTime) {
+            CGFloat toZeroPosition = startColor - startColor * elapsedTime / highlightTime;
+            [label setFontColor:[UIColor colorWithRed:toZeroPosition green:toZeroPosition blue:0 alpha:1.0]];
+        }];
+        [self runAction:removeHighlight withKey:@"removeHighlight"];
     }];
-    [self runAction:removeHighlight withKey:@"removeHighlight"];
 }
 
 @end

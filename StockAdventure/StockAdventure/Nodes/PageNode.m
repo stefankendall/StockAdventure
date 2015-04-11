@@ -31,9 +31,16 @@
                                                            2 * self.horizontalPad)];
 
     options.position = CGPointMake(self.size.width / 2,
-            self.size.height - self.verticalPad - [options height] - [self heightOfAllCurrentParagraphs]);
+            self.size.height - [options height] - [self heightOfAllCurrentParagraphs]);
     options.name = @"options";
     [self addChild:options];
+    __block SKNode <NodeWithHeight> *lowestParagraph = nil;
+    [self enumerateChildNodesWithName:@"//paragraph" usingBlock:^(SKNode *node, BOOL *stop) {
+        if (!lowestParagraph || node.position.y < lowestParagraph.position.y) {
+            lowestParagraph = (SKNode <NodeWithHeight> *) node;
+        }
+    }];
+    [self movePageIfNecessary:options toNodeAtTop:lowestParagraph];
 }
 
 - (void)addParagraphForStitch:(Stitch *)stitch {
@@ -41,12 +48,15 @@
                                                        forWidth:(int) (self.size.width -
                                                                2 * self.horizontalPad)];
     paragraph.position = CGPointMake(self.horizontalPad,
-            self.size.height - self.verticalPad - [paragraph height] - [self heightOfAllCurrentParagraphs]);
+            self.size.height - [paragraph height] - [self heightOfAllCurrentParagraphs]);
     paragraph.name = @"paragraph";
     [self addChild:paragraph];
+    [self movePageIfNecessary:paragraph toNodeAtTop:paragraph];
+}
 
-    if (paragraph.position.y < self.verticalPad) {
-        SKAction *moveAction = [SKAction moveToY:self.position.y + self.size.height - paragraph.height duration:1];
+- (void)movePageIfNecessary:(SKNode <NodeWithHeight> *)node toNodeAtTop:(SKNode <NodeWithHeight> *)top {
+    if (node.position.y < self.verticalPad) {
+        SKAction *moveAction = [SKAction moveToY:self.position.y + self.size.height - top.height - self.verticalPad duration:1];
         moveAction.timingMode = SKActionTimingEaseIn;
         [self runAction:moveAction];
     }

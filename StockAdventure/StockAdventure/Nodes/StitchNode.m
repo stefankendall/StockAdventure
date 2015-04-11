@@ -39,7 +39,7 @@ const int padBetweenLines = 10;
     return node;
 }
 
-- (int)height {
+- (CGFloat)height {
     int highest = 0;
     for (SKNode *node in [self children]) {
         CGFloat currentNodeBottom = node.position.y + node.frame.size.height;
