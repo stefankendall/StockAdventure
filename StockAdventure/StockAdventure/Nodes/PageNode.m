@@ -5,11 +5,11 @@
 
 @implementation PageNode
 
-+ (PageNode *)pageNodeWithSize: (CGSize)size {
++ (PageNode *)pageNodeWithSize:(CGSize)size {
     PageNode *page = [self node];
     page.size = size;
-    
-    page.topViewVerticalPad = 20;
+
+    page.verticalPad = 20;
     page.padBetweenParagraphs = 20;
     page.horizontalPad = 10;
 
@@ -31,9 +31,9 @@
                                                            2 * self.horizontalPad)];
 
     options.position = CGPointMake(self.size.width / 2,
-            self.size.height - self.topViewVerticalPad - [options height] - [self heightOfAllCurrentParagraphs]);
+            self.size.height - self.verticalPad - [options height] - [self heightOfAllCurrentParagraphs]);
     options.name = @"options";
-    [[self childNodeWithName:@"page"] addChild:options];
+    [self addChild:options];
 }
 
 - (void)addParagraphForStitch:(Stitch *)stitch {
@@ -41,8 +41,15 @@
                                                        forWidth:(int) (self.size.width -
                                                                2 * self.horizontalPad)];
     paragraph.position = CGPointMake(self.horizontalPad,
-            self.size.height - self.topViewVerticalPad - [paragraph height] - [self heightOfAllCurrentParagraphs]);
+            self.size.height - self.verticalPad - [paragraph height] - [self heightOfAllCurrentParagraphs]);
     paragraph.name = @"paragraph";
     [self addChild:paragraph];
+
+    if (paragraph.position.y < self.verticalPad) {
+        SKAction *moveAction = [SKAction moveToY:self.position.y + self.size.height - paragraph.height duration:1];
+        moveAction.timingMode = SKActionTimingEaseIn;
+        [self runAction:moveAction];
+    }
 }
+
 @end

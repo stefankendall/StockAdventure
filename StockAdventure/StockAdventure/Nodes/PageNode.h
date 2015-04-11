@@ -6,7 +6,7 @@
 @class StitchNode;
 
 @interface PageNode : SKNode
-@property(nonatomic) int topViewVerticalPad;
+@property(nonatomic) int verticalPad;
 
 @property(nonatomic) int padBetweenParagraphs;
 

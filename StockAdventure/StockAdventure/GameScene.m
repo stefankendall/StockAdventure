@@ -69,7 +69,7 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     SKNode *optionNode = [self touchedOption:touches];
     if (optionNode) {
-        OptionsNode *options = (OptionsNode *) [self childNodeWithName:@"options"];
+        OptionsNode *options = (OptionsNode *) [self childNodeWithName:@"//options"];
         Stitch *nextStitch = [options stitchForNode:optionNode];
         [self.transitionDelegate transitionTo:nextStitch];
     }
