@@ -3,7 +3,7 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface OptionNode : SKNode
-+ (OptionNode *)nodeWithOption:(NSDictionary *)dictionary;
++ (OptionNode *)nodeWithOption:(NSDictionary *)dictionary forWidth:(CGFloat)width;
 
 - (CGFloat)height;
 

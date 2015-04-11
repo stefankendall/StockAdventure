@@ -1,19 +1,26 @@
 #import "OptionNode.h"
+#import "TextFlower.h"
 
 @implementation OptionNode
 
 const NSString *OPTION_FONT = @"Avenir-Heavy-Oblique";
 const int OPTION_FONT_SIZE = 24;
 
-+ (OptionNode *)nodeWithOption:(NSDictionary *)optionDict {
++ (OptionNode *)nodeWithOption:(NSDictionary *)optionDict forWidth:(CGFloat)width {
     OptionNode *option = [self node];
 
-    SKLabelNode *label = [SKLabelNode labelNodeWithFontNamed:(NSString *) OPTION_FONT];
-    [label setFontSize:OPTION_FONT_SIZE];
-    [label setText:optionDict[@"option"]];
-    [label setFontColor:[UIColor blackColor]];
-    label.name = @"label";
-    [option addChild:label];
+    const int padBetweenLines = 8;
+    NSArray *lines = [TextFlower linesFromText:optionDict[@"option"] withWidth:(int) width fontSize:OPTION_FONT_SIZE];
+    for (NSUInteger i = 0; i < [lines count]; i++) {
+        SKLabelNode *label = [SKLabelNode labelNodeWithFontNamed:(NSString *) OPTION_FONT];
+        label.text = lines[i];
+        label.name = @"label";
+        label.fontSize = OPTION_FONT_SIZE;
+        label.fontColor = [UIColor blackColor];
+        label.position = CGPointMake(0, ([lines count] - i) * (padBetweenLines + OPTION_FONT_SIZE));
+        [option addChild:label];
+    }
+
     return option;
 }
 

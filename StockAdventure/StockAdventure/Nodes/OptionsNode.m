@@ -2,9 +2,12 @@
 #import "Stitch.h"
 #import "OptionNode.h"
 
-const int BETWEEN_OPTION_PADDING = 48;
+
+const int BETWEEN_OPTION_PADDING = 36;
+const int OPTIONS_PAD_TOP = 20;
 
 @implementation OptionsNode
+
 
 + (OptionsNode *)optionsNodeForStich:(Stitch *)stitch forWidth:(int)width {
     OptionsNode *node = [self node];
@@ -20,7 +23,7 @@ const int BETWEEN_OPTION_PADDING = 48;
     for (NSUInteger i = 0; i < [stitch.options count]; i++) {
         NSDictionary *optionDict = stitch.options[[stitch.options count] - i - 1];
 
-        OptionNode *option = [OptionNode nodeWithOption:optionDict];
+        OptionNode *option = [OptionNode nodeWithOption:optionDict forWidth:width];
         option.name = @"option";
         option.position = CGPointMake(0, i * ([option height] + BETWEEN_OPTION_PADDING));
         [node addChild:option];
@@ -31,7 +34,7 @@ const int BETWEEN_OPTION_PADDING = 48;
 
 - (int)height {
     OptionNode *option = (OptionNode *) [self childNodeWithName:@"option"];
-    return (int) ([self.stitch.options count] * ([option height] + BETWEEN_OPTION_PADDING));
+    return (int) ([self.stitch.options count] * ([option height] + BETWEEN_OPTION_PADDING)) + OPTIONS_PAD_TOP;
 }
 
 - (Stitch *)stitchForNode:(SKNode *)node {
