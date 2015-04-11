@@ -13,5 +13,7 @@
 
 @property(nonatomic, copy) NSString *pageStartStitch;
 
+@property(nonatomic, weak) UITouch *lastTouch;
+
 - (instancetype)initWithSize:(CGSize)size stitch:(NSString *)stitch delegate:(NSObject <StitchTransitionProtocol> *)delegate;
 @end

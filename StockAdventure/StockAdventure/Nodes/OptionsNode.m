@@ -2,7 +2,7 @@
 #import "Stitch.h"
 #import "OptionNode.h"
 
-const int BETWEEN_OPTION_PADDING = 24;
+const int BETWEEN_OPTION_PADDING = 48;
 
 @implementation OptionsNode
 

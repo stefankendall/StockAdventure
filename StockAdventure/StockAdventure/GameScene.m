@@ -14,13 +14,15 @@
         self.nextStitch = stitch;
         self.lastStitchReached = NO;
         self.transitionDelegate = delegate;
+
+        self.backgroundColor = [UIColor whiteColor];
     }
 
     return self;
 }
 
 - (void)didMoveToView:(SKView *)view {
-    PageNode *page = [PageNode pageNodeWithSize: self.size];
+    PageNode *page = [PageNode pageNodeWithSize:self.size];
     page.name = @"page";
     [self addChild:page];
     [self addStitch:self.nextStitch];
@@ -31,7 +33,7 @@
     PageNode *pageNode = (PageNode *) [self childNodeWithName:@"page"];
     [pageNode addParagraphForStitch:stitch];
     if ([[stitch options] count] > 0) {
-        [pageNode addOptions: stitch];
+        [pageNode addOptions:stitch];
     }
 
     if ([stitch divert]) {
@@ -42,8 +44,12 @@
     }
 }
 
-- (SKNode *)touchedOption:(NSSet *)touches {
-    NSArray *touchedNodes = [self nodesAtPoint:[[touches anyObject] locationInNode:self]];
+- (SKNode *)touchedOption:(UITouch *)touch {
+    if (!touch) {
+        return nil;
+    }
+
+    NSArray *touchedNodes = [self nodesAtPoint:[touch locationInNode:self]];
     for (SKNode *touchedNode in touchedNodes) {
         if (touchedNode && [touchedNode.name isEqualToString:@"option"]) {
             return (OptionsNode *) touchedNode;
@@ -53,21 +59,21 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    self.lastTouch = [touches anyObject];
     if (!self.lastStitchReached) {
         [self addStitch:self.nextStitch];
     }
 
-    OptionNode *optionNode = (OptionNode *) [self touchedOption:touches];
-    [optionNode highlight];
+    [(OptionNode *) [self touchedOption:[touches anyObject]] highlight];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    OptionNode *optionNode = (OptionNode *) [self touchedOption:touches];
-    [optionNode highlight];
+    self.lastTouch = [touches anyObject];
+    [(OptionNode *) [self touchedOption:[touches anyObject]] highlight];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    SKNode *optionNode = [self touchedOption:touches];
+    SKNode *optionNode = [self touchedOption:[touches anyObject]];
     if (optionNode) {
         OptionsNode *options = (OptionsNode *) [self childNodeWithName:@"//options"];
         Stitch *nextStitch = [options stitchForNode:optionNode];
@@ -76,6 +82,7 @@
 }
 
 - (void)update:(CFTimeInterval)currentTime {
+    [(OptionNode *) [self touchedOption:self.lastTouch] highlight];
 }
 
 @end

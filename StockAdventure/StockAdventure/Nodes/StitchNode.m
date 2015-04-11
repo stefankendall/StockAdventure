@@ -22,6 +22,7 @@ const int padBetweenLines = 10;
         label.fontSize = fontSize;
         label.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
         label.verticalAlignmentMode = SKLabelVerticalAlignmentModeTop;
+        label.fontColor = [UIColor blackColor];
         label.position = CGPointMake(0, ([lines count] - i) * (padBetweenLines + fontSize));
         [node addChild:label];
     }

@@ -11,6 +11,7 @@ const int OPTION_FONT_SIZE = 24;
     SKLabelNode *label = [SKLabelNode labelNodeWithFontNamed:(NSString *) OPTION_FONT];
     [label setFontSize:OPTION_FONT_SIZE];
     [label setText:optionDict[@"option"]];
+    [label setFontColor:[UIColor blackColor]];
     label.name = @"label";
     [option addChild:label];
     return option;
@@ -23,10 +24,12 @@ const int OPTION_FONT_SIZE = 24;
 - (void)highlight {
     [self removeActionForKey:@"removeHighlight"];
     __weak SKLabelNode *label = (SKLabelNode *) [self childNodeWithName:@"label"];
-    [label setFontColor:[UIColor colorWithRed:1.00 green:1.00 blue:0.8 alpha:1.0]];
+    CGFloat startColor = 0.8;
+    [label setFontColor:[UIColor colorWithRed:startColor green:startColor blue:0.0 alpha:1.0]];
     float highlightTime = 1;
     SKAction *removeHighlight = [SKAction customActionWithDuration:highlightTime actionBlock:^(SKNode *node, CGFloat elapsedTime) {
-        [label setFontColor:[UIColor colorWithRed:1.00 green:1.00 blue:(CGFloat) (0.80 + 0.2 * elapsedTime / highlightTime) alpha:1.0]];
+        CGFloat toZeroPosition = startColor - startColor * elapsedTime / highlightTime;
+        [label setFontColor:[UIColor colorWithRed:toZeroPosition green:toZeroPosition blue:0 alpha:1.0]];
     }];
     [self runAction:removeHighlight withKey:@"removeHighlight"];
 }
