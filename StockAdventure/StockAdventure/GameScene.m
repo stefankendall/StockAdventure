@@ -4,6 +4,7 @@
 #import "GameViewController.h"
 #import "OptionNode.h"
 #import "PageNode.h"
+#import "MoreNode.h"
 
 @implementation GameScene
 
@@ -38,9 +39,28 @@
 
     if ([stitch divert]) {
         self.nextStitch = [stitch divert];
+        [self showMore:YES];
     }
     else {
         self.lastStitchReached = YES;
+        [self showMore:NO];
+    }
+}
+
+- (void)showMore:(BOOL)moreStitches {
+    MoreNode *more = (MoreNode *) [self childNodeWithName:[MoreNode name]];
+    if (moreStitches) {
+        if (!more) {
+            more = [MoreNode moreNode];
+            more.position = CGPointMake(self.size.width - 10, 10);
+            [self addChild:more];
+        }
+    }
+    else {
+        [more runAction:[SKAction sequence:@[
+                [SKAction fadeAlphaTo:0 duration:1],
+                [SKAction removeFromParent]
+        ]]];
     }
 }
 

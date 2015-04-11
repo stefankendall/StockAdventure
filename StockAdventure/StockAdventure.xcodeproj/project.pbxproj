@@ -19,6 +19,7 @@
 		545903A48F9F578AFBA29F23 /* StitchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B831D73542D87FDB55D /* StitchNode.m */; };
 		545904FF6E4E41C23E23D301 /* OptionsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590153782BB7BBFA3427F9 /* OptionsNode.m */; };
 		5459059D733D587B3FEBDCAB /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901622765EABAF7EF95A5 /* GameViewController.m */; };
+		545906EE589077913CA595AA /* MoreNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909527919BB485E000FF3 /* MoreNode.m */; };
 		54590760295CFDDEC49CD7E5 /* StoryReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E72328FB4B852265951 /* StoryReader.m */; };
 		54590834BBE99D43A0560171 /* PageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CE761A853D2577B81EC /* PageNode.m */; };
 		54590857A53E3D20BD2F2F5F /* Stitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909F9E8878CD1D53153E3 /* Stitch.m */; };
@@ -68,6 +69,7 @@
 		5459080EBA1F20A68A59496E /* StitchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchNode.h; sourceTree = "<group>"; };
 		5459081CFDC0D32D08AABC74 /* TextFlowerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlowerTests.m; sourceTree = "<group>"; };
 		54590951F8FE597BB704B44B /* OptionsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsNode.h; sourceTree = "<group>"; };
+		545909527919BB485E000FF3 /* MoreNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreNode.m; sourceTree = "<group>"; };
 		545909F9E8878CD1D53153E3 /* Stitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stitch.m; sourceTree = "<group>"; };
 		54590A2B62340A988B7CED18 /* PageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageNode.h; sourceTree = "<group>"; };
 		54590B0A0747E3861D4457B3 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		54590CE761A853D2577B81EC /* PageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageNode.m; sourceTree = "<group>"; };
 		54590D041AE2F4AD2634E082 /* StitchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchTests.h; sourceTree = "<group>"; };
 		54590D0CBE8B4749184E66B0 /* TextFlower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlower.m; sourceTree = "<group>"; };
+		54590D323E96B6F643C49FC7 /* MoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreNode.h; sourceTree = "<group>"; };
 		54590D84A987FD48A145F6E6 /* OptionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionNode.m; sourceTree = "<group>"; };
 		54590DD9A55DF8F2BFDA7BDA /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		54590E65947F707446933DED /* NodeWithHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeWithHeight.h; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 				54590CE761A853D2577B81EC /* PageNode.m */,
 				54590A2B62340A988B7CED18 /* PageNode.h */,
 				54590E65947F707446933DED /* NodeWithHeight.h */,
+				545909527919BB485E000FF3 /* MoreNode.m */,
+				54590D323E96B6F643C49FC7 /* MoreNode.h */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				54590DB2E366BA643101133A /* OptionNode.m in Sources */,
 				54590EE1001800A8AC235691 /* ImageInfo.m in Sources */,
 				54590834BBE99D43A0560171 /* PageNode.m in Sources */,
+				545906EE589077913CA595AA /* MoreNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
