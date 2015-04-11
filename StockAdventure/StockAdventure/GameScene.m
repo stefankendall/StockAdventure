@@ -1,18 +1,15 @@
 #import "GameScene.h"
 #import "Stitch.h"
-#import "StitchNode.h"
 #import "OptionsNode.h"
 #import "GameViewController.h"
 #import "OptionNode.h"
+#import "PageNode.h"
 
 @implementation GameScene
 
 - (instancetype)initWithSize:(CGSize)size stitch:(NSString *)stitch delegate:(NSObject <StitchTransitionProtocol> *)delegate {
     self = [super initWithSize:size];
     if (self) {
-        self.topViewVerticalPad = 20;
-        self.padBetweenParagraphs = 20;
-        self.horizontalPad = 10;
         self.pageStartStitch = stitch;
         self.nextStitch = stitch;
         self.lastStitchReached = NO;
@@ -23,30 +20,18 @@
 }
 
 - (void)didMoveToView:(SKView *)view {
+    PageNode *page = [PageNode pageNodeWithSize: self.size];
+    page.name = @"page";
+    [self addChild:page];
     [self addStitch:self.nextStitch];
 }
 
 - (void)addStitch:(NSString *)stitchId {
     Stitch *stitch = [[Stitch alloc] initWithStitchId:stitchId];
-
-    StitchNode *paragraph = [StitchNode paragraphNodeWithStitch:stitch
-                                                       forWidth:(int) (self.size.width -
-                                                               2 * self.horizontalPad)];
-
-    paragraph.position = CGPointMake(self.horizontalPad,
-            self.size.height - self.topViewVerticalPad - [paragraph height] - [self heightOfAllCurrentParagraphs]);
-    paragraph.name = @"paragraph";
-    [self addChild:paragraph];
-
+    PageNode *pageNode = (PageNode *) [self childNodeWithName:@"page"];
+    [pageNode addParagraphForStitch:stitch];
     if ([[stitch options] count] > 0) {
-        OptionsNode *options = [OptionsNode optionsNodeForStich:stitch
-                                                       forWidth:(int) (self.size.width -
-                                                               2 * self.horizontalPad)];
-
-        options.position = CGPointMake(self.size.width / 2,
-                self.size.height - self.topViewVerticalPad - [options height] - [self heightOfAllCurrentParagraphs]);
-        options.name = @"options";
-        [self addChild:options];
+        [pageNode addOptions: stitch];
     }
 
     if ([stitch divert]) {
@@ -55,15 +40,6 @@
     else {
         self.lastStitchReached = YES;
     }
-}
-
-- (CGFloat)heightOfAllCurrentParagraphs {
-    __block CGFloat height = 0;
-    [self enumerateChildNodesWithName:@"//paragraph" usingBlock:^(SKNode *node, BOOL *stop) {
-        StitchNode *stitchNode = (StitchNode *) node;
-        height += [stitchNode height] + self.padBetweenParagraphs;
-    }];
-    return height;
 }
 
 - (SKNode *)touchedOption:(NSSet *)touches {

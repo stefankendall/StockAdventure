@@ -1,6 +1,7 @@
 #import "StitchNode.h"
 #import "TextFlower.h"
 #import "Stitch.h"
+#import "ImageInfo.h"
 
 @implementation StitchNode
 
@@ -26,6 +27,8 @@ const int padBetweenLines = 10;
     }
     if ([stitch image]) {
         SKSpriteNode *imageSprite = [SKSpriteNode spriteNodeWithImageNamed:[stitch image]];
+        CGSize imageSize = [ImageInfo sizeForImage:[stitch image]];
+        [imageSprite setSize:CGSizeMake(width, imageSize.height * (width / imageSize.width))];
         imageSprite.position = CGPointMake(width / 2, [node height]);
         imageSprite.anchorPoint = CGPointMake(0.5, 0);
         [node addChild:imageSprite];
