@@ -150,7 +150,7 @@
 				0294BEA11ACB745100077455 /* Supporting Files */,
 				54590DD9A55DF8F2BFDA7BDA /* GameViewController.h */,
 				545901622765EABAF7EF95A5 /* GameViewController.m */,
-				54590847E3242C1331794F03 /* Nodes */,
+				54590847E3242C1331794F03 /* Stitches */,
 				54590BA1C7F422C589A5D46C /* story.json */,
 				545907A61167CA6DB9F5EE9B /* Story */,
 				54590E7900E1DF245CB48DBF /* MiniGames */,
@@ -226,7 +226,7 @@
 			path = Story;
 			sourceTree = "<group>";
 		};
-		54590847E3242C1331794F03 /* Nodes */ = {
+		54590847E3242C1331794F03 /* Stitches */ = {
 			isa = PBXGroup;
 			children = (
 				54590B831D73542D87FDB55D /* StitchNode.m */,
@@ -245,7 +245,7 @@
 				545909527919BB485E000FF3 /* MoreNode.m */,
 				54590D323E96B6F643C49FC7 /* MoreNode.h */,
 			);
-			path = Nodes;
+			path = Stitches;
 			sourceTree = "<group>";
 		};
 		54590952C2D1E4056727E670 /* Story */ = {
