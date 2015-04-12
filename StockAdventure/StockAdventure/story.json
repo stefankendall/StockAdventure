@@ -5,7 +5,7 @@
     "optionMirroring": true,
     "editorData": {
       "libraryVisible": false,
-      "playPoint": "k",
+      "playPoint": "singingGame",
       "textSize": 0,
       "authorName": "Stefan Kendall"
     },
@@ -65,7 +65,6 @@
           {"divert": "sheBroughtCake"}
         ]
       },
-      "k": {"content": ["k"]},
       "tHEEND": {"content": ["THE END."]},
       "finallyFree": {
         "content": [
@@ -79,6 +78,7 @@
           {"divert": "tHEEND"}
         ]
       },
+      "singingGame": {"content": ["SingingGame"]},
       "chrisAnUnkemptOl": {
         "content": [
           "Chris, an unkempt older man in the corner, asks no one in particular, \"should we sing, then?\"",
@@ -90,7 +90,7 @@
           },
           {
             "option": "Sing your heart out. YOLO.",
-            "linkPath": "k",
+            "linkPath": "singingGame",
             "notIfConditions": null,
             "ifConditions": null
           }
@@ -107,6 +107,6 @@
     "initial": "allAroundYouIsWa"
   },
   "created_at": "2015-04-07T00:35:53Z",
-  "updated_at": "2015-04-11T17:30:21Z",
+  "updated_at": "2015-04-11T20:36:25Z",
   "title": "Stock Adventure"
 }
