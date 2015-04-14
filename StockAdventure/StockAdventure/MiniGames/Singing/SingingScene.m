@@ -2,6 +2,10 @@
 #import "UpDownArrowNode.h"
 #import "MusicNode.h"
 #import "NotesNode.h"
+#import "SingingScoreNode.h"
+#import "StoryReader.h"
+#import "Stitch.h"
+#import "StitchTransitionProtocol.h"
 
 @implementation SingingScene
 
@@ -12,6 +16,7 @@
         [self addMusicElements];
         self.physicsWorld.gravity = CGVectorMake(0, 0);
         [self.physicsWorld setContactDelegate:self];
+        self.notesHit = 0;
     }
 
     return self;
@@ -20,6 +25,46 @@
 - (void)didMoveToView:(SKView *)view {
     [super didMoveToView:view];
     [self startMusic];
+    [self runAction:[SKAction sequence:@[
+            [SKAction waitForDuration:5],
+            [SKAction performSelector:@selector(songOver) onTarget:self]
+    ]]];
+}
+
+- (void)songOver {
+    SKAction *fadeAndRemove = [SKAction sequence:@[
+            [SKAction fadeAlphaTo:0 duration:1],
+            [SKAction removeFromParent]
+    ]];
+    for (SKNode *node in [self children]) {
+        [node runAction:fadeAndRemove];
+    }
+    [self runAction:[SKAction sequence:@[
+            [SKAction waitForDuration:1],
+            [SKAction performSelector:@selector(showScore) onTarget:self]
+    ]]];
+}
+
+- (void)showScore {
+    SingingScoreNode *score = [SingingScoreNode nodeWithScore:self.notesHit outOf:self.notesCount];
+    score.position = CGPointMake(self.size.width / 2, self.size.height / 2);
+    [self addChild:score];
+
+    double zoomDelay = 0.3;
+    [score runAction:[SKAction repeatActionForever:[SKAction sequence:@[
+            [SKAction scaleTo:0.7 duration:zoomDelay],
+            [SKAction scaleTo:1 duration:zoomDelay]
+    ]]]];
+
+    [self runAction:[SKAction sequence:@[
+            [SKAction waitForDuration:3],
+            [SKAction performSelector:@selector(transition) onTarget:self]
+    ]]];
+}
+
+- (void)transition {
+    Stitch *nextStitch = [Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]];
+    [self.transitionDelegate transitionTo:nextStitch];
 }
 
 - (void)startMusic {
@@ -55,6 +100,9 @@
     musicNode.name = @"music";
     musicNode.position = CGPointMake(0, 200);
     [self addChild:musicNode];
+
+    NotesNode *notes = (NotesNode *) [self childNodeWithName:@"//notes"];
+    self.notesCount = [[notes allNotes] count];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -98,6 +146,7 @@
 
 - (void)noteHit:(SKNode *)note {
     [note runAction:[SKAction removeFromParent]];
+    self.notesHit++;
 }
 
 - (void)update:(NSTimeInterval)currentTime {

@@ -7,4 +7,6 @@
 
 @property(nonatomic, weak) UITouch *lastTouch;
 @property(nonatomic) NSTimeInterval lastTime;
+@property(nonatomic) int notesHit;
+@property(nonatomic) NSUInteger notesCount;
 @end

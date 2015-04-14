@@ -35,6 +35,7 @@
 		545908E5F7C5B39C3FF07117 /* StitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459005110D3CB778DFB105B /* StitchTests.m */; };
 		54590A240B4F70FA2F1A3EB0 /* TextFlowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459081CFDC0D32D08AABC74 /* TextFlowerTests.m */; };
 		54590B2538FF0C1194860060 /* UpDownArrowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909A7DECEA8DEDF78EFD2 /* UpDownArrowNode.m */; };
+		54590CE22A45109CDDC3873F /* SingingScoreNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545907CE55E15306F4A650F3 /* SingingScoreNode.m */; };
 		54590DB2E366BA643101133A /* OptionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D84A987FD48A145F6E6 /* OptionNode.m */; };
 		54590E2EDEBD7094A5ECA8B4 /* TextFlower.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D0CBE8B4749184E66B0 /* TextFlower.m */; };
 		54590EAA6D3250E701143F75 /* NotesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E1A69ECAB7ED84D9C62 /* NotesNode.m */; };
@@ -75,6 +76,7 @@
 		5459019A7EADEC41B37F6EDE /* Stitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stitch.h; sourceTree = "<group>"; };
 		5459019D32A8098204F1E85A /* MusicNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicNode.h; sourceTree = "<group>"; };
 		545901EFE1599822C00D5E7D /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
+		5459020EB9467012484EC43D /* SingingScoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingingScoreNode.h; sourceTree = "<group>"; };
 		545904C96691A05B2C999E60 /* UpDownArrowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpDownArrowNode.h; sourceTree = "<group>"; };
 		5459060A244101C0044FD94C /* TextFlower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFlower.h; sourceTree = "<group>"; };
 		54590638DF377C8F964925BC /* StitchTransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchTransitionProtocol.h; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		5459070C8A260112504C6BF4 /* OptionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionNode.h; sourceTree = "<group>"; };
 		5459071BCC7FDFB9E6BE9B90 /* 823-birthday-cake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "823-birthday-cake@2x.png"; sourceTree = "<group>"; };
 		5459071E5012193025DB1C86 /* sing@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sing@1x.png"; sourceTree = "<group>"; };
+		545907CE55E15306F4A650F3 /* SingingScoreNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingingScoreNode.m; sourceTree = "<group>"; };
 		5459080EBA1F20A68A59496E /* StitchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchNode.h; sourceTree = "<group>"; };
 		5459081CFDC0D32D08AABC74 /* TextFlowerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlowerTests.m; sourceTree = "<group>"; };
 		54590833865732CA655C007F /* MiniGameInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniGameInfo.m; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 				54590E1A69ECAB7ED84D9C62 /* NotesNode.m */,
 				54590EFC0E91949E0C4ADAB4 /* NotesNode.h */,
 				54590C68DAAE4EDA6EEC627C /* SingingCategories.h */,
+				545907CE55E15306F4A650F3 /* SingingScoreNode.m */,
+				5459020EB9467012484EC43D /* SingingScoreNode.h */,
 			);
 			path = Singing;
 			sourceTree = "<group>";
@@ -475,6 +480,7 @@
 				54590B2538FF0C1194860060 /* UpDownArrowNode.m in Sources */,
 				545901A729284748CF9AB6BD /* MusicNode.m in Sources */,
 				54590EAA6D3250E701143F75 /* NotesNode.m in Sources */,
+				54590CE22A45109CDDC3873F /* SingingScoreNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
