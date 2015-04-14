@@ -1,4 +1,5 @@
 #import "MusicNode.h"
+#import "NotesNode.h"
 
 @implementation MusicNode
 
@@ -16,11 +17,18 @@
     [node addChild:bottomLine];
 
     SKSpriteNode *microphone = [SKSpriteNode spriteNodeWithImageNamed:@"946-microphone-selected"];
+    [microphone setScale:0.75];
+    microphone.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(11, 20)];
     microphone.color = [UIColor redColor];
     microphone.colorBlendFactor = 1;
     microphone.name = @"indicator";
     microphone.position = CGPointMake(30, node.heightOfMusic / 2);
     [node addChild:microphone];
+
+    NotesNode *notes = [NotesNode notesNodeForHeight:node.heightOfMusic];
+    notes.name = @"notes";
+    notes.position = CGPointMake(0, 0);
+    [node addChild:notes];
 
     return node;
 }

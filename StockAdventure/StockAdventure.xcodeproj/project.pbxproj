@@ -29,6 +29,7 @@
 		545906EE589077913CA595AA /* MoreNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909527919BB485E000FF3 /* MoreNode.m */; };
 		5459070A2A89CE9C5563C4D1 /* song.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5459089D65C709E7B8FD841B /* song.caf */; };
 		54590760295CFDDEC49CD7E5 /* StoryReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E72328FB4B852265951 /* StoryReader.m */; };
+		5459080BAFB7733F5F8596D2 /* 823-birthday-cake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459071BCC7FDFB9E6BE9B90 /* 823-birthday-cake@2x.png */; };
 		54590834BBE99D43A0560171 /* PageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CE761A853D2577B81EC /* PageNode.m */; };
 		54590857A53E3D20BD2F2F5F /* Stitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909F9E8878CD1D53153E3 /* Stitch.m */; };
 		545908E5F7C5B39C3FF07117 /* StitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459005110D3CB778DFB105B /* StitchTests.m */; };
@@ -36,6 +37,7 @@
 		54590B2538FF0C1194860060 /* UpDownArrowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909A7DECEA8DEDF78EFD2 /* UpDownArrowNode.m */; };
 		54590DB2E366BA643101133A /* OptionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D84A987FD48A145F6E6 /* OptionNode.m */; };
 		54590E2EDEBD7094A5ECA8B4 /* TextFlower.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D0CBE8B4749184E66B0 /* TextFlower.m */; };
+		54590EAA6D3250E701143F75 /* NotesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E1A69ECAB7ED84D9C62 /* NotesNode.m */; };
 		54590EE1001800A8AC235691 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B0A0747E3861D4457B3 /* ImageInfo.m */; };
 		7950CE01897B7906314179A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0646C971F0F9B5A062B32D /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,7 @@
 		54590638DF377C8F964925BC /* StitchTransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchTransitionProtocol.h; sourceTree = "<group>"; };
 		545906976A2AD78B5C92185B /* StoryReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryReader.h; sourceTree = "<group>"; };
 		5459070C8A260112504C6BF4 /* OptionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionNode.h; sourceTree = "<group>"; };
+		5459071BCC7FDFB9E6BE9B90 /* 823-birthday-cake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "823-birthday-cake@2x.png"; sourceTree = "<group>"; };
 		5459071E5012193025DB1C86 /* sing@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sing@1x.png"; sourceTree = "<group>"; };
 		5459080EBA1F20A68A59496E /* StitchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchNode.h; sourceTree = "<group>"; };
 		5459081CFDC0D32D08AABC74 /* TextFlowerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlowerTests.m; sourceTree = "<group>"; };
@@ -102,8 +105,10 @@
 		54590D84A987FD48A145F6E6 /* OptionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionNode.m; sourceTree = "<group>"; };
 		54590DBB8FEB1499D8C1A79C /* SingingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingingScene.m; sourceTree = "<group>"; };
 		54590DD9A55DF8F2BFDA7BDA /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		54590E1A69ECAB7ED84D9C62 /* NotesNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesNode.m; sourceTree = "<group>"; };
 		54590E65947F707446933DED /* NodeWithHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeWithHeight.h; sourceTree = "<group>"; };
 		54590E72328FB4B852265951 /* StoryReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryReader.m; sourceTree = "<group>"; };
+		54590EFC0E91949E0C4ADAB4 /* NotesNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesNode.h; sourceTree = "<group>"; };
 		54590FAF2C1504AFED9C2429 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		54590FB4EB9D3B95BF45D144 /* arrowup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowup.png; sourceTree = "<group>"; };
 		6F0646C971F0F9B5A062B32D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +228,7 @@
 				5459017B28615CA798D84598 /* 946-microphone-selected@2x.png */,
 				54590FB4EB9D3B95BF45D144 /* arrowup.png */,
 				5459071E5012193025DB1C86 /* sing@1x.png */,
+				5459071BCC7FDFB9E6BE9B90 /* 823-birthday-cake@2x.png */,
 			);
 			path = icons.atlas;
 			sourceTree = "<group>";
@@ -236,6 +242,8 @@
 				545904C96691A05B2C999E60 /* UpDownArrowNode.h */,
 				54590B688A428912AF4189F9 /* MusicNode.m */,
 				5459019D32A8098204F1E85A /* MusicNode.h */,
+				54590E1A69ECAB7ED84D9C62 /* NotesNode.m */,
+				54590EFC0E91949E0C4ADAB4 /* NotesNode.h */,
 			);
 			path = Singing;
 			sourceTree = "<group>";
@@ -395,6 +403,7 @@
 				545900405E8C8077298E0F89 /* arrowup.png in Resources */,
 				545903B38E1E15C10B4CE3F7 /* sing@1x.png in Resources */,
 				5459070A2A89CE9C5563C4D1 /* song.caf in Resources */,
+				5459080BAFB7733F5F8596D2 /* 823-birthday-cake@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +472,7 @@
 				545906D3CC24F56923A9215F /* SingingScene.m in Sources */,
 				54590B2538FF0C1194860060 /* UpDownArrowNode.m in Sources */,
 				545901A729284748CF9AB6BD /* MusicNode.m in Sources */,
+				54590EAA6D3250E701143F75 /* NotesNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

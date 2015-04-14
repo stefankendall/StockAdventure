@@ -1,6 +1,7 @@
 #import "SingingScene.h"
 #import "UpDownArrowNode.h"
 #import "MusicNode.h"
+#import "NotesNode.h"
 
 @implementation SingingScene
 
@@ -9,6 +10,8 @@
     if (self) {
         [self addSingPrompt];
         [self addMusicElements];
+        self.physicsWorld.gravity = CGVectorMake(0, 0);
+        [self.physicsWorld setContactDelegate:self];
     }
 
     return self;
@@ -16,7 +19,13 @@
 
 - (void)didMoveToView:(SKView *)view {
     [super didMoveToView:view];
+    [self startMusic];
+}
+
+- (void)startMusic {
     [self runAction:[SKAction playSoundFileNamed:@"song.caf" waitForCompletion:NO]];
+    NotesNode *notes = (NotesNode *) [self childNodeWithName:@"//notes"];
+    [notes scroll];
 }
 
 - (void)addSingPrompt {
@@ -31,13 +40,13 @@
 }
 
 - (void)addMusicElements {
-    UpDownArrowNode *sharpNode = [UpDownArrowNode upDownArrowNode:YES];
+    UpDownArrowNode *sharpNode = [UpDownArrowNode upDownArrowNode:YES width:(int) (self.size.width / 2)];
     int yPosition = 100;
     [sharpNode setPosition:CGPointMake(self.size.width / 4, yPosition)];
     sharpNode.name = @"sharp";
     [self addChild:sharpNode];
 
-    UpDownArrowNode *flatNode = [UpDownArrowNode upDownArrowNode:NO];
+    UpDownArrowNode *flatNode = [UpDownArrowNode upDownArrowNode:NO width:(int) (self.size.width / 2)];
     [flatNode setPosition:CGPointMake(3 * self.size.width / 4, yPosition)];
     flatNode.name = @"flat";
     [self addChild:flatNode];
@@ -76,7 +85,10 @@
     if (flatTouched) {
         [music move:NO timeInterval:delta];
     }
+}
 
+- (void)didBeginContact:(SKPhysicsContact *)contact {
+    NSLog(@"Contact %@ with %@", contact.bodyA.node.name, contact.bodyB.node.name);
 }
 
 - (void)update:(NSTimeInterval)currentTime {

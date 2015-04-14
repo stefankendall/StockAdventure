@@ -3,5 +3,7 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface UpDownArrowNode : SKNode
-+ (UpDownArrowNode *)upDownArrowNode:(BOOL)up;
+@property(nonatomic) int width;
+
++ (UpDownArrowNode *)upDownArrowNode:(BOOL)up width: (int) width;
 @end

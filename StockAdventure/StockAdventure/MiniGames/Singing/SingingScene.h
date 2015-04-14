@@ -3,7 +3,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import "GameScene.h"
 
-@interface SingingScene : GameScene
+@interface SingingScene : GameScene <SKPhysicsContactDelegate>
 
 @property(nonatomic, weak) UITouch *lastTouch;
 @property(nonatomic) NSTimeInterval lastTime;
