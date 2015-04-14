@@ -6,4 +6,5 @@
 @interface SingingScene : GameScene
 
 @property(nonatomic, weak) UITouch *lastTouch;
+@property(nonatomic) NSTimeInterval lastTime;
 @end

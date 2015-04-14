@@ -16,7 +16,6 @@
     [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
 //    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
     self.scene.scaleMode = SKSceneScaleModeAspectFill;
-    [skView presentScene:self.scene];
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
