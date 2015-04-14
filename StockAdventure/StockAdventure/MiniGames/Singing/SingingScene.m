@@ -88,7 +88,16 @@
 }
 
 - (void)didBeginContact:(SKPhysicsContact *)contact {
-    NSLog(@"Contact %@ with %@", contact.bodyA.node.name, contact.bodyB.node.name);
+    if ([contact.bodyB.node.name isEqualToString:@"note"]) {
+        [self noteHit:contact.bodyB.node];
+    }
+    else if ([contact.bodyA.node.name isEqualToString:@"note"]) {
+        [self noteHit:contact.bodyA.node];
+    }
+}
+
+- (void)noteHit:(SKNode *)note {
+    [note runAction:[SKAction removeFromParent]];
 }
 
 - (void)update:(NSTimeInterval)currentTime {

@@ -1,4 +1,5 @@
 #import "NotesNode.h"
+#import "SingingCategories.h"
 
 @implementation NotesNode
 
@@ -20,6 +21,9 @@
         note.size = CGSizeMake(18, 19);
         note.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(18, 19)];
         note.physicsBody.linearDamping = 0;
+        note.physicsBody.categoryBitMask = CategoryNote;
+        note.physicsBody.contactTestBitMask = CategoryIndicator;
+        note.physicsBody.collisionBitMask = ~CategoryIndicator;
         note.name = @"note";
         int yOffset = [node.allNotes[i] intValue] * height / 6;
         note.position = CGPointMake(emptyLead + widthBetweenNotes * i, height / 2 + yOffset);

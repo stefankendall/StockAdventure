@@ -1,5 +1,6 @@
 #import "MusicNode.h"
 #import "NotesNode.h"
+#import "SingingCategories.h"
 
 @implementation MusicNode
 
@@ -17,8 +18,11 @@
     [node addChild:bottomLine];
 
     SKSpriteNode *microphone = [SKSpriteNode spriteNodeWithImageNamed:@"946-microphone-selected"];
-    [microphone setScale:0.75];
-    microphone.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(11, 20)];
+    [microphone setScale:0.70];
+    microphone.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(8, 10)];
+    microphone.physicsBody.categoryBitMask = CategoryIndicator;
+    microphone.physicsBody.contactTestBitMask = CategoryNote;
+    microphone.physicsBody.collisionBitMask = ~CategoryNote;
     microphone.color = [UIColor redColor];
     microphone.colorBlendFactor = 1;
     microphone.name = @"indicator";
@@ -35,7 +39,7 @@
 
 - (void)move:(BOOL)up timeInterval:(NSTimeInterval)interval {
     SKSpriteNode *indicator = (SKSpriteNode *) [self childNodeWithName:@"indicator"];
-    int pixelsPerSecond = 200;
+    int pixelsPerSecond = 400;
     int direction = up ? 1 : -1;
     CGFloat newYPosition = (CGFloat) (indicator.position.y + interval * pixelsPerSecond * direction);
 

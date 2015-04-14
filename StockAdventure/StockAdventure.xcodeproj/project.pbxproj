@@ -97,6 +97,7 @@
 		54590B688A428912AF4189F9 /* MusicNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicNode.m; sourceTree = "<group>"; };
 		54590B831D73542D87FDB55D /* StitchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchNode.m; sourceTree = "<group>"; };
 		54590BA1C7F422C589A5D46C /* story.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = story.json; sourceTree = "<group>"; };
+		54590C68DAAE4EDA6EEC627C /* SingingCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingingCategories.h; sourceTree = "<group>"; };
 		54590CE761A853D2577B81EC /* PageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageNode.m; sourceTree = "<group>"; };
 		54590D041AE2F4AD2634E082 /* StitchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchTests.h; sourceTree = "<group>"; };
 		54590D0CBE8B4749184E66B0 /* TextFlower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlower.m; sourceTree = "<group>"; };
@@ -244,6 +245,7 @@
 				5459019D32A8098204F1E85A /* MusicNode.h */,
 				54590E1A69ECAB7ED84D9C62 /* NotesNode.m */,
 				54590EFC0E91949E0C4ADAB4 /* NotesNode.h */,
+				54590C68DAAE4EDA6EEC627C /* SingingCategories.h */,
 			);
 			path = Singing;
 			sourceTree = "<group>";
