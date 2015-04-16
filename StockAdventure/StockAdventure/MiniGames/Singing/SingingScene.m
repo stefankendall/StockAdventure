@@ -3,7 +3,6 @@
 #import "MusicNode.h"
 #import "NotesNode.h"
 #import "SingingScoreNode.h"
-#import "StoryReader.h"
 #import "Stitch.h"
 #import "StitchTransitionProtocol.h"
 
@@ -26,7 +25,7 @@
     [super didMoveToView:view];
     [self startMusic];
     [self runAction:[SKAction sequence:@[
-            [SKAction waitForDuration:5],
+            [SKAction waitForDuration:24],
             [SKAction performSelector:@selector(songOver) onTarget:self]
     ]]];
 }
@@ -63,8 +62,28 @@
 }
 
 - (void)transition {
-    Stitch *nextStitch = [Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]];
-    [self.transitionDelegate transitionTo:nextStitch];
+    Stitch *stitch = [[Stitch alloc] initWithStitchId:self.pageStartStitch];
+    NSArray *options = [stitch options];
+
+    NSString *performance = [self performancePathFromScore];
+    NSString *nextStitchId = @"";
+    for (NSDictionary *option in options) {
+        if ([performance isEqualToString:option[@"option"]]) {
+            nextStitchId = option[@"linkPath"];
+        }
+    }
+
+    [self.transitionDelegate transitionTo:[Stitch stitchWithStitchId:nextStitchId]];
+}
+
+- (NSString *)performancePathFromScore {
+    if(self.notesHit < self.notesCount - 6){
+        return @"bad";
+    }
+    else if (self.notesHit < self.notesCount - 2){
+        return @"good";
+    }
+    return @"perfect";
 }
 
 - (void)startMusic {

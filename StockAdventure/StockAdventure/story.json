@@ -1,54 +1,169 @@
 {
-  "url_key": "65b8",
   "data": {
-    "allowCheckpoints": false,
-    "optionMirroring": true,
     "editorData": {
       "libraryVisible": false,
-      "playPoint": "singingGame",
       "textSize": 0,
-      "authorName": "Stefan Kendall"
+      "authorName": "Stefan Kendall",
+      "playPoint": "incredibleYourCo"
     },
+    "allowCheckpoints": false,
+    "initial": "allAroundYouIsWa",
+    "optionMirroring": true,
     "stitches": {
+      "whereAreWeGoingY": {
+        "content": [
+          "\"Where are we going?\" you shout anxiously.",
+          {"divert": "youllBeGreatKidY"}
+        ]
+      },
+      "orTheyWouldIfThe": {
+        "content": [
+          "...or they would if they weren't so passive aggressive. Because of the atrocity that is your singing, all birthday parties are banned from the office. Good job.",
+          {"divert": "tHEEND2"}
+        ]
+      },
+      "tHEEND": {"content": ["THE END."]},
+      "youHideBeneathYo": {
+        "content": [
+          "You hide beneath your desk. Eventually the knocking stops and you die alone.",
+          {"divert": "muchLaterOfCours"}
+        ]
+      },
+      "chrisAnUnkemptOl": {
+        "content": [
+          "Chris, an unkempt older man in the corner, asks no one in particular, \"should we sing, then?\"",
+          {
+            "ifConditions": null,
+            "linkPath": "youLiterallyDieO",
+            "notIfConditions": null,
+            "option": "Look around blankly."
+          },
+          {
+            "ifConditions": null,
+            "linkPath": "singingGame",
+            "notIfConditions": null,
+            "option": "Sing your heart out. YOLO."
+          }
+        ]
+      },
+      "youOpenTheDoorBe": {
+        "content": [
+          "You open the door. Before you is a half-shaven man in what appears to be a very expensive suit.",
+          {"divert": "yOUYouWereTheSin"}
+        ]
+      },
+      "tHEEND4": {"content": ["THE END"]},
+      "tHEEND3": {"content": ["THE END"]},
+      "youHadntNoticedB": {
+        "content": [
+          "You hadn't noticed before now, but the window was open, and from your second story office you can be heard from the street below.",
+          {"divert": "sCCREEEEECH"}
+        ]
+      },
+      "tHEEND2": {"content": ["THE END"]},
+      "tHEEND1": {"content": ["THE END"]},
+      "singingGame": {
+        "content": [
+          "SingingGame",
+          {
+            "ifConditions": null,
+            "linkPath": "yourVoiceLiftsTh",
+            "notIfConditions": null,
+            "option": "good"
+          },
+          {
+            "ifConditions": null,
+            "linkPath": "youTryToSingButW",
+            "notIfConditions": null,
+            "option": "bad"
+          },
+          {
+            "ifConditions": null,
+            "linkPath": "incredibleYourCo",
+            "notIfConditions": null,
+            "option": "perfect"
+          }
+        ]
+      },
+      "finallyFree": {
+        "content": [
+          "Finally. Free.",
+          {"pageNum": 2}
+        ]
+      },
+      "youHearACarScree": {
+        "content": [
+          "You hear a car screech to a halt. Suddenly someone is slamming on the front office door.",
+          {
+            "ifConditions": null,
+            "linkPath": "youOpenTheDoorBe",
+            "notIfConditions": null,
+            "option": "Go open the door."
+          },
+          {
+            "ifConditions": null,
+            "linkPath": "youHideBeneathYo",
+            "notIfConditions": null,
+            "option": "Hide beneath your desk."
+          }
+        ]
+      },
+      "youTryToSingButW": {
+        "content": [
+          "You try to sing, but what comes out is more of a gargled wooshing sound.",
+          {"divert": "everyoneStaresAt"}
+        ]
+      },
+      "youllBeGreatKidY": {
+        "content": [
+          "\"You'll be great, kid. You're parachuting in to the concert riding a tiger. You'll figure it out.\"",
+          {"divert": "thenAllThatStuff"}
+        ]
+      },
+      "youreAMenschButY": {
+        "content": [
+          "You're a mensch, but you're nothing special.",
+          {"divert": "tHEEND1"}
+        ]
+      },
+      "jenniferTurnsToY": {
+        "content": [
+          "Jennifer turns to you coldly and says, \"Thank you.\"",
+          {"divert": "youreAMenschButY"}
+        ]
+      },
+      "youLiterallyDieO": {
+        "content": [
+          "You literally die of boredom. What a wasted life.",
+          {"divert": "tHEEND"}
+        ]
+      },
       "youContinueWorki": {
         "content": [
           "You continue working.",
           {"pageNum": 3}
         ]
       },
-      "sheAlwaysEatsAtH": {
-        "content": [
-          "She always eats at her desk. Her food smells like rotten eggs. You can't imagine that's what she eats day to day, but some part of you thinks it is.",
-          {"divert": "chrisAnUnkemptOl"}
-        ]
-      },
-      "aFamiliarCrowdHa": {
-        "content": [
-          "A familiar crowd. Half the group is new hires, starry-eyed and ambitious. The other shifts around vapidly, glad to to cut a few seconds out of the day with feigned affection for Jennifer.",
-          {"divert": "sheAlwaysEatsAtH"},
-          {"pageNum": 4}
-        ]
-      },
       "sheBroughtCake": {
         "content": [
           "...she brought cake.",
           {
-            "option": "Go eat cake.",
+            "ifConditions": null,
             "linkPath": "aFamiliarCrowdHa",
             "notIfConditions": null,
-            "ifConditions": null
+            "option": "Go eat cake."
           },
           {
-            "option": "Continue working.",
+            "ifConditions": null,
             "linkPath": "youContinueWorki",
             "notIfConditions": null,
-            "ifConditions": null
+            "option": "Continue working."
           },
           {
-            "option": "Fuck cake. Walk out.",
+            "ifConditions": null,
             "linkPath": "finallyFree",
             "notIfConditions": null,
-            "ifConditions": null
+            "option": "Fuck cake. Walk out."
           }
         ]
       },
@@ -59,41 +174,76 @@
           {"pageNum": 1}
         ]
       },
+      "sCCREEEEECH": {
+        "content": [
+          "SCCREEEEECH!!!",
+          {"divert": "youHearACarScree"}
+        ]
+      },
+      "yourVoiceLiftsTh": {
+        "content": [
+          "Your voice lifts the room and your co-workers join you in rounds. You're not the best, but your twelve years in choir have finally paid off.",
+          {"divert": "jenniferTurnsToY"}
+        ]
+      },
+      "sheAlwaysEatsAtH": {
+        "content": [
+          "She always eats at her desk. Her food smells like rotten eggs. You can't imagine that's what she eats day to day, but some part of you thinks it is.",
+          {"divert": "chrisAnUnkemptOl"}
+        ]
+      },
+      "thenAllThatStuff": {
+        "content": [
+          "Then all that stuff happens. ",
+          {"divert": "tHEEND4"}
+        ]
+      },
+      "everyoneStaresAt": {
+        "content": [
+          "Everyone stares at you in disgust.",
+          {"divert": "orTheyWouldIfThe"}
+        ]
+      },
+      "aFamiliarCrowdHa": {
+        "content": [
+          "A familiar crowd. Half the group is new hires, starry-eyed and ambitious. The other shifts around vapidly, glad to to cut a few seconds out of the day with feigned affection for Jennifer.",
+          {"divert": "sheAlwaysEatsAtH"},
+          {"pageNum": 4}
+        ]
+      },
+      "heWasntLyingYour": {
+        "content": [
+          "He wasn't lying. You're taken to a limousine and driven to a helicopter landing pad.",
+          {"divert": "whereAreWeGoingY"}
+        ]
+      },
+      "yOUYouWereTheSin": {
+        "content": [
+          "\"YOU! You were the singer!\" he shouts. His finger trembles as he points at you accusingly.",
+          {"divert": "yesYouAnswer"}
+        ]
+      },
+      "comeWithMeNowThe": {
+        "content": [
+          "Come with me now. There's no time. I'm a record producer and Beyonc\u00e9, Jay-Z, and Bieber all just canceled on what was going to be the biggest concert of all time. I need you.",
+          {
+            "ifConditions": null,
+            "linkPath": "heWasntLyingYour",
+            "notIfConditions": null,
+            "option": "Life is weird. Go with the man."
+          }
+        ]
+      },
+      "incredibleYourCo": {
+        "content": [
+          "Incredible. Your co-workers stare in awe as you belt those high highs and dulcet lows.",
+          {"divert": "youHadntNoticedB"}
+        ]
+      },
       "itsJennifersBirt": {
         "content": [
           "It's Jennifer's birthday today. ",
           {"divert": "sheBroughtCake"}
-        ]
-      },
-      "tHEEND": {"content": ["THE END."]},
-      "finallyFree": {
-        "content": [
-          "Finally. Free.",
-          {"pageNum": 2}
-        ]
-      },
-      "youLiterallyDieO": {
-        "content": [
-          "You literally die of boredom. What a wasted life.",
-          {"divert": "tHEEND"}
-        ]
-      },
-      "singingGame": {"content": ["SingingGame"]},
-      "chrisAnUnkemptOl": {
-        "content": [
-          "Chris, an unkempt older man in the corner, asks no one in particular, \"should we sing, then?\"",
-          {
-            "option": "Look around blankly.",
-            "linkPath": "youLiterallyDieO",
-            "notIfConditions": null,
-            "ifConditions": null
-          },
-          {
-            "option": "Sing your heart out. YOLO.",
-            "linkPath": "singingGame",
-            "notIfConditions": null,
-            "ifConditions": null
-          }
         ]
       },
       "youveWorkedHereF": {
@@ -102,11 +252,23 @@
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/office.png"},
           {"divert": "itsJennifersBirt"}
         ]
+      },
+      "muchLaterOfCours": {
+        "content": [
+          "Much later, of course. But your life was terrible.",
+          {"divert": "tHEEND3"}
+        ]
+      },
+      "yesYouAnswer": {
+        "content": [
+          "\"Yes?\" you answer.",
+          {"divert": "comeWithMeNowThe"}
+        ]
       }
-    },
-    "initial": "allAroundYouIsWa"
+    }
   },
-  "created_at": "2015-04-07T00:35:53Z",
-  "updated_at": "2015-04-11T20:36:25Z",
-  "title": "Stock Adventure"
+  "url_key": "65b8",
+  "title": "Stock Adventure",
+  "updated_at": "2015-04-16T01:39:42Z",
+  "created_at": "2015-04-07T00:35:53Z"
 }

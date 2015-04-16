@@ -40,7 +40,7 @@
             lowestParagraph = (SKNode <NodeWithHeight> *) node;
         }
     }];
-    [self movePageIfNecessary:options toNodeAtTop:lowestParagraph];
+    [self movePageIfNecessary:options withTopNodeAndOptionsHeight:lowestParagraph.height + options.height];
 }
 
 - (void)addParagraphForStitch:(Stitch *)stitch {
@@ -51,12 +51,12 @@
             self.size.height - [paragraph height] - [self heightOfAllCurrentParagraphs]);
     paragraph.name = @"paragraph";
     [self addChild:paragraph];
-    [self movePageIfNecessary:paragraph toNodeAtTop:paragraph];
+    [self movePageIfNecessary:paragraph withTopNodeAndOptionsHeight:paragraph.height];
 }
 
-- (void)movePageIfNecessary:(SKNode <NodeWithHeight> *)node toNodeAtTop:(SKNode <NodeWithHeight> *)top {
+- (void)movePageIfNecessary:(SKNode <NodeWithHeight> *)node withTopNodeAndOptionsHeight:(CGFloat) topHeight {
     if (node.position.y < self.verticalPad) {
-        SKAction *moveAction = [SKAction moveToY:self.position.y + self.size.height - top.height - self.verticalPad duration:1];
+        SKAction *moveAction = [SKAction moveToY:self.position.y + self.size.height - topHeight duration:1];
         moveAction.timingMode = SKActionTimingEaseIn;
         [self runAction:moveAction];
     }
