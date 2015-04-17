@@ -110,7 +110,6 @@
 		54590DBB8FEB1499D8C1A79C /* SingingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingingScene.m; sourceTree = "<group>"; };
 		54590DD9A55DF8F2BFDA7BDA /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		54590E1A69ECAB7ED84D9C62 /* NotesNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesNode.m; sourceTree = "<group>"; };
-		54590E65947F707446933DED /* NodeWithHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeWithHeight.h; sourceTree = "<group>"; };
 		54590E72328FB4B852265951 /* StoryReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryReader.m; sourceTree = "<group>"; };
 		54590EFC0E91949E0C4ADAB4 /* NotesNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesNode.h; sourceTree = "<group>"; };
 		54590FAF2C1504AFED9C2429 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
@@ -283,7 +282,6 @@
 				5459070C8A260112504C6BF4 /* OptionNode.h */,
 				54590CE761A853D2577B81EC /* PageNode.m */,
 				54590A2B62340A988B7CED18 /* PageNode.h */,
-				54590E65947F707446933DED /* NodeWithHeight.h */,
 				545909527919BB485E000FF3 /* MoreNode.m */,
 				54590D323E96B6F643C49FC7 /* MoreNode.h */,
 			);

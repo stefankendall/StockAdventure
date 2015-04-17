@@ -8,7 +8,6 @@ const int OPTIONS_PAD_TOP = 30;
 
 @implementation OptionsNode
 
-
 + (OptionsNode *)optionsNodeForStich:(Stitch *)stitch forWidth:(int)width {
     OptionsNode *node = [self node];
     node.stitch = stitch;
@@ -30,15 +29,6 @@ const int OPTIONS_PAD_TOP = 30;
     }
 
     return node;
-}
-
-- (CGFloat)height {
-    __block int heightOfOptions = 0;
-    [self enumerateChildNodesWithName:@"option" usingBlock:^(SKNode *node, BOOL *stop) {
-        OptionNode *option = (OptionNode *) node;
-        heightOfOptions += [option height];
-    }];
-    return OPTIONS_PAD_TOP + heightOfOptions + BETWEEN_OPTION_PADDING * ([self.children count] - 1);
 }
 
 - (Stitch *)stitchForNode:(SKNode *)node {

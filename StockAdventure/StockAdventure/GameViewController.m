@@ -13,10 +13,10 @@
 
     skView.ignoresSiblingOrder = YES;
 
-    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
-//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
+//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
+    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
     self.scene.scaleMode = SKSceneScaleModeAspectFill;
-}\
+}
 
 - (NSUInteger)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
@@ -36,7 +36,7 @@
 
     Class gameSceneClass = [MiniGameInfo gameSceneForStitch:stitch];
     if(gameSceneClass){
-        self.scene = [(GameScene *) [gameSceneClass alloc] initWithSize:self.view.frame.size
+        self.scene = [(GameScene *) [gameSceneClass alloc] initWithSize:self.view.bounds.size
                                                                  stitch:stitch.stitchId
                                                                delegate:self];
     }
