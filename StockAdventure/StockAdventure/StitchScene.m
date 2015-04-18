@@ -92,12 +92,19 @@
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    SKNode *optionNode = [self touchedOption:[touches anyObject]];
-    if (optionNode) {
-        OptionsNode *options = (OptionsNode *) [self childNodeWithName:@"//options"];
-        Stitch *nextStitch = [options stitchForNode:optionNode];
-        [self.transitionDelegate transitionTo:nextStitch];
+    if ([self optionsReady]) {
+        SKNode *optionNode = [self touchedOption:[touches anyObject]];
+        if (optionNode) {
+            OptionsNode *options = (OptionsNode *) [self childNodeWithName:@"//options"];
+            Stitch *nextStitch = [options stitchForNode:optionNode];
+            [self.transitionDelegate transitionTo:nextStitch];
+        }
     }
+}
+
+- (BOOL)optionsReady {
+    SKNode *options = [self childNodeWithName:@"//options"];
+    return options != nil && options.alpha == 1;
 }
 
 - (void)update:(CFTimeInterval)currentTime {
