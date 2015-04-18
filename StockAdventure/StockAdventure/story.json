@@ -4,7 +4,7 @@
       "libraryVisible": false,
       "textSize": 0,
       "authorName": "Stefan Kendall",
-      "playPoint": "tHEEND"
+      "playPoint": "singingGame"
     },
     "allowCheckpoints": false,
     "initial": "allAroundYouIsWa",
@@ -46,6 +46,12 @@
           }
         ]
       },
+      "fromWhatYouCanTe": {
+        "content": [
+          "From what you can tell, she eats rotten eggs at her desk each day from 12 to 1. You would say something, but that would cause four HR meetings too many.",
+          {"divert": "chrisAnUnkemptOl"}
+        ]
+      },
       "youOpenTheDoorBe": {
         "content": [
           "You open the door. Before you is a half-shaven man in what appears to be a very expensive suit.",
@@ -85,7 +91,7 @@
           }
         ]
       },
-      "tHEEND1": {"content": ["THE END."]},
+      "tHEEND1": {"content": ["THE END"]},
       "finallyFree": {
         "content": [
           "Finally. Free.",
@@ -188,12 +194,6 @@
           {"divert": "jenniferTurnsToY"}
         ]
       },
-      "sheAlwaysEatsAtH": {
-        "content": [
-          "She always eats at her desk. Her food smells like rotten eggs. You can't imagine that's what she eats day to day, but some part of you thinks it is.",
-          {"divert": "chrisAnUnkemptOl"}
-        ]
-      },
       "thenAllThatStuff": {
         "content": [
           "Then all that stuff happens. ",
@@ -208,8 +208,8 @@
       },
       "aFamiliarCrowdHa": {
         "content": [
-          "A familiar crowd. Half the group is new hires, starry-eyed and ambitious. The other shifts around vapidly, glad to to cut a few seconds out of the day with feigned affection for Jennifer.",
-          {"divert": "sheAlwaysEatsAtH"},
+          "A familiar crowd. Half the group is new hires, starry-eyed and ambitious. The veteran half shifts around vapidly, glad to to cut a few seconds out of the soulless day with feigned affection for Jennifer.",
+          {"divert": "jenniferAlwaysEa"},
           {"pageNum": 4}
         ]
       },
@@ -223,6 +223,12 @@
         "content": [
           "\"YOU! You were the singer!\" he shouts. His finger trembles as he points at you accusingly.",
           {"divert": "yesYouAnswer"}
+        ]
+      },
+      "jenniferAlwaysEa": {
+        "content": [
+          "Jennifer always eats at her desk.",
+          {"divert": "fromWhatYouCanTe"}
         ]
       },
       "comeWithMeNowThe": {
@@ -271,6 +277,6 @@
   },
   "url_key": "65b8",
   "title": "Stock Adventure",
-  "updated_at": "2015-04-18T15:59:42Z",
+  "updated_at": "2015-04-18T17:40:50Z",
   "created_at": "2015-04-07T00:35:53Z"
 }
