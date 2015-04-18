@@ -16,11 +16,11 @@
     return page;
 }
 
-- (CGFloat)heightOfAllCurrentParagraphs {
+- (CGFloat)heightOfAllParagraphs {
     __block CGFloat height = 0;
     [self enumerateChildNodesWithName:@"//paragraph" usingBlock:^(SKNode *node, BOOL *stop) {
         StitchNode *stitchNode = (StitchNode *) node;
-            height += [stitchNode calculateAccumulatedFrame].size.height + self.padBetweenParagraphs;
+        height += [stitchNode calculateAccumulatedFrame].size.height + self.padBetweenParagraphs;
     }];
     return height;
 }
@@ -32,7 +32,7 @@
 
     options.position = CGPointMake(self.size.width / 2,
             self.size.height - self.verticalPad - [options calculateAccumulatedFrame].size.height
-                    - [self heightOfAllCurrentParagraphs] - self.padBetweenParagraphs);
+                    - [self heightOfAllParagraphs] - self.padBetweenParagraphs);
     options.name = @"options";
     [self addChild:options];
     __block SKNode *lowestParagraph = nil;
@@ -50,7 +50,7 @@
                                                        forWidth:(int) (self.size.width -
                                                                2 * self.horizontalPad)];
 
-    CGFloat yPosition = self.size.height - self.verticalPad - [self heightOfAllCurrentParagraphs] - paragraph.calculateAccumulatedFrame.size.height;
+    CGFloat yPosition = self.size.height - self.verticalPad - [self heightOfAllParagraphs] - paragraph.calculateAccumulatedFrame.size.height;
     paragraph.position = CGPointMake(self.horizontalPad, yPosition);
     paragraph.name = @"paragraph";
     [self addChild:paragraph];
@@ -59,8 +59,8 @@
 }
 
 - (void)movePageIfNecessary:(SKNode *)node withTopNodeAndOptionsHeight:(CGFloat)topHeight {
-    if (node.position.y < 0) {
-        SKAction *moveAction = [SKAction moveToY:[self heightOfAllCurrentParagraphs] - topHeight
+    if (node.position.y < -self.position.y) {
+        SKAction *moveAction = [SKAction moveToY:[self heightOfAllParagraphs] - topHeight
                         - self.verticalPad
                                         duration:1];
         moveAction.timingMode = SKActionTimingEaseIn;
