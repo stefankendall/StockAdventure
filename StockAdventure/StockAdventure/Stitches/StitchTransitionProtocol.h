@@ -4,4 +4,6 @@
 
 @protocol StitchTransitionProtocol <NSObject>
 - (void)transitionTo:(Stitch *)stitch;
+
+- (void)restartGame;
 @end

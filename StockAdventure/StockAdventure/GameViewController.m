@@ -9,14 +9,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     SKView *skView = (SKView *) self.view;
-
     skView.ignoresSiblingOrder = YES;
-
-    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
-//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
     self.scene.scaleMode = SKSceneScaleModeAspectFill;
+
+//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
+    [self restartGame];
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
@@ -53,5 +51,10 @@
     }
     [view presentScene:self.scene transition:crossfade];
 }
+
+- (void)restartGame {
+    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
+}
+
 
 @end
