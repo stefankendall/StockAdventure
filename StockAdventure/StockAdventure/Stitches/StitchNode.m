@@ -6,7 +6,7 @@
 
 const NSString *STITCH_FONT = @"Avenir";
 
-const int fontSize = 18;
+const int fontSize = 20;
 const int padBetweenLines = 10;
 
 + (StitchNode *)paragraphNodeWithStitch:(Stitch *)stitch forWidth:(int)width {
