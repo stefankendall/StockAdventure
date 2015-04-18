@@ -4,7 +4,7 @@
       "libraryVisible": false,
       "textSize": 0,
       "authorName": "Stefan Kendall",
-      "playPoint": "incredibleYourCo"
+      "playPoint": "tHEEND"
     },
     "allowCheckpoints": false,
     "initial": "allAroundYouIsWa",
@@ -19,10 +19,10 @@
       "orTheyWouldIfThe": {
         "content": [
           "...or they would if they weren't so passive aggressive. Because of the atrocity that is your singing, all birthday parties are banned from the office. Good job.",
-          {"divert": "tHEEND2"}
+          {"divert": "tHEEND3"}
         ]
       },
-      "tHEEND": {"content": ["THE END."]},
+      "tHEEND": {"content": ["THE END"]},
       "youHideBeneathYo": {
         "content": [
           "You hide beneath your desk. Eventually the knocking stops and you die alone.",
@@ -52,16 +52,16 @@
           {"divert": "yOUYouWereTheSin"}
         ]
       },
+      "tHEEND5": {"content": ["THE END"]},
       "tHEEND4": {"content": ["THE END"]},
-      "tHEEND3": {"content": ["THE END"]},
       "youHadntNoticedB": {
         "content": [
           "You hadn't noticed before now, but the window was open, and from your second story office you can be heard from the street below.",
           {"divert": "sCCREEEEECH"}
         ]
       },
+      "tHEEND3": {"content": ["THE END"]},
       "tHEEND2": {"content": ["THE END"]},
-      "tHEEND1": {"content": ["THE END"]},
       "singingGame": {
         "content": [
           "SingingGame",
@@ -85,6 +85,7 @@
           }
         ]
       },
+      "tHEEND1": {"content": ["THE END."]},
       "finallyFree": {
         "content": [
           "Finally. Free.",
@@ -123,7 +124,7 @@
       "youreAMenschButY": {
         "content": [
           "You're a mensch, but you're nothing special.",
-          {"divert": "tHEEND1"}
+          {"divert": "tHEEND2"}
         ]
       },
       "jenniferTurnsToY": {
@@ -135,12 +136,13 @@
       "youLiterallyDieO": {
         "content": [
           "You literally die of boredom. What a wasted life.",
-          {"divert": "tHEEND"}
+          {"divert": "tHEEND1"}
         ]
       },
       "youContinueWorki": {
         "content": [
           "You continue working.",
+          {"divert": "tHEEND"},
           {"pageNum": 3}
         ]
       },
@@ -195,7 +197,7 @@
       "thenAllThatStuff": {
         "content": [
           "Then all that stuff happens. ",
-          {"divert": "tHEEND4"}
+          {"divert": "tHEEND5"}
         ]
       },
       "everyoneStaresAt": {
@@ -256,7 +258,7 @@
       "muchLaterOfCours": {
         "content": [
           "Much later, of course. But your life was terrible.",
-          {"divert": "tHEEND3"}
+          {"divert": "tHEEND4"}
         ]
       },
       "yesYouAnswer": {
@@ -269,6 +271,6 @@
   },
   "url_key": "65b8",
   "title": "Stock Adventure",
-  "updated_at": "2015-04-16T01:39:42Z",
+  "updated_at": "2015-04-18T15:59:42Z",
   "created_at": "2015-04-07T00:35:53Z"
 }

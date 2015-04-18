@@ -3,6 +3,7 @@
 #import "StoryReader.h"
 #import "Stitch.h"
 #import "MiniGameInfo.h"
+#import "TheEndScene.h"
 
 @implementation GameViewController
 
@@ -13,8 +14,8 @@
 
     skView.ignoresSiblingOrder = YES;
 
-//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
-    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
+    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
+//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
     self.scene.scaleMode = SKSceneScaleModeAspectFill;
 }
 
@@ -35,15 +36,20 @@
     SKTransition *crossfade = [SKTransition crossFadeWithDuration:1];
 
     Class gameSceneClass = [MiniGameInfo gameSceneForStitch:stitch];
-    if(gameSceneClass){
+    if (gameSceneClass) {
         self.scene = [(GameScene *) [gameSceneClass alloc] initWithSize:self.view.bounds.size
                                                                  stitch:stitch.stitchId
                                                                delegate:self];
     }
+    else if ([stitch isTheEnd]) {
+        self.scene = [[TheEndScene alloc] initWithSize:self.view.frame.size
+                                                stitch:stitch.stitchId
+                                              delegate:self];
+    }
     else {
         self.scene = [[StitchScene alloc] initWithSize:self.view.frame.size
-                                              stitch:stitch.stitchId
-                                            delegate:self];
+                                                stitch:stitch.stitchId
+                                              delegate:self];
     }
     [view presentScene:self.scene transition:crossfade];
 }

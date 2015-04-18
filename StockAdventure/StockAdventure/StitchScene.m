@@ -25,19 +25,24 @@
 
 - (void)addStitch:(NSString *)stitchId {
     Stitch *stitch = [[Stitch alloc] initWithStitchId:stitchId];
-    PageNode *pageNode = (PageNode *) [self childNodeWithName:@"page"];
-    [pageNode addParagraphForStitch:stitch];
-    if ([[stitch options] count] > 0) {
-        [pageNode addOptions:stitch];
-    }
-
-    if ([stitch divert]) {
-        self.nextStitch = [stitch divert];
-        [self showMore:YES];
+    if ([stitch isTheEnd]) {
+        [self.transitionDelegate transitionTo:stitch];
     }
     else {
-        self.lastStitchReached = YES;
-        [self showMore:NO];
+        PageNode *pageNode = (PageNode *) [self childNodeWithName:@"page"];
+        [pageNode addParagraphForStitch:stitch];
+        if ([[stitch options] count] > 0) {
+            [pageNode addOptions:stitch];
+        }
+
+        if ([stitch divert]) {
+            self.nextStitch = [stitch divert];
+            [self showMore:YES];
+        }
+        else {
+            self.lastStitchReached = YES;
+            [self showMore:NO];
+        }
     }
 }
 

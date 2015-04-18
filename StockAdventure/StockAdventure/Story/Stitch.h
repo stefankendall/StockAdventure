@@ -24,4 +24,6 @@
 - (NSString *)content;
 
 - (NSArray *)options;
+
+- (BOOL)isTheEnd;
 @end

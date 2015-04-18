@@ -70,4 +70,7 @@
     return nil;
 }
 
+- (BOOL)isTheEnd {
+    return [[self content] isEqualToString:@"THE END"];
+}
 @end
