@@ -16,6 +16,9 @@
         self.physicsWorld.gravity = CGVectorMake(0, 0);
         [self.physicsWorld setContactDelegate:self];
         self.notesHit = 0;
+
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"song" ofType:@"caf"];
+        self.song = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:nil];
     }
 
     return self;
@@ -87,9 +90,9 @@
 }
 
 - (void)startMusic {
-    [self runAction:[SKAction playSoundFileNamed:@"song.caf" waitForCompletion:NO]];
     NotesNode *notes = (NotesNode *) [self childNodeWithName:@"//notes"];
     [notes scroll];
+    [self.song play];
 }
 
 - (void)addSingPrompt {

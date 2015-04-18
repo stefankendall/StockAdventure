@@ -20,7 +20,7 @@
     __block CGFloat height = 0;
     [self enumerateChildNodesWithName:@"//paragraph" usingBlock:^(SKNode *node, BOOL *stop) {
         StitchNode *stitchNode = (StitchNode *) node;
-        height += [stitchNode calculateAccumulatedFrame].size.height + self.padBetweenParagraphs;
+            height += [stitchNode calculateAccumulatedFrame].size.height + self.padBetweenParagraphs;
     }];
     return height;
 }
@@ -49,20 +49,19 @@
     StitchNode *paragraph = [StitchNode paragraphNodeWithStitch:stitch
                                                        forWidth:(int) (self.size.width -
                                                                2 * self.horizontalPad)];
-    paragraph.position = CGPointMake(self.horizontalPad,
-            self.size.height -
-                    self.verticalPad -
-                    [self heightOfAllCurrentParagraphs]
-                            - paragraph.calculateAccumulatedFrame.size.height);
+
+    CGFloat yPosition = self.size.height - self.verticalPad - [self heightOfAllCurrentParagraphs] - paragraph.calculateAccumulatedFrame.size.height;
+    paragraph.position = CGPointMake(self.horizontalPad, yPosition);
     paragraph.name = @"paragraph";
     [self addChild:paragraph];
+
     [self movePageIfNecessary:paragraph withTopNodeAndOptionsHeight:paragraph.calculateAccumulatedFrame.size.height];
 }
 
 - (void)movePageIfNecessary:(SKNode *)node withTopNodeAndOptionsHeight:(CGFloat)topHeight {
-    if (node.position.y < self.verticalPad) {
-        SKAction *moveAction = [SKAction moveToY:self.position.y + self.size.height -
-                        (self.verticalPad + topHeight + self.padBetweenParagraphs)
+    if (node.position.y < 0) {
+        SKAction *moveAction = [SKAction moveToY:[self heightOfAllCurrentParagraphs] - topHeight
+                        - self.verticalPad
                                         duration:1];
         moveAction.timingMode = SKActionTimingEaseIn;
         [self runAction:moveAction];

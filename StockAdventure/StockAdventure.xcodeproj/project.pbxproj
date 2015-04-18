@@ -41,7 +41,6 @@
 		54590D60E080ADBBB47212B7 /* FontTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590EDDECBA42B1A3910240 /* FontTest.xib */; };
 		54590DBFF3EF8E9C15EC385B /* OptionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A069100FE50092FFA0B /* OptionNode.m */; };
 		54590EAA6D3250E701143F75 /* NotesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E1A69ECAB7ED84D9C62 /* NotesNode.m */; };
-		54590EE1001800A8AC235691 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B0A0747E3861D4457B3 /* ImageInfo.m */; };
 		7950CE01897B7906314179A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0646C971F0F9B5A062B32D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,6 @@
 		5459017B28615CA798D84598 /* 946-microphone-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "946-microphone-selected@2x.png"; sourceTree = "<group>"; };
 		5459019A7EADEC41B37F6EDE /* Stitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stitch.h; sourceTree = "<group>"; };
 		5459019D32A8098204F1E85A /* MusicNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicNode.h; sourceTree = "<group>"; };
-		545901EFE1599822C00D5E7D /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
 		5459020EB9467012484EC43D /* SingingScoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingingScoreNode.h; sourceTree = "<group>"; };
 		5459034BB9DDCB2E5A219ECA /* MoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreNode.h; sourceTree = "<group>"; };
 		545903AE469CE356FB61970E /* StitchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchNode.h; sourceTree = "<group>"; };
@@ -100,7 +98,7 @@
 		545909F9E8878CD1D53153E3 /* Stitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stitch.m; sourceTree = "<group>"; };
 		54590A069100FE50092FFA0B /* OptionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionNode.m; sourceTree = "<group>"; };
 		54590A826E663E80B5E92D45 /* StitchTransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchTransitionProtocol.h; sourceTree = "<group>"; };
-		54590B0A0747E3861D4457B3 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
+		54590AF75CE41AED4C1CE12C /* woman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman.jpg; sourceTree = "<group>"; };
 		54590B688A428912AF4189F9 /* MusicNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicNode.m; sourceTree = "<group>"; };
 		54590BA1C7F422C589A5D46C /* story.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = story.json; sourceTree = "<group>"; };
 		54590BEC75BCE64228EC136B /* TheEndScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheEndScene.h; sourceTree = "<group>"; };
@@ -184,6 +182,7 @@
 				54590480118A3604E4C7A01D /* songs */,
 				54590ACD43C34123EF949737 /* Ending */,
 				5459028F270474C5962D3FAC /* Stitches */,
+				54590AF75CE41AED4C1CE12C /* woman.jpg */,
 			);
 			path = StockAdventure;
 			sourceTree = "<group>";
@@ -289,8 +288,6 @@
 				545906976A2AD78B5C92185B /* StoryReader.h */,
 				545909F9E8878CD1D53153E3 /* Stitch.m */,
 				5459019A7EADEC41B37F6EDE /* Stitch.h */,
-				54590B0A0747E3861D4457B3 /* ImageInfo.m */,
-				545901EFE1599822C00D5E7D /* ImageInfo.h */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -482,7 +479,6 @@
 				5459059D733D587B3FEBDCAB /* GameViewController.m in Sources */,
 				54590760295CFDDEC49CD7E5 /* StoryReader.m in Sources */,
 				54590857A53E3D20BD2F2F5F /* Stitch.m in Sources */,
-				54590EE1001800A8AC235691 /* ImageInfo.m in Sources */,
 				5459012820370627EDE4B439 /* MiniGameInfo.m in Sources */,
 				54590173BECFB51B57B58CDA /* GameScene.m in Sources */,
 				545906D3CC24F56923A9215F /* SingingScene.m in Sources */,

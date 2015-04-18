@@ -1,13 +1,12 @@
 #import "StitchNode.h"
 #import "TextFlower.h"
 #import "Stitch.h"
-#import "ImageInfo.h"
 
 @implementation StitchNode
 
 const NSString *STITCH_FONT = @"Avenir";
 
-const int fontSize = 24;
+const int fontSize = 16;
 const int padBetweenLines = 10;
 
 + (StitchNode *)paragraphNodeWithStitch:(Stitch *)stitch forWidth:(int)width {
@@ -19,8 +18,13 @@ const int padBetweenLines = 10;
     if ([stitch image]) {
         SKSpriteNode *imageSprite = [SKSpriteNode spriteNodeWithImageNamed:[stitch image]];
         imageSprite.name = @"image";
-        CGSize imageSize = [ImageInfo sizeForImage:[stitch image]];
-        [imageSprite setSize:CGSizeMake(width, imageSize.height * (width / imageSize.width))];
+        CGSize imageSize = [UIImage imageNamed:[stitch image]].size;
+        if (imageSize.width > width) {
+            [imageSprite setSize:CGSizeMake(width, imageSize.height * (width / imageSize.width))];
+        }
+        else {
+            [imageSprite setSize:CGSizeMake(width / 2, imageSize.height * (width / 2 / imageSize.width))];
+        }
         imageSprite.position = CGPointMake(width / 2, 0);
         imageSprite.anchorPoint = CGPointMake(0.5, 0);
         [node addChild:imageSprite];

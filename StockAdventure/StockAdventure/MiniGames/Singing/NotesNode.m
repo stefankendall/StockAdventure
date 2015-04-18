@@ -7,7 +7,7 @@
     NotesNode *node = [self node];
 
     int widthBetweenNotes = 116;
-    int emptyLead = 7 * widthBetweenNotes;
+    int emptyLead = 6 * widthBetweenNotes;
     node.allNotes = @[
             @0, @0, @1, @1, @-1, @-1, @1, @1, @-1, @-1,
             @1, @1, @-1, @-1, @1, @1, @-1, @-1, @-2, @-2,
