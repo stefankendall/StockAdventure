@@ -4,7 +4,7 @@
       "libraryVisible": false,
       "textSize": 0,
       "authorName": "Stefan Kendall",
-      "playPoint": "aFamiliarCrowdHa"
+      "playPoint": "chrisAnUnkemptOl"
     },
     "allowCheckpoints": false,
     "initial": "allAroundYouIsWa",
@@ -29,13 +29,19 @@
           {"divert": "muchLaterOfCours"}
         ]
       },
+      "tooScaredToSpeak": {
+        "content": [
+          "Too scared to speak up, you wait for someone else to break the silence.",
+          {"divert": "secondsBecomeMin"}
+        ]
+      },
       "chrisAnUnkemptOl": {
         "content": [
           "Chris, an unkempt older man in the corner, asks no one in particular, \"should we sing, then?\"",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/old_ceo.jpg"},
           {
             "ifConditions": null,
-            "linkPath": "youLiterallyDieO",
+            "linkPath": "tooScaredToSpeak",
             "notIfConditions": null,
             "option": "Look around blankly."
           },
@@ -49,7 +55,7 @@
       },
       "fromWhatYouCanTe": {
         "content": [
-          "From what you can tell, she eats rotten eggs at her desk each day from 12 to 1. That's what it smells like, at least; you would never ask. You would say something, but that's an HR nightmare and you need your job.",
+          "From what you can tell, her diet consists of rotten eggs and garbage, consumed promptly each day between 12 to 1. That's what it smells like, at least; you would never ask. You would say something, but that's an HR nightmare and you need your job.",
           {"divert": "chrisAnUnkemptOl"}
         ]
       },
@@ -140,12 +146,6 @@
           {"divert": "youreAMenschButY"}
         ]
       },
-      "youLiterallyDieO": {
-        "content": [
-          "You literally die of boredom. What a wasted life.",
-          {"divert": "tHEEND1"}
-        ]
-      },
       "youContinueWorki": {
         "content": [
           "You continue working.",
@@ -195,6 +195,12 @@
           {"divert": "jenniferTurnsToY"}
         ]
       },
+      "secondsBecomeMin": {
+        "content": [
+          "Seconds become minutes as the tension and awkwardness grows like a building wave. Suddenly hours have passed, and no one has moved.",
+          {"divert": "yourSpiritMerges"}
+        ]
+      },
       "thenAllThatStuff": {
         "content": [
           "Then all that stuff happens. ",
@@ -209,7 +215,7 @@
       },
       "aFamiliarCrowdHa": {
         "content": [
-          "A familiar crowd. Half the group is new hires, starry-eyed and ambitious. The veteran half shifts around vapidly, glad to to cut a few seconds out of the soulless day with feigned affection for Jennifer.",
+          "A familiar crowd. Half the group is new hires, starry-eyed and ambitious. The veteran half shifts around vapidly, glad to to cut a few seconds out of the meaningless day by feigning affection for Jennifer.",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/corp_group.jpg"},
           {"divert": "jenniferAlwaysEa"},
           {"pageNum": 4}
@@ -225,6 +231,13 @@
         "content": [
           "\"YOU! You were the singer!\" he shouts. His finger trembles as he points at you accusingly.",
           {"divert": "yesYouAnswer"}
+        ]
+      },
+      "yourSpiritMerges": {
+        "content": [
+          "Your spirit merges with the soulless commune around you as you turn to stone. You are trapped for eternity because you failed to act. Next time be more bold.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/statues.jpg"},
+          {"divert": "tHEEND1"}
         ]
       },
       "jenniferAlwaysEa": {
@@ -260,7 +273,7 @@
       },
       "youveWorkedHereF": {
         "content": [
-          "You've worked here for five years now. Your days are so filled with hollow meetings you can't even remember what you do anymore.",
+          "You've worked here for five years now. Your days are so filled with hollow meetings you can't even remember what it is you -do- anymore.",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/office.jpg"},
           {"divert": "itsJennifersBirt"}
         ]
@@ -281,6 +294,6 @@
   },
   "url_key": "65b8",
   "title": "Stock Adventure",
-  "updated_at": "2015-04-18T18:36:39Z",
+  "updated_at": "2015-04-18T20:01:10Z",
   "created_at": "2015-04-07T00:35:53Z"
 }

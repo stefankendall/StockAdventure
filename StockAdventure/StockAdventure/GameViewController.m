@@ -13,8 +13,8 @@
     skView.ignoresSiblingOrder = YES;
     self.scene.scaleMode = SKSceneScaleModeAspectFill;
 
-    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
-//    [self restartGame];
+//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
+    [self restartGame];
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
