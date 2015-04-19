@@ -3,12 +3,13 @@
 #import <SpriteKit/SpriteKit.h>
 
 @protocol StitchTransitionProtocol;
+@class Stitch;
 
 @interface GameScene : SKScene
 
 @property(nonatomic, copy) NSString *pageStartStitch;
 
-@property(nonatomic, copy) NSString *nextStitch;
+@property(nonatomic, strong) Stitch *nextStitch;
 
 @property(nonatomic) BOOL lastStitchReached;
 

@@ -1,5 +1,6 @@
 #import "GameScene.h"
 #import "StitchTransitionProtocol.h"
+#import "Stitch.h"
 
 @implementation GameScene
 
@@ -7,7 +8,7 @@
     self = [super initWithSize:size];
     if (self) {
         self.pageStartStitch = stitch;
-        self.nextStitch = stitch;
+        self.nextStitch = [[Stitch alloc] initWithStitchId:stitch];
         self.lastStitchReached = NO;
         self.transitionDelegate = delegate;
 

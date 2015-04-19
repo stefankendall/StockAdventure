@@ -9,11 +9,13 @@
 
 - (instancetype)initWithStitchId:(NSString *)stitchId;
 
+- (instancetype)initWithStitchDictionary:(NSDictionary *)dictionary;
+
 - (NSString *)lastPartOfImageFromUrl:(NSString *)url;
 
 - (NSString *)divertIdFromData:(NSDictionary *)data;
 
-- (NSString *)divert;
+- (Stitch *)divert;
 
 - (NSString *)image;
 
@@ -26,4 +28,6 @@
 - (NSArray *)options;
 
 - (BOOL)isTheEnd;
+
+- (void)markFlagIfExists;
 @end

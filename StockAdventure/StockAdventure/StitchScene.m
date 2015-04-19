@@ -23,8 +23,8 @@
     [self addStitch:self.nextStitch];
 }
 
-- (void)addStitch:(NSString *)stitchId {
-    Stitch *stitch = [[Stitch alloc] initWithStitchId:stitchId];
+- (void)addStitch:(Stitch *)stitch {
+    [stitch markFlagIfExists];
     if ([stitch isTheEnd]) {
         [self.transitionDelegate transitionTo:stitch];
     }

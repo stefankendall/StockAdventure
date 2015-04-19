@@ -1,5 +1,6 @@
 #import "Stitch.h"
 #import "StoryReader.h"
+#import "FlagMarker.h"
 
 @implementation Stitch
 
@@ -9,7 +10,14 @@
         self.stitchId = stitchId;
         self.stitchDictionary = [[StoryReader instance] getStory][@"data"][@"stitches"][self.stitchId];
     }
+    return self;
+}
 
+- (instancetype)initWithStitchDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    if (self) {
+        self.stitchDictionary = dictionary;
+    }
     return self;
 }
 
@@ -17,12 +25,20 @@
     return [[self alloc] initWithStitchId:stitchId];
 }
 
-- (NSString *)divert {
-    return [self divertIdFromData:self.stitchDictionary];
+- (Stitch *)divert {
+    NSString *divertId = [self divertIdFromData:self.stitchDictionary];
+    return divertId ? [[Stitch alloc] initWithStitchId:divertId] : nil;
 }
 
 - (NSString *)content {
     return self.stitchDictionary[@"content"][0];
+}
+
+- (void)markFlagIfExists {
+    NSString *marker = [self findSingleProperty:@"flagName" inData:self.stitchDictionary];
+    if (marker) {
+        [[FlagMarker instance] markSeen:marker];
+    }
 }
 
 - (NSArray *)options {
@@ -31,7 +47,18 @@
     for (int i = 1; i < [content count]; i++) {
         NSDictionary *contentDict = content[(NSUInteger) i];
         if (contentDict[@"option"]) {
-            [options addObject:contentDict];
+            NSArray *notIfConditions = contentDict[@"notIfConditions"];
+            if (notIfConditions && ![notIfConditions isEqual:[NSNull null]]) {
+                for (NSDictionary *condition in contentDict[@"notIfConditions"]) {
+                    NSString *marker = condition[@"notIfCondition"];
+                    if (![[FlagMarker instance] hasSeen:marker]) {
+                        [options addObject:contentDict];
+                    }
+                }
+            }
+            else {
+                [options addObject:contentDict];
+            }
         }
     }
     return options;
