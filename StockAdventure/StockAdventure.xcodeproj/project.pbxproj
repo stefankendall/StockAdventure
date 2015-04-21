@@ -34,6 +34,7 @@
 		545906D3CC24F56923A9215F /* SingingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590DBB8FEB1499D8C1A79C /* SingingScene.m */; };
 		5459070A2A89CE9C5563C4D1 /* song.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5459089D65C709E7B8FD841B /* song.caf */; };
 		54590760295CFDDEC49CD7E5 /* StoryReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E72328FB4B852265951 /* StoryReader.m */; };
+		545907EFF6DCE4C149407386 /* IntroReelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F9CB4575E28F4AABC2B /* IntroReelNode.m */; };
 		5459080BAFB7733F5F8596D2 /* 823-birthday-cake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459071BCC7FDFB9E6BE9B90 /* 823-birthday-cake@2x.png */; };
 		54590857A53E3D20BD2F2F5F /* Stitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909F9E8878CD1D53153E3 /* Stitch.m */; };
 		545908E5F7C5B39C3FF07117 /* StitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459005110D3CB778DFB105B /* StitchTests.m */; };
@@ -44,6 +45,7 @@
 		54590C5C73BAD73271DB9FA4 /* sunset-dreaming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 545906D9F75B3BFE71F43CA2 /* sunset-dreaming.mp3 */; };
 		54590CE22A45109CDDC3873F /* SingingScoreNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545907CE55E15306F4A650F3 /* SingingScoreNode.m */; };
 		54590D60E080ADBBB47212B7 /* FontTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590EDDECBA42B1A3910240 /* FontTest.xib */; };
+		54590D9B06896DEE8683304E /* reel in Resources */ = {isa = PBXBuildFile; fileRef = 54590AA76C6915D4B2F713B9 /* reel */; };
 		54590DBFF3EF8E9C15EC385B /* OptionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A069100FE50092FFA0B /* OptionNode.m */; };
 		54590EAA6D3250E701143F75 /* NotesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E1A69ECAB7ED84D9C62 /* NotesNode.m */; };
 		7950CE01897B7906314179A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0646C971F0F9B5A062B32D /* libPods.a */; };
@@ -83,6 +85,7 @@
 		5459020EB9467012484EC43D /* SingingScoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingingScoreNode.h; sourceTree = "<group>"; };
 		5459034BB9DDCB2E5A219ECA /* MoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreNode.h; sourceTree = "<group>"; };
 		545903AE469CE356FB61970E /* StitchNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchNode.h; sourceTree = "<group>"; };
+		545903F02823F56FE5C7F2C1 /* IntroReelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroReelNode.h; sourceTree = "<group>"; };
 		54590436AAA0463FD115AC0C /* MoreNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreNode.m; sourceTree = "<group>"; };
 		545904B7CB36B3E0523BCC46 /* FlagMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlagMarker.h; sourceTree = "<group>"; };
 		545904C96691A05B2C999E60 /* UpDownArrowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpDownArrowNode.h; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 		54590A069100FE50092FFA0B /* OptionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionNode.m; sourceTree = "<group>"; };
 		54590A505A5B13F597A79828 /* IntroScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroScene.m; sourceTree = "<group>"; };
 		54590A826E663E80B5E92D45 /* StitchTransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchTransitionProtocol.h; sourceTree = "<group>"; };
+		54590AA76C6915D4B2F713B9 /* reel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = reel; sourceTree = "<group>"; };
 		54590AF75CE41AED4C1CE12C /* woman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman.jpg; sourceTree = "<group>"; };
 		54590B688A428912AF4189F9 /* MusicNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicNode.m; sourceTree = "<group>"; };
 		54590B739C36A41C815DC252 /* lovers-dream_f1UEULrO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lovers-dream_f1UEULrO.mp3"; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 		54590EDDECBA42B1A3910240 /* FontTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontTest.xib; sourceTree = "<group>"; };
 		54590EFC0E91949E0C4ADAB4 /* NotesNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesNode.h; sourceTree = "<group>"; };
 		54590F09A7C674696574C812 /* TheEndScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheEndScene.m; sourceTree = "<group>"; };
+		54590F9CB4575E28F4AABC2B /* IntroReelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroReelNode.m; sourceTree = "<group>"; };
 		54590F9EF869CE53CDFB0021 /* TextFlower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFlower.h; sourceTree = "<group>"; };
 		54590FAF2C1504AFED9C2429 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		54590FB4EB9D3B95BF45D144 /* arrowup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowup.png; sourceTree = "<group>"; };
@@ -327,6 +332,9 @@
 				54590FC7B981780F9D9743E6 /* IntroProtocol.h */,
 				545908922A71B208CE2B67D6 /* NewGameButtonNode.m */,
 				54590926CC159CACAFA8C07B /* NewGameButtonNode.h */,
+				54590F9CB4575E28F4AABC2B /* IntroReelNode.m */,
+				545903F02823F56FE5C7F2C1 /* IntroReelNode.h */,
+				54590AA76C6915D4B2F713B9 /* reel */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -453,6 +461,7 @@
 				54590D60E080ADBBB47212B7 /* FontTest.xib in Resources */,
 				54590C5C73BAD73271DB9FA4 /* sunset-dreaming.mp3 in Resources */,
 				545903851B421BEA4C08F3FB /* lovers-dream_f1UEULrO.mp3 in Resources */,
+				54590D9B06896DEE8683304E /* reel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +535,7 @@
 				545905898B0CA6889F97E40C /* FlagMarker.m in Sources */,
 				545901F11F17C04B61047FAA /* IntroScene.m in Sources */,
 				545905ED27A81682DC3EB7DE /* NewGameButtonNode.m in Sources */,
+				545907EFF6DCE4C149407386 /* IntroReelNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

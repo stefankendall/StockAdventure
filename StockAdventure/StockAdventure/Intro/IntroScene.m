@@ -1,6 +1,7 @@
 #import "IntroScene.h"
 #import "GameViewController.h"
 #import "NewGameButtonNode.h"
+#import "IntroReelNode.h"
 
 @implementation IntroScene
 
@@ -17,7 +18,7 @@
 
 - (void)didMoveToView:(SKView *)view {
     [super didMoveToView:view];
-//    [self.backgroundMusic play];
+    [self.backgroundMusic play];
 
     CGFloat verticalCenter = self.size.height / 2 + 75;
 
@@ -47,13 +48,19 @@
     newGame.position = CGPointMake(self.size.width / 2, 75);
     newGame.name = @"newGame";
     [self addChild:newGame];
+
+    IntroReelNode *intro = [IntroReelNode introReelNode:self.size];
+    intro.position = CGPointMake(0, verticalCenter - 120);
+    [self addChild:intro];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    SKNode *touch = [self nodeAtPoint:[[touches anyObject] locationInNode:self]];
-    if ([[touch name] isEqualToString:@"newGame"]) {
-        [self.backgroundMusic stop];
-        [self.introDelegate startGame];
+    NSArray *nodes = [self nodesAtPoint:[[touches anyObject] locationInNode:self]];
+    for (SKNode *node in nodes) {
+        if ([[node name] isEqualToString:@"newGame"]) {
+            [self.backgroundMusic stop];
+            [self.introDelegate startGame];
+        }
     }
 }
 
