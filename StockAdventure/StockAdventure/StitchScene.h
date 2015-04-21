@@ -1,4 +1,5 @@
 #import <SpriteKit/SpriteKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "GameScene.h"
 
 @class GameViewController;
@@ -8,4 +9,5 @@
 
 @property(nonatomic, weak) UITouch *lastTouch;
 
+@property(nonatomic, strong) AVAudioPlayer *music;
 @end

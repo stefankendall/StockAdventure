@@ -24,6 +24,7 @@
 		545901F11F17C04B61047FAA /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A505A5B13F597A79828 /* IntroScene.m */; };
 		5459022CE7B13A84B4CD3AA3 /* FlagMarkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901410BA456F02BDD4CB3 /* FlagMarkerTests.m */; };
 		5459024088F9961C28EA3FED /* OptionsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908439AA25971851A862E /* OptionsNode.m */; };
+		545902435C294AEBCBC48262 /* now-in-the-office_fycanW4O.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5459008EA9C2CD78E8FACC54 /* now-in-the-office_fycanW4O.mp3 */; };
 		545903851B421BEA4C08F3FB /* lovers-dream_f1UEULrO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54590B739C36A41C815DC252 /* lovers-dream_f1UEULrO.mp3 */; };
 		545903B38E1E15C10B4CE3F7 /* sing@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459071E5012193025DB1C86 /* sing@1x.png */; };
 		545903F1A7B8C5891336E17C /* PageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CEF9638D89D0391F93F /* PageNode.m */; };
@@ -47,6 +48,7 @@
 		54590D60E080ADBBB47212B7 /* FontTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590EDDECBA42B1A3910240 /* FontTest.xib */; };
 		54590D9B06896DEE8683304E /* reel in Resources */ = {isa = PBXBuildFile; fileRef = 54590AA76C6915D4B2F713B9 /* reel */; };
 		54590DBFF3EF8E9C15EC385B /* OptionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A069100FE50092FFA0B /* OptionNode.m */; };
+		54590DC3B61F4D6671F0F31C /* StitchMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CEA220B6F077BE12D64 /* StitchMusic.m */; };
 		54590EAA6D3250E701143F75 /* NotesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E1A69ECAB7ED84D9C62 /* NotesNode.m */; };
 		7950CE01897B7906314179A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0646C971F0F9B5A062B32D /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,7 @@
 		0294BEC21ACB745100077455 /* StockAdventureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockAdventureTests.m; sourceTree = "<group>"; };
 		279297BD6411B2181E952321 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5459005110D3CB778DFB105B /* StitchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchTests.m; sourceTree = "<group>"; };
+		5459008EA9C2CD78E8FACC54 /* now-in-the-office_fycanW4O.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "now-in-the-office_fycanW4O.mp3"; sourceTree = "<group>"; };
 		545901410BA456F02BDD4CB3 /* FlagMarkerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlagMarkerTests.m; sourceTree = "<group>"; };
 		545901622765EABAF7EF95A5 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		5459017B28615CA798D84598 /* 946-microphone-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "946-microphone-selected@2x.png"; sourceTree = "<group>"; };
@@ -121,10 +124,12 @@
 		54590BEC75BCE64228EC136B /* TheEndScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheEndScene.h; sourceTree = "<group>"; };
 		54590C3049081D1F84A07B6F /* PageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageNode.h; sourceTree = "<group>"; };
 		54590C68DAAE4EDA6EEC627C /* SingingCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingingCategories.h; sourceTree = "<group>"; };
+		54590CEA220B6F077BE12D64 /* StitchMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchMusic.m; sourceTree = "<group>"; };
 		54590CEF9638D89D0391F93F /* PageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageNode.m; sourceTree = "<group>"; };
 		54590D138644D650EB0EF588 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		54590DBB8FEB1499D8C1A79C /* SingingScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingingScene.m; sourceTree = "<group>"; };
 		54590DD9A55DF8F2BFDA7BDA /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		54590DDD52F65548CD6298D8 /* StitchMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchMusic.h; sourceTree = "<group>"; };
 		54590E1A69ECAB7ED84D9C62 /* NotesNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesNode.m; sourceTree = "<group>"; };
 		54590E72328FB4B852265951 /* StoryReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryReader.m; sourceTree = "<group>"; };
 		54590EDDECBA42B1A3910240 /* FontTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontTest.xib; sourceTree = "<group>"; };
@@ -268,6 +273,7 @@
 				5459089D65C709E7B8FD841B /* song.caf */,
 				545906D9F75B3BFE71F43CA2 /* sunset-dreaming.mp3 */,
 				54590B739C36A41C815DC252 /* lovers-dream_f1UEULrO.mp3 */,
+				5459008EA9C2CD78E8FACC54 /* now-in-the-office_fycanW4O.mp3 */,
 			);
 			path = songs;
 			sourceTree = "<group>";
@@ -310,6 +316,8 @@
 				5459019A7EADEC41B37F6EDE /* Stitch.h */,
 				545907767F654B787CB261DD /* FlagMarker.m */,
 				545904B7CB36B3E0523BCC46 /* FlagMarker.h */,
+				54590CEA220B6F077BE12D64 /* StitchMusic.m */,
+				54590DDD52F65548CD6298D8 /* StitchMusic.h */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -462,6 +470,7 @@
 				54590C5C73BAD73271DB9FA4 /* sunset-dreaming.mp3 in Resources */,
 				545903851B421BEA4C08F3FB /* lovers-dream_f1UEULrO.mp3 in Resources */,
 				54590D9B06896DEE8683304E /* reel in Resources */,
+				545902435C294AEBCBC48262 /* now-in-the-office_fycanW4O.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +545,7 @@
 				545901F11F17C04B61047FAA /* IntroScene.m in Sources */,
 				545905ED27A81682DC3EB7DE /* NewGameButtonNode.m in Sources */,
 				545907EFF6DCE4C149407386 /* IntroReelNode.m in Sources */,
+				54590DC3B61F4D6671F0F31C /* StitchMusic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

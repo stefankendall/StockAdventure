@@ -5,6 +5,7 @@
 #import "OptionNode.h"
 #import "PageNode.h"
 #import "MoreNode.h"
+#import "StitchMusic.h"
 
 @implementation StitchScene
 
@@ -24,6 +25,13 @@
 }
 
 - (void)addStitch:(Stitch *)stitch {
+    NSString *musicPath = [StitchMusic pathForMusicForStitch:self.nextStitch.stitchId];
+    if (musicPath) {
+        [self.music stop];
+        self.music = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:musicPath] error:nil];
+        [self.music play];
+    }
+
     [stitch markFlagIfExists];
     if ([stitch isTheEnd]) {
         [self.transitionDelegate transitionTo:stitch];
@@ -97,6 +105,7 @@
         if (optionNode) {
             OptionsNode *options = (OptionsNode *) [self childNodeWithName:@"//options"];
             Stitch *nextStitch = [options stitchForNode:optionNode];
+            [self.music stop];
             [self.transitionDelegate transitionTo:nextStitch];
         }
     }
