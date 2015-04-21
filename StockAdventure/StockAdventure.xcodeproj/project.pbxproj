@@ -21,13 +21,16 @@
 		54590173BECFB51B57B58CDA /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D138644D650EB0EF588 /* GameScene.m */; };
 		54590178D317DFDC9DED2F06 /* story.json in Resources */ = {isa = PBXBuildFile; fileRef = 54590BA1C7F422C589A5D46C /* story.json */; };
 		545901A729284748CF9AB6BD /* MusicNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590B688A428912AF4189F9 /* MusicNode.m */; };
+		545901F11F17C04B61047FAA /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A505A5B13F597A79828 /* IntroScene.m */; };
 		5459022CE7B13A84B4CD3AA3 /* FlagMarkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901410BA456F02BDD4CB3 /* FlagMarkerTests.m */; };
 		5459024088F9961C28EA3FED /* OptionsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908439AA25971851A862E /* OptionsNode.m */; };
+		545903851B421BEA4C08F3FB /* lovers-dream_f1UEULrO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54590B739C36A41C815DC252 /* lovers-dream_f1UEULrO.mp3 */; };
 		545903B38E1E15C10B4CE3F7 /* sing@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459071E5012193025DB1C86 /* sing@1x.png */; };
 		545903F1A7B8C5891336E17C /* PageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CEF9638D89D0391F93F /* PageNode.m */; };
 		545905898B0CA6889F97E40C /* FlagMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 545907767F654B787CB261DD /* FlagMarker.m */; };
 		5459059D733D587B3FEBDCAB /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901622765EABAF7EF95A5 /* GameViewController.m */; };
 		545905AFF36BC5C86CD21C0D /* 946-microphone-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459017B28615CA798D84598 /* 946-microphone-selected@2x.png */; };
+		545905ED27A81682DC3EB7DE /* NewGameButtonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908922A71B208CE2B67D6 /* NewGameButtonNode.m */; };
 		545906D3CC24F56923A9215F /* SingingScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590DBB8FEB1499D8C1A79C /* SingingScene.m */; };
 		5459070A2A89CE9C5563C4D1 /* song.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5459089D65C709E7B8FD841B /* song.caf */; };
 		54590760295CFDDEC49CD7E5 /* StoryReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E72328FB4B852265951 /* StoryReader.m */; };
@@ -95,16 +98,21 @@
 		5459081CFDC0D32D08AABC74 /* TextFlowerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlowerTests.m; sourceTree = "<group>"; };
 		54590833865732CA655C007F /* MiniGameInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniGameInfo.m; sourceTree = "<group>"; };
 		545908439AA25971851A862E /* OptionsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsNode.m; sourceTree = "<group>"; };
+		545908922A71B208CE2B67D6 /* NewGameButtonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGameButtonNode.m; sourceTree = "<group>"; };
 		5459089D65C709E7B8FD841B /* song.caf */ = {isa = PBXFileReference; lastKnownFileType = file.caf; path = song.caf; sourceTree = "<group>"; };
 		545908E6211037E40241E7A7 /* SingingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingingScene.h; sourceTree = "<group>"; };
+		5459091A1D9E78F475EA151F /* IntroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroScene.h; sourceTree = "<group>"; };
+		54590926CC159CACAFA8C07B /* NewGameButtonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewGameButtonNode.h; sourceTree = "<group>"; };
 		545909A0544BF458991D1E92 /* OptionsNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsNode.h; sourceTree = "<group>"; };
 		545909A7DECEA8DEDF78EFD2 /* UpDownArrowNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpDownArrowNode.m; sourceTree = "<group>"; };
 		545909D67F6E256665091F57 /* MiniGameInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniGameInfo.h; sourceTree = "<group>"; };
 		545909F9E8878CD1D53153E3 /* Stitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stitch.m; sourceTree = "<group>"; };
 		54590A069100FE50092FFA0B /* OptionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionNode.m; sourceTree = "<group>"; };
+		54590A505A5B13F597A79828 /* IntroScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroScene.m; sourceTree = "<group>"; };
 		54590A826E663E80B5E92D45 /* StitchTransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchTransitionProtocol.h; sourceTree = "<group>"; };
 		54590AF75CE41AED4C1CE12C /* woman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman.jpg; sourceTree = "<group>"; };
 		54590B688A428912AF4189F9 /* MusicNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicNode.m; sourceTree = "<group>"; };
+		54590B739C36A41C815DC252 /* lovers-dream_f1UEULrO.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lovers-dream_f1UEULrO.mp3"; sourceTree = "<group>"; };
 		54590BA1C7F422C589A5D46C /* story.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = story.json; sourceTree = "<group>"; };
 		54590BEC75BCE64228EC136B /* TheEndScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheEndScene.h; sourceTree = "<group>"; };
 		54590C3049081D1F84A07B6F /* PageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageNode.h; sourceTree = "<group>"; };
@@ -121,6 +129,7 @@
 		54590F9EF869CE53CDFB0021 /* TextFlower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFlower.h; sourceTree = "<group>"; };
 		54590FAF2C1504AFED9C2429 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		54590FB4EB9D3B95BF45D144 /* arrowup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowup.png; sourceTree = "<group>"; };
+		54590FC7B981780F9D9743E6 /* IntroProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroProtocol.h; sourceTree = "<group>"; };
 		6F0646C971F0F9B5A062B32D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1E53223D07BB9071109ECE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +196,7 @@
 				54590ACD43C34123EF949737 /* Ending */,
 				5459028F270474C5962D3FAC /* Stitches */,
 				54590AF75CE41AED4C1CE12C /* woman.jpg */,
+				5459099B34BC6977D90C1BBF /* Intro */,
 			);
 			path = StockAdventure;
 			sourceTree = "<group>";
@@ -252,6 +262,7 @@
 			children = (
 				5459089D65C709E7B8FD841B /* song.caf */,
 				545906D9F75B3BFE71F43CA2 /* sunset-dreaming.mp3 */,
+				54590B739C36A41C815DC252 /* lovers-dream_f1UEULrO.mp3 */,
 			);
 			path = songs;
 			sourceTree = "<group>";
@@ -306,6 +317,18 @@
 				545901410BA456F02BDD4CB3 /* FlagMarkerTests.m */,
 			);
 			path = Story;
+			sourceTree = "<group>";
+		};
+		5459099B34BC6977D90C1BBF /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				54590A505A5B13F597A79828 /* IntroScene.m */,
+				5459091A1D9E78F475EA151F /* IntroScene.h */,
+				54590FC7B981780F9D9743E6 /* IntroProtocol.h */,
+				545908922A71B208CE2B67D6 /* NewGameButtonNode.m */,
+				54590926CC159CACAFA8C07B /* NewGameButtonNode.h */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		54590ACD43C34123EF949737 /* Ending */ = {
@@ -429,6 +452,7 @@
 				5459080BAFB7733F5F8596D2 /* 823-birthday-cake@2x.png in Resources */,
 				54590D60E080ADBBB47212B7 /* FontTest.xib in Resources */,
 				54590C5C73BAD73271DB9FA4 /* sunset-dreaming.mp3 in Resources */,
+				545903851B421BEA4C08F3FB /* lovers-dream_f1UEULrO.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +524,8 @@
 				545903F1A7B8C5891336E17C /* PageNode.m in Sources */,
 				545909474AC9C39749FC7CEA /* MoreNode.m in Sources */,
 				545905898B0CA6889F97E40C /* FlagMarker.m in Sources */,
+				545901F11F17C04B61047FAA /* IntroScene.m in Sources */,
+				545905ED27A81682DC3EB7DE /* NewGameButtonNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,6 +4,7 @@
 #import "Stitch.h"
 #import "MiniGameInfo.h"
 #import "TheEndScene.h"
+#import "IntroScene.h"
 
 @implementation GameViewController
 
@@ -11,9 +12,11 @@
     [super viewDidLoad];
     SKView *skView = (SKView *) self.view;
     skView.ignoresSiblingOrder = YES;
-    self.scene.scaleMode = SKSceneScaleModeAspectFill;
 
-    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
+    self.scene = [[IntroScene alloc] initWithSize:self.view.bounds.size delegate: self];
+    self.scene.scaleMode = SKSceneScaleModeAspectFill;
+    [skView presentScene:self.scene];
+//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
 //    [self restartGame];
 }
 
@@ -56,5 +59,8 @@
     [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
 }
 
+- (void)startGame {
+    [self restartGame];
+}
 
 @end
