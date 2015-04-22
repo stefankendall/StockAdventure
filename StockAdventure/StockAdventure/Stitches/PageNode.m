@@ -60,11 +60,14 @@
 
 - (void)movePageIfNecessary:(SKNode *)node withTopNodeAndOptionsHeight:(CGFloat)topHeight {
     if (node.position.y < -self.position.y) {
+        self.scrolling = YES;
         SKAction *moveAction = [SKAction moveToY:[self heightOfAllParagraphs] - topHeight
                         - self.verticalPad
                                         duration:1];
         moveAction.timingMode = SKActionTimingEaseIn;
-        [self runAction:moveAction];
+        [self runAction:[SKAction sequence:@[moveAction, [SKAction runBlock:^{
+            self.scrolling = NO;
+        }]]]];
     }
 }
 

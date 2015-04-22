@@ -26,6 +26,7 @@
 		5459022CE7B13A84B4CD3AA3 /* FlagMarkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545901410BA456F02BDD4CB3 /* FlagMarkerTests.m */; };
 		5459024088F9961C28EA3FED /* OptionsNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545908439AA25971851A862E /* OptionsNode.m */; };
 		545902435C294AEBCBC48262 /* now-in-the-office_fycanW4O.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5459008EA9C2CD78E8FACC54 /* now-in-the-office_fycanW4O.mp3 */; };
+		5459029DD709F2A7C5D109E9 /* eating-chips_fkLZDMEu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54590854953BA34B52255534 /* eating-chips_fkLZDMEu.mp3 */; };
 		545903851B421BEA4C08F3FB /* lovers-dream_f1UEULrO.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54590B739C36A41C815DC252 /* lovers-dream_f1UEULrO.mp3 */; };
 		545903B38E1E15C10B4CE3F7 /* sing@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5459071E5012193025DB1C86 /* sing@1x.png */; };
 		545903F1A7B8C5891336E17C /* PageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CEF9638D89D0391F93F /* PageNode.m */; };
@@ -41,6 +42,7 @@
 		54590857A53E3D20BD2F2F5F /* Stitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909F9E8878CD1D53153E3 /* Stitch.m */; };
 		545908E5F7C5B39C3FF07117 /* StitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459005110D3CB778DFB105B /* StitchTests.m */; };
 		545909474AC9C39749FC7CEA /* MoreNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590436AAA0463FD115AC0C /* MoreNode.m */; };
+		545909FF722475B95264B9A9 /* bayou-trans-1_MJJ4pLHu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54590C73D17F55064EF97B1E /* bayou-trans-1_MJJ4pLHu.mp3 */; };
 		54590A240B4F70FA2F1A3EB0 /* TextFlowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459081CFDC0D32D08AABC74 /* TextFlowerTests.m */; };
 		54590A437CAEFAAC81707618 /* TextFlower.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459057AA3CB536E68ADACA4 /* TextFlower.m */; };
 		54590B2538FF0C1194860060 /* UpDownArrowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909A7DECEA8DEDF78EFD2 /* UpDownArrowNode.m */; };
@@ -53,6 +55,7 @@
 		54590DBFF3EF8E9C15EC385B /* OptionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A069100FE50092FFA0B /* OptionNode.m */; };
 		54590DC3B61F4D6671F0F31C /* StitchMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CEA220B6F077BE12D64 /* StitchMusic.m */; };
 		54590EAA6D3250E701143F75 /* NotesNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590E1A69ECAB7ED84D9C62 /* NotesNode.m */; };
+		54590F8FC34F2AE3E05865CD /* cartoon-voice-clip-male-adult-shout-angry-ah-fiddle-faddle_GksC6LN_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 545907B5F345943AF1CE1B4C /* cartoon-voice-clip-male-adult-shout-angry-ah-fiddle-faddle_GksC6LN_.mp3 */; };
 		7950CE01897B7906314179A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0646C971F0F9B5A062B32D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -103,11 +106,13 @@
 		5459071BCC7FDFB9E6BE9B90 /* 823-birthday-cake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "823-birthday-cake@2x.png"; sourceTree = "<group>"; };
 		5459071E5012193025DB1C86 /* sing@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sing@1x.png"; sourceTree = "<group>"; };
 		545907767F654B787CB261DD /* FlagMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlagMarker.m; sourceTree = "<group>"; };
+		545907B5F345943AF1CE1B4C /* cartoon-voice-clip-male-adult-shout-angry-ah-fiddle-faddle_GksC6LN_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cartoon-voice-clip-male-adult-shout-angry-ah-fiddle-faddle_GksC6LN_.mp3"; sourceTree = "<group>"; };
 		545907CE55E15306F4A650F3 /* SingingScoreNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingingScoreNode.m; sourceTree = "<group>"; };
 		545907F70972C4D5811719D9 /* StitchNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchNode.m; sourceTree = "<group>"; };
 		5459081CFDC0D32D08AABC74 /* TextFlowerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlowerTests.m; sourceTree = "<group>"; };
 		54590833865732CA655C007F /* MiniGameInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniGameInfo.m; sourceTree = "<group>"; };
 		545908439AA25971851A862E /* OptionsNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsNode.m; sourceTree = "<group>"; };
+		54590854953BA34B52255534 /* eating-chips_fkLZDMEu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "eating-chips_fkLZDMEu.mp3"; sourceTree = "<group>"; };
 		545908922A71B208CE2B67D6 /* NewGameButtonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGameButtonNode.m; sourceTree = "<group>"; };
 		5459089D65C709E7B8FD841B /* song.caf */ = {isa = PBXFileReference; lastKnownFileType = file.caf; path = song.caf; sourceTree = "<group>"; };
 		545908E6211037E40241E7A7 /* SingingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingingScene.h; sourceTree = "<group>"; };
@@ -128,6 +133,7 @@
 		54590BEC75BCE64228EC136B /* TheEndScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheEndScene.h; sourceTree = "<group>"; };
 		54590C3049081D1F84A07B6F /* PageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageNode.h; sourceTree = "<group>"; };
 		54590C68DAAE4EDA6EEC627C /* SingingCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingingCategories.h; sourceTree = "<group>"; };
+		54590C73D17F55064EF97B1E /* bayou-trans-1_MJJ4pLHu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bayou-trans-1_MJJ4pLHu.mp3"; sourceTree = "<group>"; };
 		54590CE88298ABC3B315BF24 /* the-tragedy-of-loss_zJNwxXr_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "the-tragedy-of-loss_zJNwxXr_.mp3"; sourceTree = "<group>"; };
 		54590CEA220B6F077BE12D64 /* StitchMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchMusic.m; sourceTree = "<group>"; };
 		54590CEF9638D89D0391F93F /* PageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageNode.m; sourceTree = "<group>"; };
@@ -283,6 +289,9 @@
 				54590E20A2FE06B224793641 /* water-pour-liquid-into-coffee-mug_zkqmj3V_.mp3 */,
 				54590CE88298ABC3B315BF24 /* the-tragedy-of-loss_zJNwxXr_.mp3 */,
 				5459061270D21E875C3A07BB /* keyboard-fast-typing_fyZ9ZBVu.mp3 */,
+				54590C73D17F55064EF97B1E /* bayou-trans-1_MJJ4pLHu.mp3 */,
+				545907B5F345943AF1CE1B4C /* cartoon-voice-clip-male-adult-shout-angry-ah-fiddle-faddle_GksC6LN_.mp3 */,
+				54590854953BA34B52255534 /* eating-chips_fkLZDMEu.mp3 */,
 			);
 			path = songs;
 			sourceTree = "<group>";
@@ -483,6 +492,9 @@
 				545901134EA7FEA5FFECDF3B /* water-pour-liquid-into-coffee-mug_zkqmj3V_.mp3 in Resources */,
 				54590D79953B8AFAC30AA0E9 /* the-tragedy-of-loss_zJNwxXr_.mp3 in Resources */,
 				54590B39CBF739BE8720801C /* keyboard-fast-typing_fyZ9ZBVu.mp3 in Resources */,
+				545909FF722475B95264B9A9 /* bayou-trans-1_MJJ4pLHu.mp3 in Resources */,
+				54590F8FC34F2AE3E05865CD /* cartoon-voice-clip-male-adult-shout-angry-ah-fiddle-faddle_GksC6LN_.mp3 in Resources */,
+				5459029DD709F2A7C5D109E9 /* eating-chips_fkLZDMEu.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,8 @@
 
 @property(nonatomic) CGSize size;
 
+@property(nonatomic) BOOL scrolling;
+
 + (PageNode *)pageNodeWithSize:(CGSize)size;
 
 - (void)addOptions:(Stitch *)array;

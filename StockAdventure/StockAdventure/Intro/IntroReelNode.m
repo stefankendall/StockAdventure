@@ -18,7 +18,7 @@
         currentX += image.size.width;
     }
 
-    [node runAction:[SKAction moveByX:-currentX y:0 duration:[paths count] * 7]];
+    [node runAction:[SKAction moveByX:(-currentX+size.width) y:0 duration:[paths count] * 4]];
 
     return node;
 }

@@ -87,7 +87,9 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     self.lastTouch = [touches anyObject];
-    if (!self.lastStitchReached) {
+
+    PageNode *pageNode = (PageNode *) [self childNodeWithName:@"page"];
+    if (!self.lastStitchReached && ![pageNode scrolling]) {
         [self addStitch:self.nextStitch];
     }
 
