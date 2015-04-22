@@ -1,7 +1,7 @@
 #import "OptionNode.h"
 #import "TextFlower.h"
 
-const NSString *OPTION_FONT_NAME = @"Avenir-Heavy-Oblique";
+const NSString *OPTION_FONT_NAME = @"Baskerville";
 
 @implementation OptionNode
 

@@ -17,6 +17,7 @@
 		545900405E8C8077298E0F89 /* arrowup.png in Resources */ = {isa = PBXBuildFile; fileRef = 54590FB4EB9D3B95BF45D144 /* arrowup.png */; };
 		545900B8950BC0A420EE80FF /* TheEndScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590F09A7C674696574C812 /* TheEndScene.m */; };
 		545900B984A294A26A39CCD4 /* StitchNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545907F70972C4D5811719D9 /* StitchNode.m */; };
+		545901134EA7FEA5FFECDF3B /* water-pour-liquid-into-coffee-mug_zkqmj3V_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54590E20A2FE06B224793641 /* water-pour-liquid-into-coffee-mug_zkqmj3V_.mp3 */; };
 		5459012820370627EDE4B439 /* MiniGameInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590833865732CA655C007F /* MiniGameInfo.m */; };
 		54590173BECFB51B57B58CDA /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590D138644D650EB0EF588 /* GameScene.m */; };
 		54590178D317DFDC9DED2F06 /* story.json in Resources */ = {isa = PBXBuildFile; fileRef = 54590BA1C7F422C589A5D46C /* story.json */; };
@@ -43,9 +44,11 @@
 		54590A240B4F70FA2F1A3EB0 /* TextFlowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459081CFDC0D32D08AABC74 /* TextFlowerTests.m */; };
 		54590A437CAEFAAC81707618 /* TextFlower.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459057AA3CB536E68ADACA4 /* TextFlower.m */; };
 		54590B2538FF0C1194860060 /* UpDownArrowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545909A7DECEA8DEDF78EFD2 /* UpDownArrowNode.m */; };
+		54590B39CBF739BE8720801C /* keyboard-fast-typing_fyZ9ZBVu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5459061270D21E875C3A07BB /* keyboard-fast-typing_fyZ9ZBVu.mp3 */; };
 		54590C5C73BAD73271DB9FA4 /* sunset-dreaming.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 545906D9F75B3BFE71F43CA2 /* sunset-dreaming.mp3 */; };
 		54590CE22A45109CDDC3873F /* SingingScoreNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 545907CE55E15306F4A650F3 /* SingingScoreNode.m */; };
 		54590D60E080ADBBB47212B7 /* FontTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54590EDDECBA42B1A3910240 /* FontTest.xib */; };
+		54590D79953B8AFAC30AA0E9 /* the-tragedy-of-loss_zJNwxXr_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54590CE88298ABC3B315BF24 /* the-tragedy-of-loss_zJNwxXr_.mp3 */; };
 		54590D9B06896DEE8683304E /* reel in Resources */ = {isa = PBXBuildFile; fileRef = 54590AA76C6915D4B2F713B9 /* reel */; };
 		54590DBFF3EF8E9C15EC385B /* OptionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590A069100FE50092FFA0B /* OptionNode.m */; };
 		54590DC3B61F4D6671F0F31C /* StitchMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 54590CEA220B6F077BE12D64 /* StitchMusic.m */; };
@@ -94,6 +97,7 @@
 		545904C96691A05B2C999E60 /* UpDownArrowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpDownArrowNode.h; sourceTree = "<group>"; };
 		5459057AA3CB536E68ADACA4 /* TextFlower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFlower.m; sourceTree = "<group>"; };
 		5459058E675B43C74D1F8ECF /* OptionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionNode.h; sourceTree = "<group>"; };
+		5459061270D21E875C3A07BB /* keyboard-fast-typing_fyZ9ZBVu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "keyboard-fast-typing_fyZ9ZBVu.mp3"; sourceTree = "<group>"; };
 		545906976A2AD78B5C92185B /* StoryReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryReader.h; sourceTree = "<group>"; };
 		545906D9F75B3BFE71F43CA2 /* sunset-dreaming.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sunset-dreaming.mp3"; sourceTree = "<group>"; };
 		5459071BCC7FDFB9E6BE9B90 /* 823-birthday-cake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "823-birthday-cake@2x.png"; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 		54590BEC75BCE64228EC136B /* TheEndScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheEndScene.h; sourceTree = "<group>"; };
 		54590C3049081D1F84A07B6F /* PageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageNode.h; sourceTree = "<group>"; };
 		54590C68DAAE4EDA6EEC627C /* SingingCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingingCategories.h; sourceTree = "<group>"; };
+		54590CE88298ABC3B315BF24 /* the-tragedy-of-loss_zJNwxXr_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "the-tragedy-of-loss_zJNwxXr_.mp3"; sourceTree = "<group>"; };
 		54590CEA220B6F077BE12D64 /* StitchMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchMusic.m; sourceTree = "<group>"; };
 		54590CEF9638D89D0391F93F /* PageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageNode.m; sourceTree = "<group>"; };
 		54590D138644D650EB0EF588 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
@@ -131,6 +136,7 @@
 		54590DD9A55DF8F2BFDA7BDA /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		54590DDD52F65548CD6298D8 /* StitchMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchMusic.h; sourceTree = "<group>"; };
 		54590E1A69ECAB7ED84D9C62 /* NotesNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesNode.m; sourceTree = "<group>"; };
+		54590E20A2FE06B224793641 /* water-pour-liquid-into-coffee-mug_zkqmj3V_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "water-pour-liquid-into-coffee-mug_zkqmj3V_.mp3"; sourceTree = "<group>"; };
 		54590E72328FB4B852265951 /* StoryReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryReader.m; sourceTree = "<group>"; };
 		54590EDDECBA42B1A3910240 /* FontTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontTest.xib; sourceTree = "<group>"; };
 		54590EFC0E91949E0C4ADAB4 /* NotesNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesNode.h; sourceTree = "<group>"; };
@@ -274,6 +280,9 @@
 				545906D9F75B3BFE71F43CA2 /* sunset-dreaming.mp3 */,
 				54590B739C36A41C815DC252 /* lovers-dream_f1UEULrO.mp3 */,
 				5459008EA9C2CD78E8FACC54 /* now-in-the-office_fycanW4O.mp3 */,
+				54590E20A2FE06B224793641 /* water-pour-liquid-into-coffee-mug_zkqmj3V_.mp3 */,
+				54590CE88298ABC3B315BF24 /* the-tragedy-of-loss_zJNwxXr_.mp3 */,
+				5459061270D21E875C3A07BB /* keyboard-fast-typing_fyZ9ZBVu.mp3 */,
 			);
 			path = songs;
 			sourceTree = "<group>";
@@ -471,6 +480,9 @@
 				545903851B421BEA4C08F3FB /* lovers-dream_f1UEULrO.mp3 in Resources */,
 				54590D9B06896DEE8683304E /* reel in Resources */,
 				545902435C294AEBCBC48262 /* now-in-the-office_fycanW4O.mp3 in Resources */,
+				545901134EA7FEA5FFECDF3B /* water-pour-liquid-into-coffee-mug_zkqmj3V_.mp3 in Resources */,
+				54590D79953B8AFAC30AA0E9 /* the-tragedy-of-loss_zJNwxXr_.mp3 in Resources */,
+				54590B39CBF739BE8720801C /* keyboard-fast-typing_fyZ9ZBVu.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
