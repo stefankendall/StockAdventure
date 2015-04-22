@@ -4,7 +4,6 @@
 
 
 const int BETWEEN_OPTION_PADDING = 30;
-const int OPTIONS_PAD_TOP = 30;
 
 @implementation OptionsNode
 

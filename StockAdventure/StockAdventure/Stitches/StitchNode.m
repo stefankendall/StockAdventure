@@ -4,9 +4,9 @@
 
 @implementation StitchNode
 
-const NSString *STITCH_FONT = @"Avenir";
+const NSString *STITCH_FONT = @"Baskerville";
 
-const int fontSize = 20;
+const int fontSize = 24;
 const int padBetweenLines = 10;
 
 + (StitchNode *)paragraphNodeWithStitch:(Stitch *)stitch forWidth:(int)width {

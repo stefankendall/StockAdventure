@@ -1,18 +1,19 @@
 {
-  "updated_at": "2015-04-19T14:03:40Z",
+  "updated_at": "2015-04-22T01:17:21Z",
   "url_key": "65b8",
   "data": {
     "editorData": {
       "textSize": 0,
       "libraryVisible": false,
-      "playPoint": "goodWellNowThatY",
+      "playPoint": "sheBroughtCake",
       "authorName": "Stefan Kendall"
     },
     "stitches": {
-      "itsTheStrangestT": {
+      "surprisinglyYouD": {
         "content": [
-          "\"It's the strangest thing. They all got food poisoning!\"",
-          {"divert": "iDidSomeResearch"}
+          "Surprisingly you don't immediately fall to your death. The ground rushes at you but you and the pilot are slowing. One terrifying rush later, and you gently land on a patch of grass outside the concert. An adorable dog in a t-shirt runs by and yips at you.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/grass.jpg"},
+          {"divert": "whileYourEyesFol"}
         ]
       },
       "tooScaredToSpeak": {
@@ -21,62 +22,290 @@
           {"divert": "secondsBecomeMin"}
         ]
       },
+      "downInTheStadium": {
+        "content": [
+          "Down in the stadium you make out a row of shirtless men painted from head to toe. The text on their hairless chests reads \"58008.\" You take a moment to consider that while weighing your options.",
+          {
+            "ifConditions": null,
+            "option": "Pull the parachute.",
+            "linkPath": "yourCrotchIsInst",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Wait.",
+            "linkPath": "tooLongJustAHair",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "youThinkForAMome": {
+        "content": [
+          "You think for a moment. Not going to the party could be political suicide. Going to the party could be mental suicide, and you may have to work this weekend. The choice is clear. You know what you have to do.",
+          {
+            "ifConditions": null,
+            "option": "\"Sorry. I just need to get this work done.\"",
+            "linkPath": null,
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "\"...sure\"",
+            "linkPath": "aBirthdayPartyFo",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "tHEEND9": {"content": ["THE END"]},
+      "justHangOnKidThe": {
+        "content": [
+          "\"Just hang on kid. The tiger knows what to do.\"",
+          {"divert": "youreAlreadyMoun"}
+        ]
+      },
+      "thePilotAppearsL": {
+        "content": [
+          "The pilot appears larger, larger, until...",
+          {"divert": "wHAMYouCollideWi"}
+        ]
+      },
+      "jamesEyesMeetYou": {
+        "content": [
+          "James eyes meet yours and he says slowly, \"Good choice.\" You now realize that while you were frantically asking questions, James had his hand on a gun behind him, hidden in his waistband.",
+          {"divert": "aliveUnscarredNe"}
+        ]
+      },
+      "butHesNotLimpHis": {
+        "content": [
+          "But he's not limp. His arms and legs are outstretched and his eyes are fixed on what what looks like an altimeter. He's still alive! You need to catch up to him, but there's not much time.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/man_falling.jpg"},
+          {
+            "ifConditions": null,
+            "option": "This is insane. Go at a steady pace.",
+            "linkPath": "thisIsntAMovieYo",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "You want him so bad it's like acid in your mouth. Dive hard.",
+            "linkPath": "ifYoureGoingToHi",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "tHEEND6": {"content": ["THE END"]},
+      "aNoiseBeltsFromT": {
+        "content": [
+          "A noise belts from the window.",
+          {"divert": "sCCREEEEECH"}
+        ]
+      },
       "yesHeExclaimsWit": {
         "content": [
           "\"Yes!\" he exclaims with aggravation.",
           {"divert": "itsHerBIRTHDAYHe"}
         ]
       },
-      "coffeeshopSounds": {
+      "imNotAPilotHeBeg": {
         "content": [
-          "...coffeeshop sounds. Music is for the weak, and you prefer the soothing cacophony of ceramic mugs and long cappuccino pours.",
-          {"divert": "yourManagerWalks"}
+          "\"I'm not a pilot,\" he begins.",
+          {"divert": "butYouFlewTheHel"}
         ]
       },
-      "willYouComeWithM": {
+      "youHearACarSlamT": {
         "content": [
-          "\"Will you come with me?\"",
+          "You hear a car slam to a halt. Seconds later  someone is slamming on the front office door. Who could it be?",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/man_two_axes.jpg"},
           {
             "ifConditions": null,
-            "option": "Life is weird. Go with the man.",
-            "linkPath": "heWasntLyingYour",
+            "option": "Go open the door.",
+            "linkPath": "youOpenTheDoorBe",
             "notIfConditions": null
           },
           {
             "ifConditions": null,
-            "option": "\"What happened to them?\"",
-            "linkPath": "itsTheStrangestT",
-            "notIfConditions": [{"notIfCondition": "whathappenedtothem"}]
+            "option": "Hide beneath your desk.",
+            "linkPath": "youHideBeneathYo",
+            "notIfConditions": null
           }
         ]
       },
-      "yesYouAnswer": {
+      "butYouFlewTheHel": {
         "content": [
-          "\"Yes?\" you answer.",
-          {"divert": "youHaveToComeWit"}
+          "\"But you flew the helicopter.\"",
+          {"divert": "wellOfCourseICan"}
         ]
       },
-      "youPutOnYourHead": {
+      "tHEEND3": {"content": ["THE END"]},
+      "theHelicopterYou": {
         "content": [
-          "You put on your headphones and turn the volume up on your favorite Pandora playlist....",
+          "\"The helicopter!\" your new manager snorts.",
+          {"divert": "youllBeGreatKidY"}
+        ]
+      },
+      "youHitTheGroundD": {
+        "content": [
+          "You hit the ground. Dead. The tiger, miraculously, survives the fall. Cat instincts, I guess. But you're definitely dead.",
+          {"divert": "tHEEND5"}
+        ]
+      },
+      "aBirthdayPartyFo": {
+        "content": [
+          "A birthday party for Jennifer can't possibly be as bad as the dozen or so HR meetings skipping the birthday would create.",
+          {"divert": "youHeadOverToThe"}
+        ]
+      },
+      "secondsBecomeMin": {
+        "content": [
+          "Seconds become minutes as the tension and awkwardness grows like a building wave. Suddenly hours have passed, and no one has moved.",
+          {"divert": "yourSpiritMerges"}
+        ]
+      },
+      "allAroundYouIsWa": {
+        "content": [
+          "All around you is wasteland.",
+          {"divert": "youveWorkedHereF"},
+          {"pageNum": 1}
+        ]
+      },
+      "everyoneStaresAt": {
+        "content": [
+          "Everyone stares at you in disgust.",
+          {"divert": "orTheyWouldIfThe"}
+        ]
+      },
+      "youNowKnowKarate": {
+        "content": [
+          "You now know karate. And how to fly a helicopter.",
           {
             "ifConditions": null,
-            "option": "Huey Lewis & the News",
-            "linkPath": "youDontNeedMoney",
-            "notIfConditions": null
-          },
-          {
-            "ifConditions": null,
-            "option": "LMFAO",
-            "linkPath": "girlLookAtThatBo",
-            "notIfConditions": null
-          },
-          {
-            "ifConditions": null,
-            "option": "I don't listen to music",
-            "linkPath": "coffeeshopSounds",
+            "option": "Dropkick the pilot.",
+            "linkPath": "unconventionalBu",
             "notIfConditions": null
           }
+        ]
+      },
+      "justWhenYouThoug": {
+        "content": [
+          "Just when you thought you've made a terrible mistake, the chute deploys, the tiger roars, and you both land safely on the ground.",
+          {
+            "ifConditions": null,
+            "option": "Later...",
+            "linkPath": "youNailThePerfor",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "youOpenTheDoorBe": {
+        "content": [
+          "You open the door. Before you is a half-shaven man in what appears to be a very expensive suit. Most of what you know about men's fashion has come from late night television commercials, but you're certain that somehow this man is important.",
+          {"divert": "yOUYouWereTheSin"}
+        ]
+      },
+      "yourVoiceLiftsTh": {
+        "content": [
+          "Your voice lifts the room and your co-workers join you in rounds. You're not the best, but twelve years in choir have finally paid off.",
+          {"divert": "jenniferTurnsToY"}
+        ]
+      },
+      "lifeSeemsToSwirl": {
+        "content": [
+          "Life seems to swirl in front of your eyes and before you can even think to protest, you're traveling up and toward the nearest stadium. This is actually happening. You see that the tiger is wearing a saddle parachute, a traditional staple of high-class entrances.",
+          {
+            "ifConditions": null,
+            "option": "Get on the saddle.",
+            "linkPath": "youMountTheTiger",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Inspect the parachute.",
+            "linkPath": "youLookOverThePa",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "girlLookAtThatBo1": {
+        "content": [
+          "Girl look at that body.",
+          {"divert": "girlLookAtThatBo2"}
+        ]
+      },
+      "fromWhatYouCanTe": {
+        "content": [
+          "From what you can tell, her diet consists of rotten eggs and garbage, consumed promptly each day between 12 to 1. That's what it smells like, at least; you would never ask. You would say something, but that's an HR nightmare and you need your job.",
+          {"divert": "chrisAnUnkemptOl"}
+        ]
+      },
+      "butWhoDoYouWorkF": {
+        "content": [
+          "\"But who do you work for? Why did you test me? How did you know you wouldn't KILL me? I don't even know your name!\"",
+          {"divert": "thePilotLaughsMy"}
+        ]
+      },
+      "shameJamesMutter": {
+        "content": [
+          "\"Shame.\" James mutters. He reaches behind his body and pulls something up to point it at you....",
+          {"divert": "ohYouRaiseYourHe"}
+        ]
+      },
+      "youTryToSingButW": {
+        "content": [
+          "You try to sing, but what comes out is more of a gargled wooshing sound.",
+          {"divert": "everyoneStaresAt"}
+        ]
+      },
+      "girlLookAtThatBo": {
+        "content": [
+          "Girl look at that body.",
+          {"divert": "girlLookAtThatBo1"}
+        ]
+      },
+      "andYetYoureSlowi": {
+        "content": [
+          "And yet you're slowing down. The line buckles above you but you're almost there...",
+          {"divert": "thenYouLandBySom"}
+        ]
+      },
+      "youHeadOverToThe": {
+        "content": [
+          "You head over to the break room to join the party.",
+          {"divert": "aFamiliarCrowdHa"}
+        ]
+      },
+      "youGlanceAroundT": {
+        "content": [
+          "You glance around the helicopter and realize you're out of parachutes. The helicopter has gone into a tailspin and you're falling fast. Woops.",
+          {
+            "ifConditions": null,
+            "option": "Take the controls and fix this death spiral",
+            "linkPath": "youMayKnowKarate",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Jump out of the helicopter.",
+            "linkPath": "theresOnlyOnePar",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "asYourBodySpiral": {
+        "content": [
+          "As your body spirals toward the ground, you wonder if you should have trusted the man. How did he survive the bullet? Why was he so calm? You'll never know, because your time is up.",
+          {"divert": "tHEEND8"}
+        ]
+      },
+      "youCantArgueWith": {
+        "content": [
+          "You can't argue with a gun. You strap yourself in and kick your heels into the tiger and it leaps forward.",
+          {"divert": "youreFallingFarB"}
+        ]
+      },
+      "jenniferTurnsToY": {
+        "content": [
+          "Jennifer turns to you coldly and says, \"Thank you.\"",
+          {"divert": "youreAMenschButY"}
         ]
       },
       "youveWorkedHereF": {
@@ -86,12 +315,148 @@
           {"divert": "itsJennifersBirt"}
         ]
       },
-      "youHadntNoticedB": {
+      "yourManagerWalks": {
         "content": [
-          "You hadn't noticed before now, but the window was open during your song, and from your second story office you can be heard from the street below.",
-          {"divert": "aNoiseBeltsFromT"}
+          "Your manager walks up behind you and taps you on the shoulder. You take a deep breath and take off your headphones. Doesn't he see that you're working?",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/manager.jpg"},
+          {"divert": "valuedEmployeeHe"}
         ]
       },
+      "youContinueWorki": {
+        "content": [
+          "You continue working. ",
+          {"divert": "jenniferIsABland"},
+          {"pageNum": 3}
+        ]
+      },
+      "theresOnlyOnePar": {
+        "content": [
+          "There's only one parachute that can save your life right now, and it's attached to a dead man.",
+          {"divert": "youLeapFromTheHe"}
+        ]
+      },
+      "singingGame": {
+        "content": [
+          "SingingGame",
+          {
+            "ifConditions": null,
+            "option": "good",
+            "linkPath": "yourVoiceLiftsTh",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "bad",
+            "linkPath": "youTryToSingButW",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "perfect",
+            "linkPath": "incredibleYourCo",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "youCouldHaveBeen": {
+        "content": [
+          "You could have been a rock star. So close.",
+          {"divert": "tHEEND6"}
+        ]
+      },
+      "youreAlreadyMoun": {
+        "content": [
+          "You're already mounted, so no need to tell you twice. When you're dead center over the stadium, the tiger leaps from the helicopter. Fireworks explode around you as you plummet toward the earth.",
+          {"divert": "justWhenYouThoug"}
+        ]
+      },
+      "yourCrotchIsInst": {
+        "content": [
+          "Your crotch is instantly in your chest and the ground approaches quickly. This is it. Your life is over. You brace for impact.",
+          {"divert": "andYetYoureSlowi"}
+        ]
+      },
+      "jenniferAlwaysEa": {
+        "content": [
+          "Jennifer always eats at her desk.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/woman_eating_at_desk.jpg"},
+          {"divert": "fromWhatYouCanTe"}
+        ]
+      },
+      "tHEEND7": {"content": ["THE END"]},
+      "aTigerJustForYou": {
+        "content": [
+          "A tiger just for you.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/tiger.jpg"},
+          {"divert": "lifeSeemsToSwirl"}
+        ]
+      },
+      "youHaveToComeWit": {
+        "content": [
+          "\"You have to come with me. I'm a record producer, and Beyonc\u00e9, Jay-Z, and the Bieb all just canceled on what was going to be the biggest concert of all time. I need you.\"",
+          {"divert": "willYouComeWithM"}
+        ]
+      },
+      "tooEarlyDamnitTo": {
+        "content": [
+          "Too early. Damnit, too early. The parachute deploys, your descent slows, and then the line snaps. You and the tiger plummet, quickly hitting terminal velocity.",
+          {"divert": "youHitTheGroundD"}
+        ]
+      },
+      "youWrapYourLegsA": {
+        "content": [
+          "You wrap your legs around the pilot and your left arm around his neck. Then you place your hand on the latch and get ready to pull. Your eyes almost close on their own, and you pull the release cable.",
+          {"divert": "surprisinglyYouD"}
+        ]
+      },
+      "tHEEND4": {"content": ["THE END"]},
+      "whereAreWeGoingY": {
+        "content": [
+          "\"Where are we going?\" you shout anxiously.",
+          {"divert": "theHelicopterYou"}
+        ]
+      },
+      "tHEEND": {"content": ["THE END"]},
+      "iWorkOut": {
+        "content": [
+          "I work out.",
+          {"divert": "yourManagerWalks"}
+        ]
+      },
+      "unconventionalBu": {
+        "content": [
+          "Unconventional, but why not? You disarm the pilot before he has a chance to blink. His gun, now your gun, is a well-maintained Walther PPK. It's pretty but a little small for your taste.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/ppk.jpg"},
+          {"divert": "youShootThePilot"}
+        ]
+      },
+      "momentsLaterHeDe": {
+        "content": [
+          "Moments later he deploys his chute. He's on target to drop right into the stadium, a real pro.",
+          {"divert": "youGlanceAroundT"}
+        ]
+      },
+      "youLookOverThePa": {
+        "content": [
+          "You look over the parachute to make *absolutely* sure it's safe. It turns out you don't know a lot about parachutes, and suddenly the chute is deployed in the helicopter and the pilot is screaming.",
+          {"divert": "whatHaveYouDONET"}
+        ]
+      },
+      "yesYouAnswer": {
+        "content": [
+          "\"Yes?\" you answer.",
+          {"divert": "youHaveToComeWit"}
+        ]
+      },
+      "youDieSadAndAlon": {
+        "content": [
+          "You die sad and alone, many years later, always wondering what might have happened had you just taken a single risk?",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/regret_man.jpg"},
+          {"divert": "tHEEND3"}
+        ]
+      },
+      "tHEEND1": {"content": ["THE END"]},
+      "tHEEND10": {"content": ["THE END"]},
       "aFamiliarCrowdHa": {
         "content": [
           "A familiar crowd. Half the group is new hires, starry-eyed and ambitious. The veteran half shifts around vapidly, glad to to cut a few seconds out of the meaningless day by feigning affection for Jennifer.",
@@ -100,11 +465,71 @@
           {"pageNum": 4}
         ]
       },
-      "itsHardToTellExa": {
+      "youDontNeedMoney": {
         "content": [
-          "It's hard to tell exactly what your manager is thinking. His eyes seem dim and have long since lost the flame of passion and drive you imagined you would find when you read stories of business giants when you were younger.",
-          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/atlas.jpg"},
-          {"divert": "youThinkForAMome"}
+          "You don't need money. Don't take fame. Don't need\u00a0no credit card to ride this train. It's strong and it's sudden and it's cruel sometimes, but it might just save your life...",
+          {"divert": "yourManagerWalks"}
+        ]
+      },
+      "wellOfCourseICan": {
+        "content": [
+          "\"Well of course I can fly a helicopter. I'm a spy. And if you're smart, you're about to be one too. Training begins in Thailand in three days. We need to board the jet soon.\"",
+          {"divert": "butWhoDoYouWorkF"}
+        ]
+      },
+      "chrisAnUnkemptOl": {
+        "content": [
+          "Chris, an unkempt older man in the corner, asks no one in particular, \"should we sing, then?\"",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/old_ceo.jpg"},
+          {
+            "ifConditions": null,
+            "option": "Look around blankly.",
+            "linkPath": "tooScaredToSpeak",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Sing your heart out. YOLO.",
+            "linkPath": "singingGame",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "orTheyWouldIfThe": {
+        "content": [
+          "...or they would if they weren't so passive aggressive. Because of the atrocity that is your singing, all birthday parties are banned from the office. Good job.",
+          {"divert": "tHEEND2"}
+        ]
+      },
+      "youDoNotUnderAny": {
+        "content": [
+          "You do not, under any circumstances, negotiate with terrorists. You focus your mind and time seems to slow. Thoughts speed through your head and you can feel the air around you shifting, moving. You are one with the universe.",
+          {"divert": "youNowKnowKarate"}
+        ]
+      },
+      "heWasntLyingYour": {
+        "content": [
+          "He wasn't lying. You're taken to a limousine and hastily get inside. As you drive, traffic parts for you biblically, as if the whole world is revolving around your upcoming performance.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/limo.jpg"},
+          {"divert": "whereAreWeGoingY"}
+        ]
+      },
+      "youreFallingFarB": {
+        "content": [
+          "You're falling. Far below you a hoard of people is cheering. You can barely make out of the city below you. It seems you're still quite high up.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/city_from_above.jpg"},
+          {
+            "ifConditions": null,
+            "option": "Pull the parachute.",
+            "linkPath": "tooEarlyDamnitTo",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Wait.",
+            "linkPath": "heedingTheAdvice",
+            "notIfConditions": null
+          }
         ]
       },
       "soYoullGoThen": {
@@ -113,32 +538,48 @@
           {"divert": "itsHardToTellExa"}
         ]
       },
-      "itsHerBIRTHDAYHe": {
+      "itsTheStrangestT": {
         "content": [
-          "\"It's her BIRTHDAY.\" He stares at you as if expecting an immediate response.",
-          {
-            "ifConditions": null,
-            "option": "\"I know.\"",
-            "linkPath": "soYoullGoThen",
-            "notIfConditions": null
-          }
+          "\"It's the strangest thing. They all got food poisoning!\"",
+          {"divert": "iDidSomeResearch"}
         ]
       },
-      "whyArentYouAtJen": {
+      "goodWellNowThatY": {
         "content": [
-          "\"Why aren't you at Jennifer's birthday party? This is a big day for her.\"",
-          {
-            "ifConditions": null,
-            "option": "\"Big day...?\"",
-            "linkPath": "yesHeExclaimsWit",
-            "notIfConditions": null
-          },
-          {
-            "ifConditions": null,
-            "option": "\"I'm working.\"",
-            "linkPath": null,
-            "notIfConditions": null
-          }
+          "\"Good. Well now that you know all about food poisoning, I just have one question.\"",
+          {"divert": "willYouComeWithM"},
+          {"flagName": "whathappenedtothem"}
+        ]
+      },
+      "whatHaveYouDONET": {
+        "content": [
+          "\"What have you DONE?! This was a one-way trip, kid, and you're going to have to pull the parachute yourself. Tie yourself to the tiger harness with that rope and don't pull the chute early or you'll cut loose with all that extra weight.\"",
+          {"divert": "shouldntWeJustCa"}
+        ]
+      },
+      "lifeCanBeIncredi": {
+        "content": [
+          "Life can be incredible, but not for you.",
+          {"divert": "youDieSadAndAlon"}
+        ]
+      },
+      "yOUYouWereTheSin": {
+        "content": [
+          "\"YOU! You were the singer!\" he shouts. His finger trembles as he points at you accusingly.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/pointing.jpg"},
+          {"divert": "yesYouAnswer"}
+        ]
+      },
+      "girlLookAtThatBo2": {
+        "content": [
+          "Girl look at that body.",
+          {"divert": "iWorkOut"}
+        ]
+      },
+      "sCCREEEEECH": {
+        "content": [
+          "SCCREEEEECH!!!",
+          {"divert": "youHearACarSlamT"}
         ]
       },
       "sheBroughtCake": {
@@ -165,53 +606,6 @@
           }
         ]
       },
-      "youOpenTheDoorBe": {
-        "content": [
-          "You open the door. Before you is a half-shaven man in what appears to be a very expensive suit. Most of what you know about men's fashion has come from late night television commercials, but you're certain that somehow this man is important.",
-          {"divert": "yOUYouWereTheSin"}
-        ]
-      },
-      "aNoiseBeltsFromT": {
-        "content": [
-          "A noise belts from the window.",
-          {"divert": "sCCREEEEECH"}
-        ]
-      },
-      "singingGame": {
-        "content": [
-          "SingingGame",
-          {
-            "ifConditions": null,
-            "option": "good",
-            "linkPath": "yourVoiceLiftsTh",
-            "notIfConditions": null
-          },
-          {
-            "ifConditions": null,
-            "option": "bad",
-            "linkPath": "youTryToSingButW",
-            "notIfConditions": null
-          },
-          {
-            "ifConditions": null,
-            "option": "perfect",
-            "linkPath": "incredibleYourCo",
-            "notIfConditions": null
-          }
-        ]
-      },
-      "heWasntLyingYour": {
-        "content": [
-          "He wasn't lying. You're taken to a limousine and driven to a helicopter landing pad.",
-          {"divert": "whereAreWeGoingY"}
-        ]
-      },
-      "everyoneStaresAt": {
-        "content": [
-          "Everyone stares at you in disgust.",
-          {"divert": "orTheyWouldIfThe"}
-        ]
-      },
       "yourSpiritMerges": {
         "content": [
           "Your spirit merges with the soulless commune around you as you turn to stone. You are trapped for eternity because you failed to act. Next time be more bold.",
@@ -219,33 +613,46 @@
           {"divert": "tHEEND"}
         ]
       },
-      "fromWhatYouCanTe": {
+      "thenYouLandBySom": {
         "content": [
-          "From what you can tell, her diet consists of rotten eggs and garbage, consumed promptly each day between 12 to 1. That's what it smells like, at least; you would never ask. You would say something, but that's an HR nightmare and you need your job.",
-          {"divert": "chrisAnUnkemptOl"}
+          "Then you land. By some miracle, you're alive.",
+          {"divert": "youNailThePerfor"}
         ]
       },
-      "youThinkForAMome": {
+      "thisIsntAMovieYo": {
         "content": [
-          "You think for a moment. Not going to the party could be political suicide. Going to the party could be mental suicide, and you may have to work this weekend. The choice is clear. You know what you have to do.",
-          {
-            "ifConditions": null,
-            "option": "\"Sorry. I just need to get this work done.\"",
-            "linkPath": null,
-            "notIfConditions": null
-          },
-          {
-            "ifConditions": null,
-            "option": "\"...sure\"",
-            "linkPath": "aBirthdayPartyFo",
-            "notIfConditions": null
-          }
+          "This isn't a movie. You can't just fly into someone and survive a fall from ten thousand feet. As you struggle to grasp the insanity of the situation you take your eye off of the pilot for just a second.",
+          {"divert": "andThenHesAboveY"}
         ]
       },
-      "whereAreWeGoingY": {
+      "wHAMYouCollideWi": {
         "content": [
-          "\"Where are we going?\" you shout anxiously.",
-          {"divert": "youllBeGreatKidY"}
+          "WHAM! You collide with the man, grabbing desperately. He seems oddly calm as you grasp wildly, looking for some way to attach yourself to his chute. From the corner of your eye, you recognize a peculiar twirl from the pilot's face. A smile. He turns to you to speak, completely relaxed.",
+          {"divert": "impressiveIWasnt"}
+        ]
+      },
+      "coffeeshopSounds": {
+        "content": [
+          "...coffeeshop sounds. Music is for the weak, and you prefer the soothing cacophony of ceramic mugs and long cappuccino pours.",
+          {"divert": "yourManagerWalks"}
+        ]
+      },
+      "vayaConDios": {
+        "content": [
+          "Vaya con Dios.",
+          {"divert": "tHEEND7"}
+        ]
+      },
+      "shouldntWeJustCa": {
+        "content": [
+          "\"Shouldn't we just call this off?\" you plead.",
+          {"divert": "thePilotShakesHi"}
+        ]
+      },
+      "yourEyesScramble": {
+        "content": [
+          "Your eyes scramble for something, anything that will save you. But your hesitation costs you. The pilot looks almost somber as he kicks you away and pulls his chute.",
+          {"divert": "asYourBodySpiral"}
         ]
       },
       "youHideBeneathYo": {
@@ -254,51 +661,17 @@
           {"divert": "lifeCanBeIncredi"}
         ]
       },
-      "sCCREEEEECH": {
+      "youNailThePerfor": {
         "content": [
-          "SCCREEEEECH!!!",
-          {"divert": "youHearACarSlamT"}
-        ]
-      },
-      "youEatCakeAndGoB": {
-        "content": [
-          "You eat cake and go back to your dull life.",
-          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/bored_kid.jpg"},
-          {"divert": "tHEEND1"}
-        ]
-      },
-      "jenniferAlwaysEa": {
-        "content": [
-          "Jennifer always eats at her desk.",
-          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/woman_eating_at_desk.jpg"},
-          {"divert": "fromWhatYouCanTe"}
+          "You nail the performance and live your life as a pop/rock/punk/alternative/hip hop star. Good job, kid.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/rode_tiger_meme.jpg"},
+          {"divert": "tHEEND4"}
         ]
       },
       "valuedEmployeeHe": {
         "content": [
           "\"Valued employee,\" he begins. Neither he nor anyone higher up in the company values your work, so why address you by name?",
           {"divert": "whyArentYouAtJen"}
-        ]
-      },
-      "yourManagerWalks": {
-        "content": [
-          "Your manager walks up behind you and taps you on the shoulder. You take a deep breath and take off your headphones. Doesn't he see that you're working?",
-          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/manager.jpg"},
-          {"divert": "valuedEmployeeHe"}
-        ]
-      },
-      "itsJennifersBirt": {
-        "content": [
-          "It's Jennifer's birthday today. ",
-          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/woman.jpg"},
-          {"divert": "sheBroughtCake"}
-        ]
-      },
-      "allAroundYouIsWa": {
-        "content": [
-          "All around you is wasteland.",
-          {"divert": "youveWorkedHereF"},
-          {"pageNum": 1}
         ]
       },
       "iDidSomeResearch": {
@@ -313,152 +686,10 @@
           }
         ]
       },
-      "thenAllThatStuff": {
+      "youLeapFromTheHe": {
         "content": [
-          "Then all that stuff happens. ",
-          {"divert": "tHEEND4"}
-        ]
-      },
-      "youHaveToComeWit": {
-        "content": [
-          "\"You have to come with me. I'm a record producer and Beyonc\u00e9, Jay-Z, and the Bieb all just canceled on what was going to be the biggest concert of all time. I need you.\"",
-          {"divert": "willYouComeWithM"}
-        ]
-      },
-      "youHearACarSlamT": {
-        "content": [
-          "You hear a car slam to a halt. Seconds later  someone is slamming on the front office door. Who could it be?",
-          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/man_two_axes.jpg"},
-          {
-            "ifConditions": null,
-            "option": "Go open the door.",
-            "linkPath": "youOpenTheDoorBe",
-            "notIfConditions": null
-          },
-          {
-            "ifConditions": null,
-            "option": "Hide beneath your desk.",
-            "linkPath": "youHideBeneathYo",
-            "notIfConditions": null
-          }
-        ]
-      },
-      "youreAMenschButY": {
-        "content": [
-          "You're a mensch, but you're nothing special. If you had sang just a bit better, maybe your life would have gone another way.",
-          {"divert": "youEatCakeAndGoB"}
-        ]
-      },
-      "jenniferTurnsToY": {
-        "content": [
-          "Jennifer turns to you coldly and says, \"Thank you.\"",
-          {"divert": "youreAMenschButY"}
-        ]
-      },
-      "secondsBecomeMin": {
-        "content": [
-          "Seconds become minutes as the tension and awkwardness grows like a building wave. Suddenly hours have passed, and no one has moved.",
-          {"divert": "yourSpiritMerges"}
-        ]
-      },
-      "chrisAnUnkemptOl": {
-        "content": [
-          "Chris, an unkempt older man in the corner, asks no one in particular, \"should we sing, then?\"",
-          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/old_ceo.jpg"},
-          {
-            "ifConditions": null,
-            "option": "Look around blankly.",
-            "linkPath": "tooScaredToSpeak",
-            "notIfConditions": null
-          },
-          {
-            "ifConditions": null,
-            "option": "Sing your heart out. YOLO.",
-            "linkPath": "singingGame",
-            "notIfConditions": null
-          }
-        ]
-      },
-      "youTryToSingButW": {
-        "content": [
-          "You try to sing, but what comes out is more of a gargled wooshing sound.",
-          {"divert": "everyoneStaresAt"}
-        ]
-      },
-      "youHeadOverToThe": {
-        "content": [
-          "You head over to the break room to join the party.",
-          {"divert": "aFamiliarCrowdHa"}
-        ]
-      },
-      "aBirthdayPartyFo": {
-        "content": [
-          "A birthday party for Jennifer can't possibly be as bad as the dozen or so HR meetings skipping the birthday would create.",
-          {"divert": "youHeadOverToThe"}
-        ]
-      },
-      "iWorkOut": {
-        "content": [
-          "I work out.",
-          {"divert": "yourManagerWalks"}
-        ]
-      },
-      "girlLookAtThatBo": {
-        "content": [
-          "Girl look at that body.",
-          {"divert": "girlLookAtThatBo1"}
-        ]
-      },
-      "youDontNeedMoney": {
-        "content": [
-          "You don't need money. Don't take fame. Don't need\u00a0no credit card to ride this train. It's strong and it's sudden and it's cruel sometimes, but it might just save your life...",
-          {"divert": "yourManagerWalks"}
-        ]
-      },
-      "goodWellNowThatY": {
-        "content": [
-          "\"Good. Well now that you know all about food poisoning, I just have one question.\"",
-          {"divert": "willYouComeWithM"},
-          {"flagName": "whathappenedtothem"}
-        ]
-      },
-      "youDieSadAndAlon": {
-        "content": [
-          "You die sad and alone, many years later, always wondering what might have happened had you just taken a single risk?",
-          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/regret_man.jpg"},
-          {"divert": "tHEEND3"}
-        ]
-      },
-      "lifeCanBeIncredi": {
-        "content": [
-          "Life can be incredible, but not for you.",
-          {"divert": "youDieSadAndAlon"}
-        ]
-      },
-      "orTheyWouldIfThe": {
-        "content": [
-          "...or they would if they weren't so passive aggressive. Because of the atrocity that is your singing, all birthday parties are banned from the office. Good job.",
-          {"divert": "tHEEND2"}
-        ]
-      },
-      "yourVoiceLiftsTh": {
-        "content": [
-          "Your voice lifts the room and your co-workers join you in rounds. You're not the best, but twelve years in choir have finally paid off.",
-          {"divert": "jenniferTurnsToY"}
-        ]
-      },
-      "tHEEND": {"content": ["THE END"]},
-      "youllBeGreatKidY": {
-        "content": [
-          "\"You'll be great, kid. You're parachuting in to the concert riding a tiger. You'll figure it out.\"",
-          {"divert": "thenAllThatStuff"}
-        ]
-      },
-      "yOUYouWereTheSin": {
-        "content": [
-          "\"YOU! You were the singer!\" he shouts. His finger trembles as he points at you accusingly.",
-          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/pointing.jpg"},
-          {"divert": "yesYouAnswer"}
+          "You leap from the helicopter and aim yourself at the pilot, falling limp...",
+          {"divert": "butHesNotLimpHis"}
         ]
       },
       "incredibleYourCo": {
@@ -468,20 +699,104 @@
           {"divert": "youHadntNoticedB"}
         ]
       },
-      "tHEEND4": {"content": ["THE END"]},
-      "tHEEND3": {"content": ["THE END"]},
-      "tHEEND2": {"content": ["THE END"]},
-      "tHEEND1": {"content": ["THE END"]},
-      "girlLookAtThatBo2": {
+      "youMayKnowKarate": {
         "content": [
-          "Girl look at that body.",
-          {"divert": "iWorkOut"}
+          "You may know karate, but you don't know how to fly a helicopter. Lights blink and flash as you push and pull levers and switches. Before you have a chance to slam into the world, you slip out of the helicopter and a near-invisible helicopter blade grinds you into ground beef.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/ground_beef.jpg"},
+          {"divert": "youCouldHaveBeen"}
         ]
       },
-      "girlLookAtThatBo1": {
+      "tHEEND8": {"content": ["THE END"]},
+      "whyArentYouAtJen": {
         "content": [
-          "Girl look at that body.",
-          {"divert": "girlLookAtThatBo2"}
+          "\"Why aren't you at Jennifer's birthday party? This is a big day for her.\"",
+          {
+            "ifConditions": null,
+            "option": "\"Big day...?\"",
+            "linkPath": "yesHeExclaimsWit",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "\"I'm working.\"",
+            "linkPath": null,
+            "notIfConditions": null
+          }
+        ]
+      },
+      "ifYoureGoingToHi": {
+        "content": [
+          "If you're going to hit the ground, you're not going alone. The pilot forced you into this and he's going to get you out of it. You dive through the air, picking up speed.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/fast_skydive.jpg"},
+          {"divert": "thePilotAppearsL"}
+        ]
+      },
+      "tHEEND5": {"content": ["THE END"]},
+      "youMountTheTiger": {
+        "content": [
+          "You mount the tiger. Before today you would never have imagined you even COULD ride a tiger, but today is a special kind of day. The tiger is strangely calm - clearly this isn't its first rodeo. Your pilot turns to you and begins to shout.",
+          {"divert": "justHangOnKidThe"}
+        ]
+      },
+      "itsHardToTellExa": {
+        "content": [
+          "It's hard to tell exactly what your manager is thinking. His eyes seem dim and have long since lost the flame of passion and drive you imagined you would find when you read stories of business giants when you were younger.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/atlas.jpg"},
+          {"divert": "youThinkForAMome"}
+        ]
+      },
+      "finallyFree": {
+        "content": [
+          "Finally. Free.",
+          {"pageNum": 2}
+        ]
+      },
+      "youPutOnYourHead": {
+        "content": [
+          "You put on your headphones and turn the volume up on your favorite Pandora playlist....",
+          {
+            "ifConditions": null,
+            "option": "Huey Lewis & the News",
+            "linkPath": "youDontNeedMoney",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "LMFAO",
+            "linkPath": "girlLookAtThatBo",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "I don't listen to music",
+            "linkPath": "coffeeshopSounds",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "youveMadeATerrib": {
+        "content": [
+          "You've made a terrible mistake. This only ends two ways.",
+          {
+            "ifConditions": null,
+            "option": "Strap yourself to the tiger and jump.",
+            "linkPath": "youCantArgueWith",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Fight the pilot. Go for the gun.",
+            "linkPath": "youDoNotUnderAny",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "tHEEND2": {"content": ["THE END"]},
+      "youEatCakeAndGoB": {
+        "content": [
+          "You eat cake and go back to your dull life.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/bored_kid.jpg"},
+          {"divert": "tHEEND1"}
         ]
       },
       "jenniferIsABland": {
@@ -490,17 +805,144 @@
           {"divert": "youPutOnYourHead"}
         ]
       },
-      "youContinueWorki": {
+      "whileYourEyesFol": {
         "content": [
-          "You continue working. ",
-          {"divert": "jenniferIsABland"},
-          {"pageNum": 3}
+          "While your eyes follow the dog, the pilot coughs and begins the explanation he promised earlier.",
+          {"divert": "imNotAPilotHeBeg"}
         ]
       },
-      "finallyFree": {
+      "itsJennifersBirt": {
         "content": [
-          "Finally. Free.",
-          {"pageNum": 2}
+          "It's Jennifer's birthday today. ",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/woman.jpg"},
+          {"divert": "sheBroughtCake"}
+        ]
+      },
+      "youreAMenschButY": {
+        "content": [
+          "You're a mensch, but you're nothing special. If you had sang just a bit better, maybe your life would have gone another way.",
+          {"divert": "youEatCakeAndGoB"}
+        ]
+      },
+      "thePilotShakesHi": {
+        "content": [
+          "The pilot shakes his head. \"Impossible. I only get paid if you make the jump.\" He pulls a gun out of an ankle holster and points it at your head.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/man_with_gun.jpg"},
+          {"divert": "youveMadeATerrib"}
+        ]
+      },
+      "tooLongJustAHair": {
+        "content": [
+          "Too long. Just a hair too long. You hit the ground with INCREDIBLE force.You hit the ground.",
+          {"divert": "youHitTheGroundD"}
+        ]
+      },
+      "thePilotLaughsMy": {
+        "content": [
+          "The pilot laughs. \"My name is James. As for who I work for, you'll find out soon enough.\" James pauses for a moment, then asks, \"So are you coming?\"",
+          {
+            "ifConditions": null,
+            "option": "Yes.",
+            "linkPath": "jamesEyesMeetYou",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "No.",
+            "linkPath": "shameJamesMutter",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "youllBeGreatKidY": {
+        "content": [
+          "\"You'll be great, kid. You're parachuting in to the concert riding a tiger. You'll figure it out.\" You stare at your manager with incredulity, but your skepticism ends the moment you see it.",
+          {"divert": "aTigerJustForYou"}
+        ]
+      },
+      "willYouComeWithM": {
+        "content": [
+          "\"Will you come with me?\"",
+          {
+            "ifConditions": null,
+            "option": "Life is weird. Go with the man.",
+            "linkPath": "heWasntLyingYour",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "\"What happened to them?\"",
+            "linkPath": "itsTheStrangestT",
+            "notIfConditions": [{"notIfCondition": "whathappenedtothem"}]
+          }
+        ]
+      },
+      "heedingTheAdvice": {
+        "content": [
+          "Heeding the advice of your murderous pilot, you wait. Air whistles past you as your speed increases, and the tiger begins to squirm. Maybe he's done this before?",
+          {"divert": "downInTheStadium"}
+        ]
+      },
+      "andThenHesAboveY": {
+        "content": [
+          "And then he's above you. He pulled his chute.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/man_parachuting.jpg"},
+          {"divert": "vayaConDios"}
+        ]
+      },
+      "aliveUnscarredNe": {
+        "content": [
+          "Alive. Unscarred. Newly employed. Today has been a good strange day, as far as strange days go. You're a spy!",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/spy.jpg"},
+          {"divert": "tHEEND9"}
+        ]
+      },
+      "impressiveIWasnt": {
+        "content": [
+          "\"Impressive. I wasn't sure you had what it took. I'll explain in a moment, but in six seconds we're going to be meat waffles. Pull my chute, kid, and hang on.\"",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/waffles.jpg"},
+          {
+            "ifConditions": null,
+            "option": "Trust him. Pull the chute.",
+            "linkPath": "youWrapYourLegsA",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Look for another way to hang on.",
+            "linkPath": "yourEyesScramble",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "ohYouRaiseYourHe": {
+        "content": [
+          "Oh. You raise your head to speak but you don't get the chance.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/revolver.jpg"},
+          {"divert": "tHEEND10"}
+        ]
+      },
+      "youHadntNoticedB": {
+        "content": [
+          "You hadn't noticed before now, but the window was open during your song, and from your second story office you can be heard from the street below.",
+          {"divert": "aNoiseBeltsFromT"}
+        ]
+      },
+      "itsHerBIRTHDAYHe": {
+        "content": [
+          "\"It's her BIRTHDAY.\" He stares at you as if expecting an immediate response.",
+          {
+            "ifConditions": null,
+            "option": "\"I know.\"",
+            "linkPath": "soYoullGoThen",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "youShootThePilot": {
+        "content": [
+          "You shoot the pilot and dropkick him out of the helicopter. His body is limp as he begins to plummet toward the earth. He has a parachute, but with a bullet in him head it won't do much good. Your attention turns to the tiger. It's clear the tiger knows what he's doing, so you trust his training. You release the restraint holding the tiger and he jumps.",
+          {"divert": "momentsLaterHeDe"}
         ]
       }
     },

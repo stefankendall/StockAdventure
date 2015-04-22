@@ -10,7 +10,7 @@
     page.size = size;
 
     page.verticalPad = 20;
-    page.padBetweenParagraphs = 30;
+    page.padBetweenParagraphs = 25;
     page.horizontalPad = 10;
 
     return page;
@@ -32,7 +32,7 @@
 
     options.position = CGPointMake(self.size.width / 2,
             self.size.height - self.verticalPad - [options calculateAccumulatedFrame].size.height
-                    - [self heightOfAllParagraphs] - self.padBetweenParagraphs);
+                    - [self heightOfAllParagraphs] - 2 * self.padBetweenParagraphs);
     options.name = @"options";
     [self addChild:options];
     __block SKNode *lowestParagraph = nil;
