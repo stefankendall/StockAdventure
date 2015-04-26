@@ -55,8 +55,8 @@
 }
 
 - (void)restartGame {
-//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
-    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
+    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
+//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
 }
 
 - (void)startGame {
