@@ -18,12 +18,14 @@ const int BETWEEN_OPTION_PADDING = 30;
             ]]
     ];
 
+    CGFloat currentY = 0;
     for (NSUInteger i = 0; i < [stitch.options count]; i++) {
         NSDictionary *optionDict = stitch.options[[stitch.options count] - i - 1];
 
         OptionNode *option = [OptionNode nodeWithOption:optionDict forWidth:width];
         option.name = @"option";
-        option.position = CGPointMake(0, i * ([option height] + BETWEEN_OPTION_PADDING));
+        option.position = CGPointMake(0, currentY);
+        currentY += [option calculateAccumulatedFrame].size.height + BETWEEN_OPTION_PADDING;
         [node addChild:option];
     }
 

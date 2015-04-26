@@ -6,7 +6,7 @@ const NSString *OPTION_FONT_NAME = @"Baskerville";
 @implementation OptionNode
 
 const int OPTION_FONT_SIZE = 24;
-const int padBetweenOptionLines = 8;
+const int padBetweenOptionLines = 4;
 
 + (OptionNode *)nodeWithOption:(NSDictionary *)optionDict forWidth:(CGFloat)width {
     OptionNode *option = [self node];
@@ -23,10 +23,6 @@ const int padBetweenOptionLines = 8;
     }
 
     return option;
-}
-
-- (CGFloat)height {
-    return [self.children count] * OPTION_FONT_SIZE + ([self.children count] - 1) * padBetweenOptionLines;
 }
 
 - (void)highlight {

@@ -10,7 +10,9 @@
             @"youContinueWorki" : @"keyboard-fast-typing_fyZ9ZBVu",
             @"yourVoiceLiftsTh" : @"bayou-trans-1_MJJ4pLHu",
             @"itsHerBIRTHDAYHe" : @"cartoon-voice-clip-male-adult-shout-angry-ah-fiddle-faddle_GksC6LN_",
-            @"jenniferAlwaysEa" : @"eating-chips_fkLZDMEu"
+            @"jenniferAlwaysEa" : @"eating-chips_fkLZDMEu",
+            @"youSighHeavilyTh" : @"male-50-sigh_GJD5z_Ed",
+            @"yourLifeIsFairly" : @"laugh-track-2_z1lpz64O"
     };
     if (fileNames[stitchId]) {
         return [[NSBundle mainBundle] pathForResource:fileNames[stitchId] ofType:@"mp3"];

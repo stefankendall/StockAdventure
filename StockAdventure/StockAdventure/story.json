@@ -1,14 +1,20 @@
 {
-  "updated_at": "2015-04-22T01:17:21Z",
+  "updated_at": "2015-04-26T04:00:22Z",
   "url_key": "65b8",
   "data": {
     "editorData": {
       "textSize": 0,
-      "libraryVisible": false,
-      "playPoint": "sheBroughtCake",
+      "libraryVisible": true,
+      "playPoint": "ifYoureNotCarefu",
       "authorName": "Stefan Kendall"
     },
     "stitches": {
+      "yourStomachDrops": {
+        "content": [
+          "Your stomach drops. The last time this happened, you lost weeks to hand-holding, apologies, and trust exercises because you ended a text message with a period. The difference between \"no\" and \"no.\"  is nearly indistinguishable, but the difference wrecked your life for a while. You open the email.",
+          {"divert": "pleaseAdviceOhDe"}
+        ]
+      },
       "surprisinglyYouD": {
         "content": [
           "Surprisingly you don't immediately fall to your death. The ground rushes at you but you and the pilot are slowing. One terrifying rush later, and you gently land on a patch of grass outside the concert. An adorable dog in a t-shirt runs by and yips at you.",
@@ -16,10 +22,41 @@
           {"divert": "whileYourEyesFol"}
         ]
       },
+      "ifTheresOneLifeL": {
+        "content": [
+          "If there's one life lesson that has always served you well, it's smother others with courtesy. Katherine won't know how to react given how politely you're writing.",
+          {"divert": "youBeginTheNextL"},
+          {"flagName": "emailgood1"}
+        ]
+      },
+      "coldUnemotionalS": {
+        "content": [
+          "Cold. Unemotional. Single word sentences ending in a period. You're going to address this as matter-of-factly as possible and you trust it will go away. In the end people are reasonable beings and this situation is unreasonable.",
+          {"divert": "youBeginTheNextL"},
+          {"flagName": "emailok1"}
+        ]
+      },
       "tooScaredToSpeak": {
         "content": [
           "Too scared to speak up, you wait for someone else to break the silence.",
           {"divert": "secondsBecomeMin"}
+        ]
+      },
+      "justOneThingLeft": {
+        "content": [
+          "Just one thing left to do.",
+          {
+            "ifConditions": null,
+            "option": "Leave. Cool guys don't look at explosions.",
+            "linkPath": null,
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Wait and watch.",
+            "linkPath": "blankStitch1",
+            "notIfConditions": null
+          }
         ]
       },
       "downInTheStadium": {
@@ -39,13 +76,19 @@
           }
         ]
       },
+      "youreQuiteSetToK": {
+        "content": [
+          "You're quite set to keep working at this point, so you explain, \"There are dozens of people on this floor alone. Do you know many working days we lose to birthday parties? Suppose we have forty people in the office and celebrate each birthday. Because we're simplifying, we'll say that each party takes exactly one hour without setup, teardown, or efficiency loss of any kind. That's forty man hours we lose every single birthday party.\"",
+          {"divert": "iDontFollowYourM"}
+        ]
+      },
       "youThinkForAMome": {
         "content": [
           "You think for a moment. Not going to the party could be political suicide. Going to the party could be mental suicide, and you may have to work this weekend. The choice is clear. You know what you have to do.",
           {
             "ifConditions": null,
             "option": "\"Sorry. I just need to get this work done.\"",
-            "linkPath": null,
+            "linkPath": "noMatterHowYouCo",
             "notIfConditions": null
           },
           {
@@ -54,6 +97,19 @@
             "linkPath": "aBirthdayPartyFo",
             "notIfConditions": null
           }
+        ]
+      },
+      "youPackUpYourDes": {
+        "content": [
+          "You pack up your desk and walk out without saying a word. Freedom.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/freedom.jpg"}
+        ]
+      },
+      "withNoIncomeOrJo": {
+        "content": [
+          "With no income or job lined up, you turn to hard drugs and die hours later. The drug dealer you found at Walmart knew you were a schmuck and sold you gasoline as heroine. ",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/drugs.jpg"},
+          {"divert": "tHEEND5"}
         ]
       },
       "tHEEND9": {"content": ["THE END"]},
@@ -112,6 +168,12 @@
           {"divert": "butYouFlewTheHel"}
         ]
       },
+      "iSeeYourManagerM": {
+        "content": [
+          "\"I see...\" your manager mutters, almost confused. \"There's a birthday party, though.\"",
+          {"divert": "youreQuiteSetToK"}
+        ]
+      },
       "youHearACarSlamT": {
         "content": [
           "You hear a car slam to a halt. Seconds later  someone is slamming on the front office door. Who could it be?",
@@ -137,22 +199,52 @@
         ]
       },
       "tHEEND3": {"content": ["THE END"]},
+      "tHEEND12": {"content": ["THE END"]},
       "theHelicopterYou": {
         "content": [
           "\"The helicopter!\" your new manager snorts.",
           {"divert": "youllBeGreatKidY"}
         ]
       },
+      "youBeginTheNextL": {
+        "content": [
+          "You begin the next line.",
+          {
+            "ifConditions": null,
+            "option": "\"I am sincerely sorry....\"",
+            "linkPath": "youWaxPoeticInYo",
+            "notIfConditions": [{"notIfCondition": "emailbad1"}]
+          },
+          {
+            "ifConditions": null,
+            "option": "\"This problem is absurd and Jennifer is overreacting.\"",
+            "linkPath": "youStateTheIssue",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "\"Jennifer is a fuck and so are you.\"",
+            "linkPath": "harshWordsButTru",
+            "notIfConditions": [{"notIfCondition": "emailgood1"}]
+          }
+        ]
+      },
       "youHitTheGroundD": {
         "content": [
           "You hit the ground. Dead. The tiger, miraculously, survives the fall. Cat instincts, I guess. But you're definitely dead.",
-          {"divert": "tHEEND5"}
+          {"divert": "tHEEND6"}
         ]
       },
       "aBirthdayPartyFo": {
         "content": [
           "A birthday party for Jennifer can't possibly be as bad as the dozen or so HR meetings skipping the birthday would create.",
           {"divert": "youHeadOverToThe"}
+        ]
+      },
+      "illHeadOverRight": {
+        "content": [
+          "\"I'll head over right now,\" you manage through a clenched smile. You head to the party.",
+          {"divert": "aFamiliarCrowdHa"}
         ]
       },
       "secondsBecomeMin": {
@@ -185,6 +277,23 @@
           }
         ]
       },
+      "ifYoureNotCarefu": {
+        "content": [
+          "If you're not careful how you act next, your life could go into a quick spiral. At any rate you're definitely going to need to work this weekend, because this unexpected three hour meeting is going to cut out most of your day. ",
+          {
+            "ifConditions": null,
+            "option": "Reply to email.",
+            "linkPath": "youCanArgueYourW",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Accept calendar invite and attend the meeting.",
+            "linkPath": "youPrepareForThe",
+            "notIfConditions": null
+          }
+        ]
+      },
       "justWhenYouThoug": {
         "content": [
           "Just when you thought you've made a terrible mistake, the chute deploys, the tiger roars, and you both land safely on the ground.",
@@ -196,16 +305,41 @@
           }
         ]
       },
+      "youConsiderWatch": {
+        "content": [
+          "You consider watching your coworkers spiral into obesity and insulin resistance, but not today. Life is too short to deal with the politics and drama of a birthday party.",
+          {"divert": "youPackUpYourDes"},
+          {"pageNum": -1}
+        ]
+      },
       "youOpenTheDoorBe": {
         "content": [
           "You open the door. Before you is a half-shaven man in what appears to be a very expensive suit. Most of what you know about men's fashion has come from late night television commercials, but you're certain that somehow this man is important.",
           {"divert": "yOUYouWereTheSin"}
         ]
       },
+      "iDontFollowYourM": {
+        "content": [
+          "\"I don't follow\" your manager counters. \"Surely it's not that bad. It's just a birthday party. And it's one hour, not forty.\"",
+          {"divert": "youveAlwaysKnown"}
+        ]
+      },
       "yourVoiceLiftsTh": {
         "content": [
           "Your voice lifts the room and your co-workers join you in rounds. You're not the best, but twelve years in choir have finally paid off.",
           {"divert": "jenniferTurnsToY"}
+        ]
+      },
+      "lifeIsFarTooShor": {
+        "content": [
+          "Life is far too short to deal with any communication that begins or ends with \"please advise.\" It is the corporate equivalent of \"I fucking hate you,\" but a lot less honest.",
+          {"divert": "youPackUpYourDes"}
+        ]
+      },
+      "youveBeenFiredWi": {
+        "content": [
+          "You've been fired. Without any discussion or debate, not attending Jennifer's party was grounds for dismissal. You flagrantly disrespected both your manager and Jennifer, and that makes you not a team player.",
+          {"divert": "withNoIncomeOrJo"}
         ]
       },
       "lifeSeemsToSwirl": {
@@ -221,6 +355,17 @@
             "ifConditions": null,
             "option": "Inspect the parachute.",
             "linkPath": "youLookOverThePa",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "beforeYouKnowItT": {
+        "content": [
+          "Before you know it, the day is over, and it's time to go home.",
+          {
+            "ifConditions": null,
+            "option": "Go Home.",
+            "linkPath": "yourLifeIsFairly",
             "notIfConditions": null
           }
         ]
@@ -293,7 +438,7 @@
       "asYourBodySpiral": {
         "content": [
           "As your body spirals toward the ground, you wonder if you should have trusted the man. How did he survive the bullet? Why was he so calm? You'll never know, because your time is up.",
-          {"divert": "tHEEND8"}
+          {"divert": "tHEEND10"}
         ]
       },
       "youCantArgueWith": {
@@ -306,6 +451,13 @@
         "content": [
           "Jennifer turns to you coldly and says, \"Thank you.\"",
           {"divert": "youreAMenschButY"}
+        ]
+      },
+      "yourManagerStare1": {
+        "content": [
+          "Your manager stares at you for a while, and then he walks away without saying anything. Weird.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/walking.jpg"},
+          {"divert": "theRestOfTheDayG"}
         ]
       },
       "youveWorkedHereF": {
@@ -326,13 +478,20 @@
         "content": [
           "You continue working. ",
           {"divert": "jenniferIsABland"},
-          {"pageNum": 3}
+          {"pageNum": -1}
         ]
       },
       "theresOnlyOnePar": {
         "content": [
           "There's only one parachute that can save your life right now, and it's attached to a dead man.",
           {"divert": "youLeapFromTheHe"}
+        ]
+      },
+      "youStateTheIssue": {
+        "content": [
+          "You state the issue as matter-of-factly as possible. Fact and reason are on your side, and you make that point several times. By not attending the party, you made significant strides in your work. You should get a raise for your commitment to duty...which you mention as well. By the end of your argument-thesis you begin to believe you may actually get a raise.",
+          {"divert": "youPrepareYourCo"},
+          {"flagName": "emailok2"}
         ]
       },
       "singingGame": {
@@ -361,7 +520,20 @@
       "youCouldHaveBeen": {
         "content": [
           "You could have been a rock star. So close.",
-          {"divert": "tHEEND6"}
+          {"divert": "tHEEND7"}
+        ]
+      },
+      "harshWordsButTru": {
+        "content": [
+          "Harsh words, but true. You've always said you were a person of truth if nothing else, and now you're holding fast to your deepest beliefs. A quick tally of your email body shows you use the word \"Fuck\" no less than thirty-six times. God this feels good.",
+          {"divert": "youPrepareYourCo"},
+          {"flagName": "emailbad2"}
+        ]
+      },
+      "youTrustInTheSys": {
+        "content": [
+          "You trust in the system. Maybe there was a simple misunderstanding here, but you never intended any harm. Perhaps Jennifer is having a rough time with her personal life. Who knows? But you're sure the HR intermediary Katherine will see reason and handle this quickly.",
+          {"divert": "tHEEND9"}
         ]
       },
       "youreAlreadyMoun": {
@@ -376,6 +548,7 @@
           {"divert": "andYetYoureSlowi"}
         ]
       },
+      "blankStitch": {"content": [""]},
       "jenniferAlwaysEa": {
         "content": [
           "Jennifer always eats at her desk.",
@@ -397,6 +570,12 @@
           {"divert": "willYouComeWithM"}
         ]
       },
+      "yourManagerThink": {
+        "content": [
+          "Your manager thinks for a moment, and then tilts his head to speak. Maybe he gets it? ",
+          {"divert": "wellHowAboutYouJ"}
+        ]
+      },
       "tooEarlyDamnitTo": {
         "content": [
           "Too early. Damnit, too early. The parachute deploys, your descent slows, and then the line snaps. You and the tiger plummet, quickly hitting terminal velocity.",
@@ -409,18 +588,36 @@
           {"divert": "surprisinglyYouD"}
         ]
       },
+      "subjectHRISSUEIM": {
+        "content": [
+          "Subject: \"HR ISSUE IMMEDIATE ATTENTION\".",
+          {"divert": "yourStomachDrops"}
+        ]
+      },
       "tHEEND4": {"content": ["THE END"]},
+      "tHEEND": {"content": ["THE END"]},
       "whereAreWeGoingY": {
         "content": [
           "\"Where are we going?\" you shout anxiously.",
           {"divert": "theHelicopterYou"}
         ]
       },
-      "tHEEND": {"content": ["THE END"]},
+      "youveAlwaysKnown": {
+        "content": [
+          "You've always known the school system didn't produce the best math students, but at this point you're a little frustrated. ",
+          {"divert": "evenControllingF"}
+        ]
+      },
       "iWorkOut": {
         "content": [
           "I work out.",
           {"divert": "yourManagerWalks"}
+        ]
+      },
+      "momentsLaterHeDe": {
+        "content": [
+          "Moments later he deploys his chute. He's on target to drop right into the stadium, a real pro.",
+          {"divert": "youGlanceAroundT"}
         ]
       },
       "unconventionalBu": {
@@ -428,12 +625,6 @@
           "Unconventional, but why not? You disarm the pilot before he has a chance to blink. His gun, now your gun, is a well-maintained Walther PPK. It's pretty but a little small for your taste.",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/ppk.jpg"},
           {"divert": "youShootThePilot"}
-        ]
-      },
-      "momentsLaterHeDe": {
-        "content": [
-          "Moments later he deploys his chute. He's on target to drop right into the stadium, a real pro.",
-          {"divert": "youGlanceAroundT"}
         ]
       },
       "youLookOverThePa": {
@@ -462,13 +653,36 @@
           "A familiar crowd. Half the group is new hires, starry-eyed and ambitious. The veteran half shifts around vapidly, glad to to cut a few seconds out of the meaningless day by feigning affection for Jennifer.",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/corp_group.jpg"},
           {"divert": "jenniferAlwaysEa"},
-          {"pageNum": 4}
+          {"pageNum": -1}
         ]
       },
       "youDontNeedMoney": {
         "content": [
           "You don't need money. Don't take fame. Don't need\u00a0no credit card to ride this train. It's strong and it's sudden and it's cruel sometimes, but it might just save your life...",
           {"divert": "yourManagerWalks"}
+        ]
+      },
+      "youPrepareYourCo": {
+        "content": [
+          "You prepare your coup de gr\u00e2ce to finish your argument.",
+          {
+            "ifConditions": null,
+            "option": "\"I will personally throw Jennifer another party.\"",
+            "linkPath": "blankStitch",
+            "notIfConditions": [{"notIfCondition": "emailbad2"}]
+          },
+          {
+            "ifConditions": null,
+            "option": "\"I trust you will see reason and resolve this promptly.\"",
+            "linkPath": "youTrustInTheSys",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "\"Go fuck yourself. Please advise.\"",
+            "linkPath": "justForGoodMeasu",
+            "notIfConditions": [{"notIfCondition": "emailgood2"}]
+          }
         ]
       },
       "wellOfCourseICan": {
@@ -512,6 +726,12 @@
           "He wasn't lying. You're taken to a limousine and hastily get inside. As you drive, traffic parts for you biblically, as if the whole world is revolving around your upcoming performance.",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/limo.jpg"},
           {"divert": "whereAreWeGoingY"}
+        ]
+      },
+      "noMatterHowYouCo": {
+        "content": [
+          "No matter how you consider the situation, it just makes more sense to do the work now and deal with ramifications later. If anyone is reasonable they should see that you're making the best decision for the company and your job, so you you're not too worried about what might happen.",
+          {"divert": "yourManagerStare1"}
         ]
       },
       "youreFallingFarB": {
@@ -601,7 +821,7 @@
           {
             "ifConditions": null,
             "option": "Fuck cake. Walk out.",
-            "linkPath": "finallyFree",
+            "linkPath": "youConsiderWatch",
             "notIfConditions": null
           }
         ]
@@ -613,6 +833,7 @@
           {"divert": "tHEEND"}
         ]
       },
+      "blankStitch1": {"content": [""]},
       "thenYouLandBySom": {
         "content": [
           "Then you land. By some miracle, you're alive.",
@@ -625,10 +846,36 @@
           {"divert": "andThenHesAboveY"}
         ]
       },
+      "youPrepareForThe": {
+        "content": [
+          "You prepare for the meeting assuming this will be some sort of resolution situation, but reality is much different. ",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/team.jpg"},
+          {"divert": "youveBeenFiredWi"}
+        ]
+      },
       "wHAMYouCollideWi": {
         "content": [
           "WHAM! You collide with the man, grabbing desperately. He seems oddly calm as you grasp wildly, looking for some way to attach yourself to his chute. From the corner of your eye, you recognize a peculiar twirl from the pilot's face. A smile. He turns to you to speak, completely relaxed.",
           {"divert": "impressiveIWasnt"}
+        ]
+      },
+      "justForGoodMeasu": {
+        "content": [
+          "Just for good measure, you copy the entire company on the email and slam the send button repeatedly. This might not be the best move for you professionally, but spiritually you are now whole. Zen emanates from your body as you hear the dings of new email messages radiate throughout the office.",
+          {"divert": "justOneThingLeft"}
+        ]
+      },
+      "vayaConDios": {
+        "content": [
+          "Vaya con Dios.",
+          {"divert": "tHEEND8"}
+        ]
+      },
+      "yourManagerStare": {
+        "content": [
+          "Your manager stares at you open-mouthed, clearly not expecting this answer. He continues staring at you, breathing slowly, and you're now certain he has nothing left to say.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/lemur.jpg"},
+          {"divert": "theRestOfTheDayG"}
         ]
       },
       "coffeeshopSounds": {
@@ -637,10 +884,11 @@
           {"divert": "yourManagerWalks"}
         ]
       },
-      "vayaConDios": {
+      "youOpenUpYourEma": {
         "content": [
-          "Vaya con Dios.",
-          {"divert": "tHEEND7"}
+          "You open up your email to do your daily parsing and sorting, but then you see it, a bomb set to destroy your day.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/bomb.jpg"},
+          {"divert": "subjectHRISSUEIM"}
         ]
       },
       "shouldntWeJustCa": {
@@ -653,6 +901,12 @@
         "content": [
           "Your eyes scramble for something, anything that will save you. But your hesitation costs you. The pilot looks almost somber as he kicks you away and pulls his chute.",
           {"divert": "asYourBodySpiral"}
+        ]
+      },
+      "youLeapFromTheHe": {
+        "content": [
+          "You leap from the helicopter and aim yourself at the pilot, falling limp...",
+          {"divert": "butHesNotLimpHis"}
         ]
       },
       "youHideBeneathYo": {
@@ -686,10 +940,11 @@
           }
         ]
       },
-      "youLeapFromTheHe": {
+      "youMayKnowKarate": {
         "content": [
-          "You leap from the helicopter and aim yourself at the pilot, falling limp...",
-          {"divert": "butHesNotLimpHis"}
+          "You may know karate, but you don't know how to fly a helicopter. Lights blink and flash as you push and pull levers and switches. Before you have a chance to slam into the world, you slip out of the helicopter and a near-invisible helicopter blade grinds you into ground beef.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/ground_beef.jpg"},
+          {"divert": "youCouldHaveBeen"}
         ]
       },
       "incredibleYourCo": {
@@ -699,14 +954,37 @@
           {"divert": "youHadntNoticedB"}
         ]
       },
-      "youMayKnowKarate": {
+      "tHEEND8": {"content": ["THE END"]},
+      "youCanArgueYourW": {
         "content": [
-          "You may know karate, but you don't know how to fly a helicopter. Lights blink and flash as you push and pull levers and switches. Before you have a chance to slam into the world, you slip out of the helicopter and a near-invisible helicopter blade grinds you into ground beef.",
-          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/ground_beef.jpg"},
-          {"divert": "youCouldHaveBeen"}
+          "You can argue your way out of this. You know it. A blinking cursor flickers before you as you consider how to start the email.",
+          {
+            "ifConditions": null,
+            "option": "\"Dearest Katherine,\"",
+            "linkPath": "ifTheresOneLifeL",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "\"Katherine.\"",
+            "linkPath": "coldUnemotionalS",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "\"Hey fuckface.\"",
+            "linkPath": "yOLOYouWillNotLi",
+            "notIfConditions": null
+          }
         ]
       },
-      "tHEEND8": {"content": ["THE END"]},
+      "pleaseAdviceOhDe": {
+        "content": [
+          "\"Please advice.\" Oh dear god. With the immediate spelling error and harsh introduction, you know you're in for a shitstorm.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/shitstorm.jpg"},
+          {"divert": "morbidCuriosityM"}
+        ]
+      },
       "whyArentYouAtJen": {
         "content": [
           "\"Why aren't you at Jennifer's birthday party? This is a big day for her.\"",
@@ -719,7 +997,7 @@
           {
             "ifConditions": null,
             "option": "\"I'm working.\"",
-            "linkPath": null,
+            "linkPath": "iSeeYourManagerM",
             "notIfConditions": null
           }
         ]
@@ -729,6 +1007,19 @@
           "If you're going to hit the ground, you're not going alone. The pilot forced you into this and he's going to get you out of it. You dive through the air, picking up speed.",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/fast_skydive.jpg"},
           {"divert": "thePilotAppearsL"}
+        ]
+      },
+      "butYouHaveRespon": {
+        "content": [
+          "But you have responsibilities. This is your job, and sometimes you even care about it. If you had to describe your biggest weakness, you would say that you care too much. That's what you say during job interviews, at least. You keep reading.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/interview.jpg"},
+          {"divert": "pleaseAdviceIHav"}
+        ]
+      },
+      "theEmailGoesOnFo": {
+        "content": [
+          "The email goes on for several lines of signature.",
+          {"divert": "katherineDouglas"}
         ]
       },
       "tHEEND5": {"content": ["THE END"]},
@@ -743,12 +1034,6 @@
           "It's hard to tell exactly what your manager is thinking. His eyes seem dim and have long since lost the flame of passion and drive you imagined you would find when you read stories of business giants when you were younger.",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/atlas.jpg"},
           {"divert": "youThinkForAMome"}
-        ]
-      },
-      "finallyFree": {
-        "content": [
-          "Finally. Free.",
-          {"pageNum": 2}
         ]
       },
       "youPutOnYourHead": {
@@ -791,6 +1076,7 @@
           }
         ]
       },
+      "tHEEND11": {"content": ["THE END"]},
       "tHEEND2": {"content": ["THE END"]},
       "youEatCakeAndGoB": {
         "content": [
@@ -811,6 +1097,41 @@
           {"divert": "imNotAPilotHeBeg"}
         ]
       },
+      "tooLongJustAHair": {
+        "content": [
+          "Too long. Just a hair too long. You hit the ground with INCREDIBLE force.You hit the ground.",
+          {"divert": "youHitTheGroundD"}
+        ]
+      },
+      "ifIGoICantGetThi": {
+        "content": [
+          "\"If I go, I can't get this work done before the weekend. Sorry.\"",
+          {"divert": "yourManagerStare"}
+        ]
+      },
+      "morbidCuriosityM": {
+        "content": [
+          "Morbid curiosity makes you think you should keep reading, but then again, why? Life is far too short to deal with hand-wringing and endless meetings with HR. ",
+          {
+            "ifConditions": null,
+            "option": "Fuck it. Leave.",
+            "linkPath": "lifeIsFarTooShor",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Keep reading the email.",
+            "linkPath": "butYouHaveRespon",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "yourLifeIsFairly": {
+        "content": [
+          "Your life is fairly ordinary, so nothing peculiar happens between this day and the next. You watch your favorite laugh-tracked show on television, drink a handle of scotch, and pass out right around midnight. ",
+          {"divert": "timeBlursAndBefo"}
+        ]
+      },
       "itsJennifersBirt": {
         "content": [
           "It's Jennifer's birthday today. ",
@@ -829,12 +1150,6 @@
           "The pilot shakes his head. \"Impossible. I only get paid if you make the jump.\" He pulls a gun out of an ankle holster and points it at your head.",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/man_with_gun.jpg"},
           {"divert": "youveMadeATerrib"}
-        ]
-      },
-      "tooLongJustAHair": {
-        "content": [
-          "Too long. Just a hair too long. You hit the ground with INCREDIBLE force.You hit the ground.",
-          {"divert": "youHitTheGroundD"}
         ]
       },
       "thePilotLaughsMy": {
@@ -877,12 +1192,6 @@
           }
         ]
       },
-      "heedingTheAdvice": {
-        "content": [
-          "Heeding the advice of your murderous pilot, you wait. Air whistles past you as your speed increases, and the tiger begins to squirm. Maybe he's done this before?",
-          {"divert": "downInTheStadium"}
-        ]
-      },
       "andThenHesAboveY": {
         "content": [
           "And then he's above you. He pulled his chute.",
@@ -890,11 +1199,23 @@
           {"divert": "vayaConDios"}
         ]
       },
+      "heedingTheAdvice": {
+        "content": [
+          "Heeding the advice of your murderous pilot, you wait. Air whistles past you as your speed increases, and the tiger begins to squirm. Maybe he's done this before?",
+          {"divert": "downInTheStadium"}
+        ]
+      },
+      "pleaseAdviceIHav": {
+        "content": [
+          "\"Please advice. I have received SEVERAL complaints that you have shown extreme disrespect for Jennifer and her work that borderlines on harassment. This situation must be resolved immediately, so I have scheduled a lunch meeting so we can work this out. I appreciate your cooperation on this sensitive matter.\"",
+          {"divert": "theEmailGoesOnFo"}
+        ]
+      },
       "aliveUnscarredNe": {
         "content": [
           "Alive. Unscarred. Newly employed. Today has been a good strange day, as far as strange days go. You're a spy!",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/spy.jpg"},
-          {"divert": "tHEEND9"}
+          {"divert": "tHEEND11"}
         ]
       },
       "impressiveIWasnt": {
@@ -915,11 +1236,82 @@
           }
         ]
       },
+      "youWaxPoeticInYo": {
+        "content": [
+          "You wax poetic in your apology. Shakespeare himself would tremble at the knees with how eloquently you word your apology. Sincerity flows from deep within your heart.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/hamlet.jpg"},
+          {"divert": "youPrepareYourCo"},
+          {"flagName": "emailgood2"}
+        ]
+      },
+      "theRestOfTheDayG": {
+        "content": [
+          "The rest of the day goes fairly well. You get an enormous amount of work done in the newly quiet, abandoned office.",
+          {"divert": "beforeYouKnowItT"}
+        ]
+      },
+      "wellHowAboutYouJ": {
+        "content": [
+          "\"Well how about you just go to the party?\" he retorts. His eyes are like lead as he stares blankly waiting for a response.",
+          {
+            "ifConditions": null,
+            "option": "No",
+            "linkPath": "ifIGoICantGetThi",
+            "notIfConditions": null
+          },
+          {
+            "ifConditions": null,
+            "option": "Yes",
+            "linkPath": "youSighHeavilyTh",
+            "notIfConditions": null
+          }
+        ]
+      },
+      "katherineDouglas": {
+        "content": [
+          "Katherine Douglas. HR. ext. 3306. Picture of Katherine and her dog. Several quotes taken from an inspiration quotes website.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/woman_with_dog.jpg"},
+          {"divert": "ifYoureNotCarefu"}
+        ]
+      },
+      "evenControllingF": {
+        "content": [
+          "\"Even controlling for weekends and holidays, we wind up losing 27.4 times 40 hours, which is one-thousand ninety-six hours. Do you know what we could make with one-thousand ninety-six hours?\"",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/math.jpg"},
+          {"divert": "yourManagerThink"}
+        ]
+      },
+      "youSighHeavilyTh": {
+        "content": [
+          "You sigh *heavily*. There's no beating this system. It's political suicide to press the matter and nothing can be as bad as the conversation you're having right now.",
+          {"divert": "illHeadOverRight"}
+        ]
+      },
+      "timeBlursAndBefo": {
+        "content": [
+          "Time blurs, and before you know it it's 8:30AM and you're back at your desk.",
+          {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/alarmclock.jpg"},
+          {"divert": "youOpenUpYourEma"}
+        ]
+      },
       "ohYouRaiseYourHe": {
         "content": [
           "Oh. You raise your head to speak but you don't get the chance.",
           {"image": "https://dl.dropboxusercontent.com/u/5142994/stockadventure/revolver.jpg"},
-          {"divert": "tHEEND10"}
+          {"divert": "tHEEND12"}
+        ]
+      },
+      "yOLOYouWillNotLi": {
+        "content": [
+          "YOLO. You will not live your life in a world where people like Jennifer can cry to people like Katherine and suck time out of your life and your work.",
+          {"divert": "youBeginTheNextL"},
+          {"flagName": "emailbad1"}
+        ]
+      },
+      "youShootThePilot": {
+        "content": [
+          "You shoot the pilot and dropkick him out of the helicopter. His body is limp as he begins to plummet toward the earth. He has a parachute, but with a bullet in him head it won't do much good. Your attention turns to the tiger. It's clear the tiger knows what he's doing, so you trust his training. You release the restraint holding the tiger and he jumps.",
+          {"divert": "momentsLaterHeDe"}
         ]
       },
       "youHadntNoticedB": {
@@ -937,12 +1329,6 @@
             "linkPath": "soYoullGoThen",
             "notIfConditions": null
           }
-        ]
-      },
-      "youShootThePilot": {
-        "content": [
-          "You shoot the pilot and dropkick him out of the helicopter. His body is limp as he begins to plummet toward the earth. He has a parachute, but with a bullet in him head it won't do much good. Your attention turns to the tiger. It's clear the tiger knows what he's doing, so you trust his training. You release the restraint holding the tiger and he jumps.",
-          {"divert": "momentsLaterHeDe"}
         ]
       }
     },

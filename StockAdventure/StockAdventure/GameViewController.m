@@ -13,10 +13,9 @@
     SKView *skView = (SKView *) self.view;
     skView.ignoresSiblingOrder = YES;
 
-    self.scene = [[IntroScene alloc] initWithSize:self.view.bounds.size delegate: self];
+    self.scene = [[IntroScene alloc] initWithSize:self.view.bounds.size delegate:self];
     self.scene.scaleMode = SKSceneScaleModeAspectFill;
     [skView presentScene:self.scene];
-//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
 //    [self restartGame];
 }
 
@@ -56,7 +55,8 @@
 }
 
 - (void)restartGame {
-    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
+//    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"initial"]]];
+    [self transitionTo:[Stitch stitchWithStitchId:[[StoryReader instance] getStory][@"data"][@"editorData"][@"playPoint"]]];
 }
 
 - (void)startGame {
