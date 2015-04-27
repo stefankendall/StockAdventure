@@ -36,7 +36,7 @@
     [adventure setFontSize:fontSize];
     [adventure setFontColor:[UIColor blackColor]];
     adventure.alpha = 0;
-    [adventure setText:@"Adventure"];
+    [adventure setText:@"Story"];
     adventure.position = CGPointMake(self.size.width / 2, verticalCenter);
     adventure.verticalAlignmentMode = SKLabelVerticalAlignmentModeTop;
     [self addChild:adventure];

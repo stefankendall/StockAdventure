@@ -72,7 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0294BE9E1ACB745100077455 /* StockAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0294BE9E1ACB745100077455 /* Stock Story.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Story.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0294BEA21ACB745100077455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0294BEA31ACB745100077455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0294BEA51ACB745100077455 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		0294BE9F1ACB745100077455 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0294BE9E1ACB745100077455 /* StockAdventure.app */,
+				0294BE9E1ACB745100077455 /* Stock Story.app */,
 				0294BEBC1ACB745100077455 /* StockAdventureTests.xctest */,
 			);
 			name = Products;
@@ -402,9 +402,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0294BE9D1ACB745100077455 /* StockAdventure */ = {
+		0294BE9D1ACB745100077455 /* Stock Story */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0294BEC61ACB745100077455 /* Build configuration list for PBXNativeTarget "StockAdventure" */;
+			buildConfigurationList = 0294BEC61ACB745100077455 /* Build configuration list for PBXNativeTarget "Stock Story" */;
 			buildPhases = (
 				C64F97B88F78736D45C43E6D /* Check Pods Manifest.lock */,
 				0294BE9A1ACB745100077455 /* Sources */,
@@ -416,9 +416,9 @@
 			);
 			dependencies = (
 			);
-			name = StockAdventure;
+			name = "Stock Story";
 			productName = StockAdventure;
-			productReference = 0294BE9E1ACB745100077455 /* StockAdventure.app */;
+			productReference = 0294BE9E1ACB745100077455 /* Stock Story.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0294BEBB1ACB745100077455 /* StockAdventureTests */ = {
@@ -470,7 +470,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0294BE9D1ACB745100077455 /* StockAdventure */,
+				0294BE9D1ACB745100077455 /* Stock Story */,
 				0294BEBB1ACB745100077455 /* StockAdventureTests */,
 			);
 		};
@@ -597,7 +597,7 @@
 /* Begin PBXTargetDependency section */
 		0294BEBE1ACB745100077455 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0294BE9D1ACB745100077455 /* StockAdventure */;
+			target = 0294BE9D1ACB745100077455 /* Stock Story */;
 			targetProxy = 0294BEBD1ACB745100077455 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -707,6 +707,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StockAdventure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -718,6 +719,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StockAdventure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -768,7 +770,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0294BEC61ACB745100077455 /* Build configuration list for PBXNativeTarget "StockAdventure" */ = {
+		0294BEC61ACB745100077455 /* Build configuration list for PBXNativeTarget "Stock Story" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0294BEC71ACB745100077455 /* Debug */,
